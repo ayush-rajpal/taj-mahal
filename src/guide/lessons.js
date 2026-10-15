@@ -1,7 +1,7 @@
 // What Tauhid says. Fixed text, no AI: the greeting, then one answer per question button.
 // Formatting: **bold**, `code`, lines starting with "- " become bullets, and https:// links are clickable.
 
-export const GREETING = `Yo! I'm Tauhid Zaman, and this whole thing is my idea. Welcome to the **Metaverse Web**: the regular web, except every website is a 3D world you can walk around in, and the links between them are portals you walk through.
+export const GREETING = `Yo! I'm Tauhid Zaman. Welcome to the **Metaverse Web**: the regular web, except every website is a 3D world you can walk around in, and the links between them are portals you walk through.
 
 Pick a question below and I'll walk you through it.`
 
