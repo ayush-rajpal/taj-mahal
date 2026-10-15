@@ -6,7 +6,7 @@ import TouchControls from './TouchControls.jsx'
 import TalkAim from './guide/TalkAim.jsx'
 import GuidePanel from './guide/GuidePanel.jsx'
 import { EYE, SPAWN } from './layout.js'
-import { onIdentity, presence, spawnId } from './mvw.js'
+import { onIdentity, presence } from './mvw.js'
 
 // Change these to make the world yours (and the name in public/.well-known/metaverse.json too).
 const NAME = 'Starter World'
@@ -20,9 +20,10 @@ export default function App() {
     setLocked(v)
     if (v) setFree(false) // the mouse is locked now; Esc brings back the menu as a pause screen
   }, [])
-  // Arriving through a portal (the address has ?spawn=), skip the start menu and drop straight in:
-  // the keys work right away, and the first click locks the mouse for looking around.
-  const [free, setFree] = useState(() => spawnId !== null)
+  // Every arrival, portal or not, starts on the menu: one clear click to walk in and lock the mouse.
+  // `free` is a walking-without-the-mouse-locked state, used after closing Tauhid's chat (keys work,
+  // the view follows the mouse, and the next click locks it).
+  const [free, setFree] = useState(false)
   const freeRef = useRef(free)
   freeRef.current = free
   // tell the Metaverse Browser where you are whenever the area changes (mvw/0.1 `presence`)
