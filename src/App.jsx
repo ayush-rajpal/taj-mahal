@@ -46,18 +46,20 @@ export default function App() {
   // talking to Tauhid: aim the crosshair at him and click or press E (phones: tap him).
   // The mouse is released so you can click his questions; closing the chat puts you back in.
   const [aim, setAim] = useState(null)
-  const aimRef = useRef(null)
-  aimRef.current = aim
   const [talking, setTalking] = useState(false)
   const startTalk = useCallback(() => {
     setFree(false)
     setTalking(true)
     document.exitPointerLock?.()
   }, [])
+  // closing the chat goes straight back to mouse-look. Closing with × or a click outside does it at
+  // once; Esc doesn't count as a click for the browser, so then the next click grabs the mouse.
   const endTalk = useCallback(() => {
     setTalking(false)
-    if (!isTouch) setFree(true) // keys work again; the next click locks the mouse
-  }, [isTouch])
+    if (touchOn) return
+    setFree(true) // keys work right away, whether or not the mouse grab below is allowed
+    lockRef.current?.()
+  }, [touchOn])
 
   const playing = locked || touchOn || free || talking
   useEffect(() => {
@@ -67,11 +69,9 @@ export default function App() {
       setFree(false)
       return
     }
-    const click = (e) => {
-      if (e.target.closest('button, a, .guide')) return
-      if (aimRef.current) startTalk() // looking at Tauhid: talk instead of grabbing the mouse
-      else lockRef.current?.()
-    }
+    // a click here always grabs the mouse for looking around, even with Tauhid in the crosshair;
+    // once the mouse is grabbed, clicking him (or pressing E) starts the chat
+    const click = (e) => !e.target.closest('button, a, .guide') && lockRef.current?.()
     addEventListener('mousedown', click)
     return () => removeEventListener('mousedown', click)
   }, [free, talking]) // eslint-disable-line react-hooks/exhaustive-deps
@@ -82,8 +82,7 @@ export default function App() {
     if (!talking || touchOn) return
     const clickOut = (e) => {
       if (e.button !== 0 || e.target.closest('.guide, button, a')) return
-      endTalk()
-      lockRef.current?.()
+      endTalk() // and back to mouse-look
     }
     addEventListener('mousedown', clickOut)
     return () => removeEventListener('mousedown', clickOut)
@@ -105,7 +104,7 @@ export default function App() {
       {free && !talking && <div className="hint">Click to look around · WASD to walk</div>}
       {aim && playing && !talking && (
         <div className="talkhint">
-          {touchOn ? <button onClick={startTalk}>💬 Talk to Tauhid</button> : 'Click or press E to talk to Tauhid'}
+          {touchOn ? <button onClick={startTalk}>💬 Talk to Tauhid</button> : locked ? 'Click or press E to talk to Tauhid' : 'Press E to talk to Tauhid'}
         </div>
       )}
       {talking && <GuidePanel visitor={me?.name} onClose={endTalk} />}
