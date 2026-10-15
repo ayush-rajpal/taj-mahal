@@ -76,6 +76,19 @@ export default function App() {
     return () => removeEventListener('mousedown', click)
   }, [free, talking]) // eslint-disable-line react-hooks/exhaustive-deps
 
+  // while chatting, a click anywhere outside the chat closes it and gives the mouse back to looking
+  // around (the conversation is kept, so talking to him again picks up where you left off)
+  useEffect(() => {
+    if (!talking || touchOn) return
+    const clickOut = (e) => {
+      if (e.button !== 0 || e.target.closest('.guide, button, a')) return
+      endTalk()
+      lockRef.current?.()
+    }
+    addEventListener('mousedown', clickOut)
+    return () => removeEventListener('mousedown', clickOut)
+  }, [talking, touchOn, endTalk])
+
   return (
     <>
       <Canvas camera={{ fov: 72, near: 0.05, far: 200, position: [SPAWN.x, EYE, SPAWN.z] }} dpr={[1, 1.75]}>

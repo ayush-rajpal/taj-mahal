@@ -96,7 +96,7 @@ export default function GuidePanel({ visitor, onClose }) {
           </button>
         ))}
       </div>
-      <div className="guide-foot">Esc or × to keep exploring</div>
+      <div className="guide-foot">Click outside the chat, Esc or × to keep exploring</div>
     </div>
   )
 }
