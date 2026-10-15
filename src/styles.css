@@ -417,3 +417,8 @@ body,
   font-size: 11px;
   color: #8f8f9a;
 }
+
+/* view follows the mouse before the first click: hide the cursor over the world so it feels like mouse-look */
+.freelook canvas {
+  cursor: none;
+}

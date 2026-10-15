@@ -61,6 +61,9 @@ export default function App() {
     lockRef.current?.()
   }, [touchOn])
 
+  useEffect(() => {
+    document.body.classList.toggle('freelook', free)
+  }, [free])
   const playing = locked || touchOn || free || talking
   useEffect(() => {
     if (!free || talking) return
@@ -101,7 +104,7 @@ export default function App() {
         {where}
       </div>
       {playing && <div className="crosshair" />}
-      {free && !talking && <div className="hint">Click to look around · WASD to walk</div>}
+      {free && !talking && <div className="hint">Move the mouse to look · click to lock it · WASD to walk</div>}
       {aim && playing && !talking && (
         <div className="talkhint">
           {touchOn ? <button onClick={startTalk}>💬 Talk to Tauhid</button> : locked ? 'Click or press E to talk to Tauhid' : 'Press E to talk to Tauhid'}
