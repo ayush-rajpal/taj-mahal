@@ -14,7 +14,7 @@ export const ROOM = { xMin: -5, xMax: 5, zMin: -5, zMax: 5 }
 // yaw: 0 faces north (-z), Math.PI faces south (+z).
 export const SPAWNS = {
   default: { x: 0, z: 2, yaw: 0 }, // middle of the room, facing the portal
-  darul_kebab_portal: { x: 0, z: -3.3, yaw: Math.PI }, // just in front of the portal, facing into the room
+  hub_portal: { x: 0, z: -3.3, yaw: Math.PI }, // just in front of the portal, facing into the room
 }
 export const SPAWN = pickSpawn(SPAWNS)
 
@@ -23,10 +23,10 @@ export const SPAWN = pickSpawn(SPAWNS)
 export const PORTAL = {
   x: 0,
   z: ROOM.zMin + 0.1,
-  href: import.meta.env.DEV ? 'http://localhost:5174/' : 'https://zlisto.github.io/darul_kebab/', // local copy while developing
-  spawn: 'front_door',
-  back: 'darul_kebab_portal',
-  label: 'Darul Kebab',
+  href: import.meta.env.DEV ? 'http://localhost:5178/' : 'https://zlisto.github.io/hub_world/', // local copy while developing
+  spawn: 'by_starter_world', // the square's spawn in front of ITS portal back to here
+  back: 'hub_portal',
+  label: 'Metaverse Square',
 }
 
 // Keep the player inside the room: clamp to the walls, minus the player's radius.
@@ -39,6 +39,6 @@ export function collide(pos) {
 
 // Where you are, in plain words. Sent to the Metaverse Browser with presence() whenever it changes.
 export function locate(x, z) {
-  if (z < PORTAL.z + 2) return 'Starter World · by the portal to Darul Kebab'
+  if (z < PORTAL.z + 2) return 'Starter World · by the portal to Metaverse Square'
   return 'Starter World · in the room'
 }

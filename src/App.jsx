@@ -8,7 +8,7 @@ import { onIdentity, presence } from './mvw.js'
 
 // Change these to make the world yours (and the name in public/.well-known/metaverse.json too).
 const NAME = 'Starter World'
-const BLURB = 'An empty room, waiting to become your world. Walk through the pink portal to visit Darul Kebab.'
+const BLURB = 'An empty room, waiting to become your world. Walk through the pink portal to Metaverse Square, the plaza with a portal to every world.'
 
 export default function App() {
   const [locked, setLocked] = useState(false)

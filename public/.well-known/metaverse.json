@@ -1,17 +1,17 @@
 {
   "protocol": "mvw/0.1",
   "name": "Starter World",
-  "description": "A plain empty room, the starting point for a new world. One portal on the north wall leads to Darul Kebab.",
+  "description": "A plain empty room, the starting point for a new world. One portal on the north wall leads to Metaverse Square, the plaza with a portal to every world.",
   "spawns": {
     "default": "The middle of the room, facing the portal on the north wall",
-    "darul_kebab_portal": "In front of the portal to Darul Kebab on the north wall, facing into the room"
+    "hub_portal": "In front of the portal to Metaverse Square on the north wall, facing into the room"
   },
   "portals": [
     {
-      "id": "to_darul_kebab",
-      "label": "Darul Kebab",
-      "href": "https://zlisto.github.io/darul_kebab/",
-      "spawn": "front_door",
+      "id": "to_metaverse_square",
+      "label": "Metaverse Square",
+      "href": "https://zlisto.github.io/hub_world/",
+      "spawn": "by_starter_world",
       "where": "The glowing doorway in the middle of the north wall"
     }
   ]
