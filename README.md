@@ -13,6 +13,12 @@ npm run dev
 
 Then open http://localhost:5176/. To see it inside the Metaverse Browser, start `https://github.com/zlisto/metaverse_browser` (`npm run dev`, port 5175) and type `localhost:5176` in its address bar.
 
+## Meet your guide
+
+Tauhid Zaman stands by the portal. Look at him and click (or press **E**; on a phone, tap **Talk to Tauhid**) and a chat opens where he explains the Metaverse Web: what it is, portals, spawn points, manifests, and how to add your own world. His lines are fixed text in `src/guide/lessons.js`, so there's no AI and no server.
+
+His avatar comes from [evans-hall-3d](https://github.com/zlisto/evans-hall-3d), where he teaches in room 2200. Everything for him lives in `src/guide/`. To remove him from your copy, delete that folder, the `GUIDE` block in `src/layout.js`, the `<Zaman>` line in `src/World.jsx`, and the talk lines in `src/App.jsx`.
+
 ## What's where
 
 | File | What it does | Change it? |

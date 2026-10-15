@@ -1,5 +1,6 @@
 import Portal from './Portal.jsx'
-import { H, PORTAL, ROOM } from './layout.js'
+import { GUIDE, H, PORTAL, ROOM } from './layout.js'
+import Zaman from './guide/Zaman.jsx'
 
 // Everything you can see. Replace the room with your own: more meshes, a loaded model
 // (useLoader + GLTFLoader from three/examples), textures, more lights.
@@ -18,7 +19,7 @@ function Wall({ x, z, len, alongX, color = '#e9e4da' }) {
   )
 }
 
-export default function World() {
+export default function World({ talking = false, onTalk }) {
   return (
     <>
       <color attach="background" args={['#101014']} />
@@ -47,6 +48,9 @@ export default function World() {
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial color="#ff4fa3" />
       </mesh>
+
+      {/* Tauhid, your guide: aim at him and click (or press E) to talk */}
+      <Zaman position={[GUIDE.x, 0, GUIDE.z]} rotation={GUIDE.rot} talking={talking} onTalk={onTalk} />
 
       {/* the portal (rot 0 = facing south, into the room). Add one <Portal> per link. */}
       <Portal x={PORTAL.x} z={PORTAL.z} href={PORTAL.href} spawn={PORTAL.spawn} back={PORTAL.back} label={PORTAL.label} />

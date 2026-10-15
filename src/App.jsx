@@ -3,12 +3,14 @@ import { Canvas } from '@react-three/fiber'
 import World from './World.jsx'
 import Player from './Player.jsx'
 import TouchControls from './TouchControls.jsx'
+import TalkAim from './guide/TalkAim.jsx'
+import GuidePanel from './guide/GuidePanel.jsx'
 import { EYE, SPAWN } from './layout.js'
 import { onIdentity, presence, spawnId } from './mvw.js'
 
 // Change these to make the world yours (and the name in public/.well-known/metaverse.json too).
 const NAME = 'Starter World'
-const BLURB = 'An empty room, waiting to become your world. Walk through the pink portal to Metaverse Square, the plaza with a portal to every world.'
+const BLURB = 'An empty room, waiting to become your world. Talk to Tauhid to learn how the Metaverse Web works, then walk through the pink portal to Metaverse Square.'
 
 export default function App() {
   const [locked, setLocked] = useState(false)
@@ -41,23 +43,44 @@ export default function App() {
     touchRef.current.move = [0, 0]
     setTouchOn(on)
   }
-  const playing = locked || touchOn || free
+  // talking to Tauhid: aim the crosshair at him and click or press E (phones: tap him).
+  // The mouse is released so you can click his questions; closing the chat puts you back in.
+  const [aim, setAim] = useState(null)
+  const aimRef = useRef(null)
+  aimRef.current = aim
+  const [talking, setTalking] = useState(false)
+  const startTalk = useCallback(() => {
+    setFree(false)
+    setTalking(true)
+    document.exitPointerLock?.()
+  }, [])
+  const endTalk = useCallback(() => {
+    setTalking(false)
+    if (!isTouch) setFree(true) // keys work again; the next click locks the mouse
+  }, [isTouch])
+
+  const playing = locked || touchOn || free || talking
   useEffect(() => {
-    if (!free) return
+    if (!free || talking) return
     if (isTouch) {
       setTouch(true) // phones: the joystick needs no click, so just turn it on
       setFree(false)
       return
     }
-    const click = (e) => !e.target.closest('button') && lockRef.current?.()
+    const click = (e) => {
+      if (e.target.closest('button, a, .guide')) return
+      if (aimRef.current) startTalk() // looking at Tauhid: talk instead of grabbing the mouse
+      else lockRef.current?.()
+    }
     addEventListener('mousedown', click)
     return () => removeEventListener('mousedown', click)
-  }, [free]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [free, talking]) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <>
       <Canvas camera={{ fov: 72, near: 0.05, far: 200, position: [SPAWN.x, EYE, SPAWN.z] }} dpr={[1, 1.75]}>
-        <World />
+        <World talking={talking} onTalk={startTalk} />
+        <TalkAim enabled={playing && !talking} onAim={setAim} onTalk={startTalk} />
         <Player lockRef={lockRef} freeRef={freeRef} touchRef={touchRef} onLock={onLock} onWhere={onWhere} />
       </Canvas>
 
@@ -66,7 +89,13 @@ export default function App() {
         {where}
       </div>
       {playing && <div className="crosshair" />}
-      {free && <div className="hint">Click to look around · WASD to walk</div>}
+      {free && !talking && <div className="hint">Click to look around · WASD to walk</div>}
+      {aim && playing && !talking && (
+        <div className="talkhint">
+          {touchOn ? <button onClick={startTalk}>💬 Talk to Tauhid</button> : 'Click or press E to talk to Tauhid'}
+        </div>
+      )}
+      {talking && <GuidePanel visitor={me?.name} onClose={endTalk} />}
       {touchOn && <TouchControls touchRef={touchRef} onPause={() => setTouch(false)} />}
 
       {!playing && (
@@ -101,6 +130,7 @@ export default function App() {
                   <span><b>Shift</b> run</span>
                   <span><b>Space</b> jump</span>
                   <span><b>C</b> crouch</span>
+                  <span><b>E</b> talk</span>
                   <span><b>Esc</b> pause</span>
                 </>
               )}

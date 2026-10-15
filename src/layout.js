@@ -29,16 +29,31 @@ export const PORTAL = {
   label: 'Metaverse Square',
 }
 
+// Tauhid, your guide: standing near the portal, turned toward where you arrive. Talk to him to
+// learn how the Metaverse Web works (src/guide/). Delete this and <Guide> in World.jsx to remove him.
+export const GUIDE = { x: -1.7, z: -2.6, r: 0.45 }
+GUIDE.rot = Math.atan2(SPAWNS.default.x - GUIDE.x, SPAWNS.default.z - GUIDE.z)
+
 // Keep the player inside the room: clamp to the walls, minus the player's radius.
 // For furniture, push the player out of boxes here too (see darul_kebab/src/layout.js).
 export function collide(pos) {
   pos.x = Math.max(ROOM.xMin + R_PLAYER, Math.min(ROOM.xMax - R_PLAYER, pos.x))
   pos.z = Math.max(ROOM.zMin + R_PLAYER, Math.min(ROOM.zMax - R_PLAYER, pos.z))
+  // and out of the guide
+  const dx = pos.x - GUIDE.x
+  const dz = pos.z - GUIDE.z
+  const d = Math.hypot(dx, dz)
+  const rr = R_PLAYER + GUIDE.r
+  if (d < rr && d > 1e-6) {
+    pos.x = GUIDE.x + (dx / d) * rr
+    pos.z = GUIDE.z + (dz / d) * rr
+  }
   return pos
 }
 
 // Where you are, in plain words. Sent to the Metaverse Browser with presence() whenever it changes.
 export function locate(x, z) {
+  if (Math.hypot(x - GUIDE.x, z - GUIDE.z) < 2.2) return 'Starter World · with Tauhid, your guide'
   if (z < PORTAL.z + 2) return 'Starter World · by the portal to Metaverse Square'
   return 'Starter World · in the room'
 }
