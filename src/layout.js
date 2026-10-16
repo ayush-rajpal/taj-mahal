@@ -5,7 +5,7 @@ import { pickSpawn } from './mvw.js'
 // Change the room here; World.jsx draws it and Player.jsx walks in it.
 
 export const H = 3.2 // ceiling height
-export const SPEED = { walk: 3.4, run: 6 } // meters per second; Shift runs
+export const SPEED = { walk: 12, run: 20 } // meters per second; Shift runs
 export const EYE = 1.65 // eye height when standing
 export const R_PLAYER = 0.35 // how close you can get to a wall
 export const ROOM = { xMin: -5, xMax: 5, zMin: -5, zMax: 5 }
