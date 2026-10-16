@@ -16,6 +16,7 @@ export const ROOM = { xMin: -5, xMax: 5, zMin: -5, zMax: 5 }
 export const SPAWNS = {
   default: { x: 0, z: 2, yaw: 0 }, // middle of the room, facing the portal
   hub_portal: { x: 0, z: -3.3, yaw: Math.PI }, // just in front of the portal, facing into the room
+  evans_portal: { x: 2.2, z: -3.3, yaw: Math.PI }, // in front of the Evans Hall door
 }
 export const SPAWN = pickSpawn(SPAWNS)
 
@@ -28,6 +29,17 @@ export const PORTAL = {
   spawn: 'by_starter_world', // the square's spawn in front of ITS portal back to here
   back: 'hub_portal',
   label: 'Metaverse Square',
+}
+
+// Tauhid's real classroom: Evans Hall room 2200
+export const EVANS = {
+  x: 2.4,
+  z: ROOM.zMin + 0.1,
+  href: import.meta.env.DEV ? 'http://localhost:5173/' : 'https://zlisto.github.io/evans-hall-3d/',
+  spawn: 'room_2200',
+  back: 'evans_portal',
+  label: 'Evans Hall · 2200',
+  sub: "Tauhid's classroom",
 }
 
 // Tauhid, your guide: standing near the portal, turned toward where you arrive. Talk to him to
@@ -55,6 +67,7 @@ export function collide(pos) {
 // Where you are, in plain words. Sent to the Metaverse Browser with presence() whenever it changes.
 export function locate(x, z) {
   if (Math.hypot(x - GUIDE.x, z - GUIDE.z) < 2.2) return 'Starter World · with Tauhid, your guide'
+  if (Math.hypot(x - EVANS.x, z - EVANS.z) < 2.2) return 'Starter World · by the portal to Evans Hall'
   if (z < PORTAL.z + 2) return 'Starter World · by the portal to Metaverse Square'
   return 'Starter World · in the room'
 }

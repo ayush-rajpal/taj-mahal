@@ -1,5 +1,5 @@
 import Portal from './Portal.jsx'
-import { GUIDE, H, PORTAL, ROOM } from './layout.js'
+import { EVANS, GUIDE, H, PORTAL, ROOM } from './layout.js'
 import Zaman from './guide/Zaman.jsx'
 
 // Everything you can see. Replace the room with your own: more meshes, a loaded model
@@ -52,8 +52,9 @@ export default function World({ talking = false, onTalk }) {
       {/* Tauhid, your guide: aim at him and click (or press E) to talk */}
       <Zaman position={[GUIDE.x, 0, GUIDE.z]} rotation={GUIDE.rot} talking={talking} onTalk={onTalk} />
 
-      {/* the portal (rot 0 = facing south, into the room). Add one <Portal> per link. */}
+      {/* portals (rot 0 = facing south, into the room). Add one <Portal> per link. */}
       <Portal x={PORTAL.x} z={PORTAL.z} href={PORTAL.href} spawn={PORTAL.spawn} back={PORTAL.back} label={PORTAL.label} />
+      <Portal x={EVANS.x} z={EVANS.z} href={EVANS.href} spawn={EVANS.spawn} back={EVANS.back} label={EVANS.label} sub={EVANS.sub} color="#ffd166" />
     </>
   )
 }

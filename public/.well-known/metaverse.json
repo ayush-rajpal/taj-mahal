@@ -1,10 +1,11 @@
 {
   "protocol": "mvw/0.1",
   "name": "Starter World",
-  "description": "A plain empty room, the starting point for a new world. One portal on the north wall leads to Metaverse Square, the plaza with a portal to every world.",
+  "description": "A plain empty room, the starting point for a new world. One portal on the north wall leads to Metaverse Square, the plaza with a portal to every world. Another leads to Evans Hall room 2200, where Tauhid teaches for real.",
   "spawns": {
     "default": "The middle of the room, facing the portal on the north wall",
-    "hub_portal": "In front of the portal to Metaverse Square on the north wall, facing into the room"
+    "hub_portal": "In front of the portal to Metaverse Square on the north wall, facing into the room",
+    "evans_portal": "In front of the portal to Evans Hall on the north wall, facing into the room"
   },
   "portals": [
     {
@@ -13,6 +14,13 @@
       "href": "https://zlisto.github.io/hub_world/",
       "spawn": "by_starter_world",
       "where": "The glowing doorway in the middle of the north wall"
+    },
+    {
+      "id": "to_evans_hall",
+      "label": "Evans Hall · 2200",
+      "href": "https://zlisto.github.io/evans-hall-3d/",
+      "spawn": "room_2200",
+      "where": "A gold doorway on the north wall, next to Metaverse Square"
     }
   ]
 }

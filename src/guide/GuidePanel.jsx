@@ -1,5 +1,13 @@
 import { Fragment, useEffect, useRef, useState } from 'react'
+import { EVANS, PORTAL } from '../layout.js'
+import { navigate } from '../mvw.js'
+import { fadeOut, whoosh } from '../audio.js'
 import { GREETING, LESSONS } from './lessons.js'
+
+const DESTINATIONS = [
+  { label: 'Metaverse Square', sub: 'every world · portal', href: PORTAL.href, spawn: PORTAL.spawn, back: PORTAL.back },
+  { label: EVANS.label, sub: EVANS.sub, href: EVANS.href, spawn: EVANS.spawn, back: EVANS.back },
+]
 
 // The chat window that opens when you talk to Tauhid. His lines are fixed (lessons.js): you pick a
 // question, it shows up as your message, and his answer follows after a short "typing" pause.
@@ -68,6 +76,11 @@ export default function GuidePanel({ visitor, onClose }) {
       setTyping(false)
     }, 650)
   }
+  const go = (d) => {
+    fadeOut()
+    whoosh()
+    navigate(d.href, d.spawn, d.back)
+  }
 
   return (
     <div className="guide" role="dialog" aria-label="Talking with Tauhid Zaman">
@@ -88,6 +101,19 @@ export default function GuidePanel({ visitor, onClose }) {
           </div>
         ))}
         {typing && <div className="guide-msg tauhid typing">…</div>}
+        <div className="world-list">
+          <p className="world-none">Want me to send you somewhere?</p>
+          {DESTINATIONS.map((d) => (
+            <div key={d.label} className="world-card ok">
+              <div className="world-head">
+                <span className="world-dot" />
+                <b>{d.label}</b>
+                <button onClick={() => go(d)}>Go →</button>
+              </div>
+              <span className="world-host">{d.sub}</span>
+            </div>
+          ))}
+        </div>
       </div>
       <div className="guide-asks">
         {LESSONS.map((l) => (
