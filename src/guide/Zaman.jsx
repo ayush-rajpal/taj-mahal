@@ -1,16 +1,19 @@
-// From zlisto/evans-hall-3d (src/Zaman.jsx), unchanged apart from this line.
+// From zlisto/evans-hall-3d (src/Zaman.jsx), with a new face (shaved head, short beard, closed smile)
+// and a more muscular build: thicker legs and arms.
 import { useMemo, useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 import Labubu from './Labubu.jsx'
 import { B, BOX, CAP, CYL, SPH, TORUS, m, useTalker } from './avatar.js'
 
-// Prof. Tauhid Zaman: muscular build, close-cropped buzz cut, black-and-pink BLACKPINK hoodie, a pink
-// Labubu clipped to his belt loop. While you chat he turns to face you and talks with his hands.
+// Prof. Tauhid Zaman: muscular build, shaved head, short dark beard and a warm closed-mouth smile,
+// black-and-pink BLACKPINK hoodie, a pink Labubu clipped to his belt loop. While you chat he turns
+// to face you and talks with his hands.
 
 export const ZAMAN = { slug: 'tauhid-zaman', name: 'Tauhid Zaman' }
 
-const SKIN = '#c58f63'
+const SKIN = '#b07a56'
+const SKIN_SHADE = '#a46f4e' // the shaved scalp, a touch darker than the face
 const HAIR = '#15110f'
 const HOODIE = '#121214'
 const PINK = '#ff4fa3'
@@ -61,18 +64,18 @@ export default function Zaman({ position = [0, 0, 0], rotation = 0, talking = fa
     <group ref={root} position={position} rotation={[0, rotation, 0]} {...clickProps(onTalk)}>
       {/* sneakers: white with a pink stripe */}
       {[-1, 1].map((sx) => (
-        <group key={sx} position={[0.1 * sx, 0, 0.03]}>
-          <B g={BOX} c="#f4f4f6" p={[0, 0.045, 0]} s={[0.11, 0.09, 0.27]} />
-          <B g={BOX} c={PINK} p={[0.056 * sx, 0.05, 0]} s={[0.004, 0.03, 0.17]} />
-          <B g={BOX} c="#d9d9de" p={[0, 0.006, 0]} s={[0.115, 0.012, 0.28]} />
+        <group key={sx} position={[0.11 * sx, 0, 0.03]}>
+          <B g={BOX} c="#f4f4f6" p={[0, 0.045, 0]} s={[0.125, 0.09, 0.28]} />
+          <B g={BOX} c={PINK} p={[0.064 * sx, 0.05, 0]} s={[0.004, 0.03, 0.17]} />
+          <B g={BOX} c="#d9d9de" p={[0, 0.006, 0]} s={[0.13, 0.012, 0.29]} />
         </group>
       ))}
       {/* jeans */}
       {[-1, 1].map((sx) => (
-        <mesh key={sx} geometry={CAP} material={m(JEANS)} position={[0.1 * sx, 0.5, 0]} scale={[0.075, 0.34, 0.08]} />
+        <mesh key={sx} geometry={CAP} material={m(JEANS)} position={[0.11 * sx, 0.5, 0]} scale={[0.095, 0.33, 0.1]} />
       ))}
-      <B g={BOX} c={JEANS} p={[0, 0.87, 0]} s={[0.34, 0.12, 0.2]} />
-      <B g={BOX} c="#1a1a1a" p={[0, 0.915, 0]} s={[0.345, 0.03, 0.205]} />
+      <B g={BOX} c={JEANS} p={[0, 0.87, 0]} s={[0.39, 0.13, 0.22]} />
+      <B g={BOX} c="#1a1a1a" p={[0, 0.915, 0]} s={[0.395, 0.03, 0.225]} />
       {/* belt loop + chain + Labubu charm on his right hip */}
       <group ref={charm} position={[-0.165, 0.9, 0.07]}>
         <B g={TORUS} c="#c9c9d1" o={{ metalness: 0.9, roughness: 0.25 }} p={[0, -0.02, 0]} r={[0, Math.PI / 2, 0]} s={[0.018, 0.018, 0.018]} />
@@ -100,43 +103,55 @@ export default function Zaman({ position = [0, 0, 0], rotation = 0, talking = fa
           <B g={CYL} c={PINK} p={[0.045 * sx, 1.31, 0.245]} s={[0.009, 0.025, 0.009]} />
         </group>
       ))}
-      <B g={CYL} c={SKIN} p={[0, 1.52, 0]} s={[0.065, 0.07, 0.065]} />
+      <B g={CYL} c={SKIN} p={[0, 1.54, 0]} s={[0.065, 0.1, 0.065]} />
 
       {/* arms: hoodie sleeves with pink cuffs. His right hand is at -x. */}
       {[
         [armR, -1],
         [armL, 1],
       ].map(([ref, sx]) => (
-        <group key={sx} ref={ref} position={[0.3 * sx, 1.43, 0]}>
-          <mesh geometry={CAP} material={hood} position={[0, -0.24, 0]} scale={[0.085, 0.2, 0.085]} />
-          <B g={CYL} c={PINK} p={[0, -0.46, 0]} s={[0.078, 0.035, 0.078]} />
-          <mesh geometry={SPH} material={skin} position={[0, -0.52, 0.01]} scale={[0.05, 0.058, 0.045]} />
+        <group key={sx} ref={ref} position={[0.31 * sx, 1.43, 0]}>
+          <mesh geometry={CAP} material={hood} position={[0, -0.24, 0]} scale={[0.1, 0.2, 0.1]} />
+          <B g={CYL} c={PINK} p={[0, -0.46, 0]} s={[0.088, 0.035, 0.088]} />
+          <mesh geometry={SPH} material={skin} position={[0, -0.52, 0.01]} scale={[0.055, 0.062, 0.05]} />
         </group>
       ))}
 
-      {/* head */}
-      <group ref={head} position={[0, 1.58, 0]}>
-        <B c={SKIN} p={[0, 0.06, 0]} s={[0.112, 0.132, 0.122]} />
+      {/* head: shaved, slightly oval, with a short dark beard and a warm closed-mouth smile */}
+      <group ref={head} position={[0, 1.625, 0]}>
+        <B c={SKIN} p={[0, 0.06, 0]} s={[0.108, 0.135, 0.12]} />
+        {/* jaw, a little squarer and fuller than the dome */}
+        <B c={SKIN} p={[0, 0.0, 0.012]} s={[0.1, 0.085, 0.105]} />
+        {/* shaved scalp: a shade darker over the top and back of the head */}
+        <B c={SKIN_SHADE} p={[0, 0.098, -0.012]} s={[0.109, 0.1, 0.118]} />
         {[-1, 1].map((sx) => (
-          <B key={sx} c={SKIN} p={[0.113 * sx, 0.055, -0.005]} s={[0.02, 0.034, 0.02]} />
+          <B key={sx} c={SKIN} p={[0.108 * sx, 0.055, -0.005]} s={[0.02, 0.034, 0.022]} />
         ))}
-        {/* close-cropped buzz cut: a thin layer hugging the scalp, sharp line-up at the temples */}
-        <B c={HAIR} p={[0, 0.105, -0.012]} s={[0.116, 0.088, 0.12]} />
-        {[-1, 1].map((sx) => (
-          <B key={sx} g={BOX} c={HAIR} p={[0.105 * sx, 0.085, 0.02]} s={[0.01, 0.045, 0.055]} />
-        ))}
-        {/* eyes */}
+        {/* eyes: dark brown, a relaxed squint from the smile */}
         {[-1, 1].map((sx) => (
           <group key={sx}>
-            <B c="#ffffff" p={[0.042 * sx, 0.075, 0.106]} s={[0.02, 0.016, 0.01]} />
-            <B c="#1d1410" p={[0.042 * sx, 0.075, 0.114]} s={[0.011, 0.012, 0.006]} />
-            <B g={BOX} c={HAIR} p={[0.044 * sx, 0.106, 0.11]} r={[0, 0, -0.08 * sx]} s={[0.042, 0.011, 0.01]} />
+            <B c="#f5efe6" p={[0.04 * sx, 0.078, 0.105]} s={[0.019, 0.012, 0.01]} />
+            <B c="#2a1a12" p={[0.04 * sx, 0.078, 0.113]} s={[0.01, 0.01, 0.005]} />
+            {/* eyebrows: dark, fairly straight, slightly heavier at the inner end */}
+            <B g={BOX} c={HAIR} p={[0.043 * sx, 0.104, 0.109]} r={[0, 0, -0.04 * sx]} s={[0.038, 0.008, 0.009]} />
           </group>
         ))}
-        {/* nose + big grin */}
-        <B c={SKIN} p={[0, 0.04, 0.122]} s={[0.018, 0.026, 0.02]} />
-        <B g={BOX} c="#5a2620" p={[0, 0.0, 0.112]} s={[0.05, 0.014, 0.008]} />
-        <B g={BOX} c="#ffffff" p={[0, 0.003, 0.115]} s={[0.04, 0.006, 0.006]} />
+        {/* nose: broad at the base */}
+        <B c={SKIN} p={[0, 0.048, 0.121]} s={[0.016, 0.03, 0.02]} />
+        <B c={SKIN} p={[0, 0.03, 0.118]} s={[0.026, 0.014, 0.018]} />
+        {/* short beard: mustache, goatee and a stubble shadow along the jaw */}
+        <B g={BOX} c="#2e211a" p={[0, 0.014, 0.116]} s={[0.042, 0.006, 0.006]} />
+        <B c="#2e211a" p={[0, -0.058, 0.088]} s={[0.034, 0.022, 0.03]} />
+        <B c="#4a3528" p={[0, -0.03, 0.02]} s={[0.099, 0.06, 0.092]} />
+        {/* the smile: closed lips that turn up at the corners */}
+        <B g={BOX} c="#7a4436" p={[0, -0.012, 0.114]} s={[0.03, 0.007, 0.006]} />
+        {[-1, 1].map((sx) => (
+          <B key={sx} g={BOX} c="#7a4436" p={[0.02 * sx, -0.006, 0.112]} r={[0, 0, 0.7 * sx]} s={[0.016, 0.006, 0.006]} />
+        ))}
+        {/* cheeks lifted by the smile */}
+        {[-1, 1].map((sx) => (
+          <B key={sx} c={SKIN} p={[0.05 * sx, 0.032, 0.09]} s={[0.022, 0.016, 0.018]} />
+        ))}
       </group>
     </group>
   )
