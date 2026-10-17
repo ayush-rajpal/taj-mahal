@@ -617,8 +617,14 @@ def build_gate() -> None:
             with mb.frame(RY(pi * flip + pi)):
                 with mb.frame(T4(0, 0, hz + 1.0)):
                     facade(mb, fac["gate_pishtaq"], "gate_facade", "sandstone", lambda i, a: "gate_facade", atlas, atlas)
-                with mb.frame(T4(0, 0, hz)):
-                    facade(mb, fac["gate_wings"], "gate_facade", "sandstone", lambda i, a: "gate_facade", atlas, atlas)
+                # the wing slabs stop at the pishtaq on each side, so nothing closes off the iwan and passage behind it
+                wings = fac["gate_wings"]
+                for s in (-1, 1):
+                    c = s * (pw + hx) / 2
+                    half = {**wings, "w": hx - pw, "arches": [{**a, "cx": a["cx"] - c} for a in wings["arches"] if a["cx"] * s > 0]}
+                    shifted = lambda u, v, c=c: atlas(u + c, v)
+                    with mb.frame(T4(c, 0, hz)):
+                        facade(mb, half, "gate_facade", "sandstone", lambda i, a: "gate_facade", shifted, shifted)
                 # the gallery on top of the pishtaq, with eleven small domes
                 extrude(mb, [(-pw, ph), (pw, ph), (pw, Ht), (-pw, Ht)], [], 3.0, (0, 0, hz + 1.0), (1, 0, 0), (0, 1, 0), (0, 0, 1),
                         "gate_gallery", "sandstone", "sandstone", uv_front=lambda u, v: (u / (2 * pw) + 0.5, (v - ph) / (Ht - ph)))
