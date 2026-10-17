@@ -152,6 +152,7 @@ export default function App() {
                 {t.label}
               </button>
             ))}
+            <kbd title="Press T to switch the lighting">T</kbd>
           </div>
           <div className="hud-row">
             <button className="hud-ask" onClick={() => setShowMap((v) => !v)}>

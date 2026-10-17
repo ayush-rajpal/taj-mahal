@@ -524,6 +524,16 @@ body,
   color: #fff;
 }
 
+.hud-times kbd {
+  align-self: center;
+  margin: 0 8px 0 4px;
+  padding: 0 5px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  font-size: 11px;
+  color: #bbb;
+}
+
 .hud-ask kbd {
   margin-left: 6px;
   padding: 0 5px;
