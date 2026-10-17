@@ -191,7 +191,7 @@ export default function App() {
             <div className="kicker">{me?.name ? `Welcome, ${me.name}` : 'Welcome'} · {W.place}</div>
             <h1>{NAME}</h1>
             <p className="sub">{BLURB}</p>
-            <p className="by">A world by {W.author} · MGT 409, Yale SOM</p>
+            <p className="by">A world by {W.author}</p>
             {!loading.done && (
               <div className="loading">
                 <div className="loading-bar">
