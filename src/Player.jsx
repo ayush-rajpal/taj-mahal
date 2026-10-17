@@ -2,31 +2,33 @@ import { useEffect, useMemo, useRef } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
 import * as THREE from 'three'
 import { PointerLockControls } from 'three/examples/jsm/controls/PointerLockControls.js'
-import { EYE, SPAWN, SPEED, collide, locate } from './layout.js'
+import { EYE, SPAWN, SPEED, floorAt, locate, move } from './layout.js'
 
-// First-person walking, the same controls as Darul Kebab and Yale.
+// First-person walking, the same controls as the other Metaverse Web worlds, plus floors: you walk up
+// the plinth stairs and the terrace steps, can't climb taller edges, and fall if you step off one.
 // PC: WASD move, mouse look, Shift run, Space jump, C crouch.
 // Phone: TouchControls fills touchRef = { active, move: [x, y], look: [dx, dy], jump }.
+// Anything can move you with: dispatchEvent(new CustomEvent('teleport', { detail: { x, z, yaw } }))
 const CROUCH_EYE = 1.05
 const JUMP_SPEED = 4.2
 const GRAVITY = 12
 const LOOK_SPEED = 0.005 // radians per touch pixel
 const MOUSE_SPEED = 0.002 // radians per mouse pixel, the same as PointerLockControls
 
-export default function Player({ lockRef, touchRef, freeRef, onLock, onWhere }) {
+export default function Player({ lockRef, mapRef, touchRef, freeRef, onLock, onWhere }) {
   const { camera, gl } = useThree()
   const controls = useMemo(() => new PointerLockControls(camera, gl.domElement), [camera, gl])
   const keys = useRef({})
   const where = useRef('')
   const eye = useRef(EYE)
-  const jumpY = useRef(0)
+  const foot = useRef(floorAt(SPAWN.x, SPAWN.z))
   const vy = useRef(0)
   const fwd = useMemo(() => new THREE.Vector3(), [])
   const euler = useMemo(() => new THREE.Euler(0, 0, 0, 'YXZ'), [])
 
   useEffect(() => {
     // start at the spawn point picked from ?spawn= (see layout.js)
-    camera.position.set(SPAWN.x, EYE, SPAWN.z)
+    camera.position.set(SPAWN.x, foot.current + EYE, SPAWN.z)
     camera.rotation.set(0, SPAWN.yaw ?? 0, 0, 'YXZ')
     lockRef.current = () => controls.lock()
     const on = () => onLock(true)
@@ -36,7 +38,9 @@ export default function Player({ lockRef, touchRef, freeRef, onLock, onWhere }) 
     }
     controls.addEventListener('lock', on)
     controls.addEventListener('unlock', off)
+    const typing = (e) => e.target.closest?.('input, textarea')
     const down = (e) => {
+      if (typing(e)) return
       keys.current[e.code] = true
       if (e.code === 'Space') e.preventDefault()
     }
@@ -52,11 +56,20 @@ export default function Player({ lockRef, touchRef, freeRef, onLock, onWhere }) 
       euler.x = Math.max(-1.45, Math.min(1.45, euler.x - cap(e.movementY) * MOUSE_SPEED))
       camera.quaternion.setFromEuler(euler)
     }
+    const teleport = (e) => {
+      const { x, z, yaw } = e.detail
+      foot.current = floorAt(x, z)
+      vy.current = 0
+      camera.position.set(x, foot.current + eye.current, z)
+      if (yaw !== undefined) camera.rotation.set(0, yaw, 0, 'YXZ')
+    }
     window.addEventListener('keydown', down)
     window.addEventListener('keyup', up)
     window.addEventListener('blur', blur)
     window.addEventListener('mousemove', look)
+    window.addEventListener('teleport', teleport)
     return () => {
+      window.removeEventListener('teleport', teleport)
       window.removeEventListener('mousemove', look)
       controls.removeEventListener('lock', on)
       controls.removeEventListener('unlock', off)
@@ -83,7 +96,7 @@ export default function Player({ lockRef, touchRef, freeRef, onLock, onWhere }) 
     touch.look[0] = 0
     touch.look[1] = 0
 
-    // walk along the floor in the direction you're looking
+    // walk along the ground in the direction you're looking
     camera.getWorldDirection(fwd)
     fwd.y = 0
     fwd.normalize()
@@ -110,21 +123,38 @@ export default function Player({ lockRef, touchRef, freeRef, onLock, onWhere }) 
         mz /= l
       }
       const speed = active && k.KeyC ? 1.8 : sprint ? SPEED.run : SPEED.walk
-      const pos = collide({ x: camera.position.x + mx * speed * dt, z: camera.position.z + mz * speed * dt })
-      camera.position.x = pos.x
-      camera.position.z = pos.z
+      // small sub-steps so fast running can't skip through a thin wall
+      const n = Math.ceil((speed * dt) / 0.25)
+      let x = camera.position.x
+      let z = camera.position.z
+      for (let i = 0; i < n; i++) [x, z] = move(x, z, (mx * speed * dt) / n, (mz * speed * dt) / n, foot.current)
+      camera.position.x = x
+      camera.position.z = z
     }
 
-    // jump and crouch
+    // floors: step up onto anything low enough, fall onto anything lower; jump and crouch
+    const floor = floorAt(camera.position.x, camera.position.z)
+    const grounded = foot.current <= floor + 0.01
     const wantJump = (active && k.Space) || touch.jump
     touch.jump = false
-    if (active && wantJump && jumpY.current === 0) vy.current = JUMP_SPEED
-    vy.current -= GRAVITY * dt
-    jumpY.current = Math.max(0, jumpY.current + vy.current * dt)
-    if (jumpY.current === 0) vy.current = 0
+    if (active && wantJump && grounded) vy.current = JUMP_SPEED
+    if (foot.current < floor && vy.current <= 0) {
+      foot.current = Math.min(floor, foot.current + Math.max(0.05, (floor - foot.current) * Math.min(1, dt * 18)))
+      vy.current = 0
+    } else {
+      vy.current -= GRAVITY * dt
+      foot.current += vy.current * dt
+      if (foot.current <= floor) {
+        foot.current = floor
+        vy.current = 0
+      }
+    }
     const eyeTarget = active && k.KeyC ? CROUCH_EYE : EYE
     eye.current += (eyeTarget - eye.current) * Math.min(1, dt * 12)
-    camera.position.y = eye.current + jumpY.current
+    camera.position.y = foot.current + eye.current
+
+    // the map in the corner: where you are and which way you're facing
+    mapRef?.current?.(camera.position.x, camera.position.z, fwd.x, fwd.z)
 
     // report the area you're in, only when it changes
     const w = locate(camera.position.x, camera.position.z)

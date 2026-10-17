@@ -1,0 +1,45 @@
+{
+  "_about": "The Taj Mahal complex in metres, shared by the Blender build (blender/build_taj.py), the texture maker (blender/make_textures.py) and the world (src/layout.js). +x = east, -z = north (the Yamuna), y = up. The tomb's centre is the origin. Proportions come from Wikipedia's figures, the public-domain site plan and measurements of a straight-on photo (see assets/CREDITS.md).",
+  "levels": { "garden": 0, "terrace": 1.5, "plinth": 7.5, "river": -6 },
+  "site": {
+    "half_width": 150,
+    "terrace_n": -52,
+    "terrace_s": 52,
+    "garden_s": 348,
+    "pool_z": 200,
+    "forecourt_s": 470,
+    "forecourt_half": 80
+  },
+  "plinth": { "half": 47.75, "stair_x": 16.0, "stair_half": 2.5, "stair_len": 10.0 },
+  "tomb": {
+    "half": 28.65,
+    "chamfer": 6.6,
+    "depth": 3.5,
+    "wall_h": 21.0,
+    "roof_h": 20.6,
+    "pishtaq": {
+      "half": 11.5,
+      "h": 25.5,
+      "proj": 0.8,
+      "arch": { "w": 13.2, "spring": 12.8, "apex": 18.3 },
+      "door": { "w": 4.0, "spring": 5.0, "apex": 6.8 }
+    },
+    "bay": {
+      "lower": { "w": 5.6, "y0": 0, "spring": 5.4, "apex": 7.9 },
+      "upper": { "w": 5.6, "y0": 9.6, "spring": 14.3, "apex": 17.3 }
+    },
+    "chamfer_bay": {
+      "lower": { "w": 5.0, "y0": 0, "spring": 5.4, "apex": 7.7 },
+      "upper": { "w": 5.0, "y0": 9.6, "spring": 14.3, "apex": 17.1 }
+    },
+    "drum": { "r": 12.3, "top": 34.0 },
+    "dome": [[12.3, 0], [13.25, 1.4], [13.75, 3.4], [13.9, 5.9], [13.5, 8.6], [12.4, 11.4], [10.2, 14.0], [7.9, 15.9], [5.3, 17.4], [2.6, 18.7], [1.2, 19.3], [0, 19.6]],
+    "finial": { "base": 52.9, "h": 8.6 },
+    "chhatri": { "at": 16.0, "r": 4.4 },
+    "chamber": { "ri": 8.8, "wall_h": 16.0, "corridor_half": 2.0, "corridor_h": 6.8, "jali_ri": 4.4, "jali_h": 2.0 }
+  },
+  "minaret": { "at": 44.3, "h": 40.0, "r": 3.0 },
+  "mosque": { "x": 101, "half_x": 11, "half_z": 28, "h": 15.5 },
+  "gate": { "z": 348, "half_x": 16.15, "half_z": 14, "tower_x": 18.1, "tower_r": 2.2, "wing_h": 16.7, "pishtaq_half": 8.95, "pishtaq_h": 20.7, "gallery_h": 23.3, "passage_half": 2.0, "passage_h": 6.0 },
+  "garden": { "channel_half": 3.0, "walk_half": 9.0, "pool_half": 14, "pool_inner": 8, "pool_h": 0.6, "cross_walks": 4.0 }
+}

@@ -1,0 +1,266 @@
+[
+  {
+    "file": "wikipedia_taj_mahal.txt",
+    "title": "Taj Mahal",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Taj_Mahal",
+    "license": "CC BY-SA 4.0",
+    "chars": 32735
+  },
+  {
+    "file": "wikipedia_mumtaz_mahal.txt",
+    "title": "Mumtaz Mahal",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mumtaz_Mahal",
+    "license": "CC BY-SA 4.0",
+    "chars": 14838
+  },
+  {
+    "file": "wikipedia_shah_jahan.txt",
+    "title": "Shah Jahan",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shah_Jahan",
+    "license": "CC BY-SA 4.0",
+    "chars": 34014
+  },
+  {
+    "file": "wikipedia_mughal_architecture.txt",
+    "title": "Mughal architecture",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mughal_architecture",
+    "license": "CC BY-SA 4.0",
+    "chars": 26885
+  },
+  {
+    "file": "wikipedia_charbagh.txt",
+    "title": "Charbagh",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Charbagh",
+    "license": "CC BY-SA 4.0",
+    "chars": 3666
+  },
+  {
+    "file": "wikipedia_pietra_dura.txt",
+    "title": "Pietra dura",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pietra_dura",
+    "license": "CC BY-SA 4.0",
+    "chars": 6907
+  },
+  {
+    "file": "wikipedia_mehtab_bagh.txt",
+    "title": "Mehtab Bagh",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mehtab_Bagh",
+    "license": "CC BY-SA 4.0",
+    "chars": 6616
+  },
+  {
+    "file": "wikipedia_ustad_ahmad_lahori.txt",
+    "title": "Ustad Ahmad Lahori",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ustad_Ahmad_Lahori",
+    "license": "CC BY-SA 4.0",
+    "chars": 2639
+  },
+  {
+    "file": "wikipedia_makrana.txt",
+    "title": "Makrana",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Makrana",
+    "license": "CC BY-SA 4.0",
+    "chars": 4029
+  },
+  {
+    "file": "wikipedia_agra.txt",
+    "title": "Agra",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Agra",
+    "license": "CC BY-SA 4.0",
+    "chars": 52098
+  },
+  {
+    "file": "wikipedia_yamuna.txt",
+    "title": "Yamuna",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Yamuna",
+    "license": "CC BY-SA 4.0",
+    "chars": 31609
+  },
+  {
+    "file": "wikipedia_agra_fort.txt",
+    "title": "Agra Fort",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Agra_Fort",
+    "license": "CC BY-SA 4.0",
+    "chars": 29499
+  },
+  {
+    "file": "wikipedia_tomb_of_i_tim_d_ud_daulah.txt",
+    "title": "Tomb of I'tim\u0101d-ud-Daulah",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Itmad_Ud_Daulah",
+    "license": "CC BY-SA 4.0",
+    "chars": 7930
+  },
+  {
+    "file": "wikipedia_humayun_s_tomb.txt",
+    "title": "Humayun's Tomb",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Humayun%27s_tomb",
+    "license": "CC BY-SA 4.0",
+    "chars": 29590
+  },
+  {
+    "file": "wikipedia_bibi_ka_maqbara.txt",
+    "title": "Bibi Ka Maqbara",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bibi_Ka_Maqbara",
+    "license": "CC BY-SA 4.0",
+    "chars": 6362
+  },
+  {
+    "file": "wikipedia_mughal_empire.txt",
+    "title": "Mughal Empire",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mughal_Empire",
+    "license": "CC BY-SA 4.0",
+    "chars": 45169
+  },
+  {
+    "file": "wikipedia_aurangzeb.txt",
+    "title": "Aurangzeb",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aurangzeb",
+    "license": "CC BY-SA 4.0",
+    "chars": 70851
+  },
+  {
+    "file": "wikipedia_jahangir.txt",
+    "title": "Jahangir",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jahangir",
+    "license": "CC BY-SA 4.0",
+    "chars": 41807
+  },
+  {
+    "file": "wikipedia_taj_trapezium_zone.txt",
+    "title": "Taj Trapezium Zone",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Taj_Trapezium_Zone",
+    "license": "CC BY-SA 4.0",
+    "chars": 2478
+  },
+  {
+    "file": "wikipedia_jali.txt",
+    "title": "Jali",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jali",
+    "license": "CC BY-SA 4.0",
+    "chars": 3809
+  },
+  {
+    "file": "wikipedia_chhatri.txt",
+    "title": "Chhatri",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chhatri",
+    "license": "CC BY-SA 4.0",
+    "chars": 8055
+  },
+  {
+    "file": "wikipedia_iwan.txt",
+    "title": "Iwan",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Iwan",
+    "license": "CC BY-SA 4.0",
+    "chars": 14059
+  },
+  {
+    "file": "wikipedia_minaret.txt",
+    "title": "Minaret",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Minaret",
+    "license": "CC BY-SA 4.0",
+    "chars": 19944
+  },
+  {
+    "file": "wikipedia_onion_dome.txt",
+    "title": "Onion dome",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Onion_dome",
+    "license": "CC BY-SA 4.0",
+    "chars": 9265
+  },
+  {
+    "file": "wikipedia_mughal_gardens.txt",
+    "title": "Mughal gardens",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mughal_garden",
+    "license": "CC BY-SA 4.0",
+    "chars": 11895
+  },
+  {
+    "file": "wikipedia_gauhar_ara_begum.txt",
+    "title": "Gauhar Ara Begum",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gauhar_Ara_Begum",
+    "license": "CC BY-SA 4.0",
+    "chars": 2224
+  },
+  {
+    "file": "wikipedia_jahanara_begum.txt",
+    "title": "Jahanara Begum",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jahanara_Begum",
+    "license": "CC BY-SA 4.0",
+    "chars": 19274
+  },
+  {
+    "file": "wikipedia_new_7_wonders_of_the_world.txt",
+    "title": "New 7 Wonders of the World",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/New_7_Wonders_of_the_World",
+    "license": "CC BY-SA 4.0",
+    "chars": 5409
+  },
+  {
+    "file": "wikipedia_taj_mahotsav.txt",
+    "title": "Taj Mahotsav",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Taj_Mahotsav",
+    "license": "CC BY-SA 4.0",
+    "chars": 2324
+  },
+  {
+    "file": "wikipedia_persian_gardens.txt",
+    "title": "Persian gardens",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Persian_gardens",
+    "license": "CC BY-SA 4.0",
+    "chars": 16616
+  },
+  {
+    "file": "wikipedia_dara_shikoh.txt",
+    "title": "Dara Shikoh",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dara_Shikoh",
+    "license": "CC BY-SA 4.0",
+    "chars": 19770
+  },
+  {
+    "file": "wikipedia_islamic_calligraphy.txt",
+    "title": "Islamic calligraphy",
+    "site": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Islamic_calligraphy",
+    "license": "CC BY-SA 4.0",
+    "chars": 16210
+  },
+  {
+    "file": "wikivoyage_agra.txt",
+    "title": "Agra",
+    "site": "Wikivoyage",
+    "url": "https://en.wikivoyage.org/wiki/Agra",
+    "license": "CC BY-SA 4.0",
+    "chars": 24353
+  }
+]

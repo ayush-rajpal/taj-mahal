@@ -1,2 +1,10 @@
 node_modules
 dist
+.env
+__pycache__/
+*.pyc
+blender/textures/
+blender/*.blend1
+# raw downloads (re-fetch with tools/fetch_sources.py); their credits stay in assets/CREDITS.md
+assets/photos/
+assets/textures/

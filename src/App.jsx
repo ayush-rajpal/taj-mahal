@@ -1,37 +1,55 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
+import * as THREE from 'three'
 import World from './World.jsx'
 import Player from './Player.jsx'
 import TouchControls from './TouchControls.jsx'
 import TalkAim from './guide/TalkAim.jsx'
 import GuidePanel from './guide/GuidePanel.jsx'
-import { EYE, SPAWN } from './layout.js'
+import Minimap from './Minimap.jsx'
+import { EYE, SPAWN, floorAt } from './layout.js'
 import { onIdentity, presence } from './mvw.js'
+import W from './wonder.js'
 
-// Change these to make the world yours (and the name in public/.well-known/metaverse.json too).
-const NAME = 'Starter World'
-const BLURB = 'An empty room, waiting to become your world. Talk to Tauhid to learn how the Metaverse Web works, then walk through the pink portal to Metaverse Square.'
+const NAME = W.name
+const BLURB = W.blurb
+
+// loading progress for the model and photos (the overlay shows it until everything's in)
+function useLoading() {
+  const [p, setP] = useState({ loaded: 0, total: 1, done: false })
+  useEffect(() => {
+    const m = THREE.DefaultLoadingManager
+    m.onProgress = (_, loaded, total) => setP((s) => ({ ...s, loaded, total }))
+    m.onLoad = () => setP((s) => ({ ...s, done: true }))
+    return () => {
+      m.onProgress = m.onLoad = undefined
+    }
+  }, [])
+  return p
+}
 
 export default function App() {
   const [locked, setLocked] = useState(false)
   const [where, setWhere] = useState('')
   const lockRef = useRef()
+  const loading = useLoading()
+  const [time, setTime] = useState(W.defaultTime)
+  const [board, setBoard] = useState(null)
+  const [showMap, setShowMap] = useState(true)
+  const mapRef = useRef()
   const onLock = useCallback((v) => {
     setLocked(v)
     if (v) setFree(false) // the mouse is locked now; Esc brings back the menu as a pause screen
   }, [])
-  // Every arrival, portal or not, starts on the menu: one clear click to walk in and lock the mouse.
-  // `free` is a walking-without-the-mouse-locked state, used after closing Tauhid's chat (keys work,
-  // the view follows the mouse, and the next click locks it).
+  // Every arrival starts on the menu: one clear click to walk in and lock the mouse. `free` is a
+  // walking-without-the-mouse-locked state, used after closing the guide's chat.
   const [free, setFree] = useState(false)
   const freeRef = useRef(free)
   freeRef.current = free
-  // tell the Metaverse Browser where you are whenever the area changes (mvw/0.1 `presence`)
   const onWhere = useCallback((w) => {
     setWhere(w)
-    presence(w)
+    presence(w) // tell the Metaverse Browser where you are (mvw/0.1 `presence`)
   }, [])
-  // who's visiting: the Metaverse Browser sends { name, color }. Opened on its own, it stays null.
   const [me, setMe] = useState(null)
   useEffect(() => onIdentity(setMe), [])
 
@@ -44,8 +62,7 @@ export default function App() {
     touchRef.current.move = [0, 0]
     setTouchOn(on)
   }
-  // talking to Tauhid: aim the crosshair at him and click or press E (phones: tap him).
-  // The mouse is released so you can click his questions; closing the chat puts you back in.
+  // talking to the guide: aim at them and click or press E, or press G (or the button) anywhere
   const [aim, setAim] = useState(null)
   const [talking, setTalking] = useState(false)
   const startTalk = useCallback(() => {
@@ -53,14 +70,20 @@ export default function App() {
     setTalking(true)
     document.exitPointerLock?.()
   }, [])
-  // closing the chat goes straight back to mouse-look. Closing with × or a click outside does it at
-  // once; Esc doesn't count as a click for the browser, so then the next click grabs the mouse.
   const endTalk = useCallback(() => {
     setTalking(false)
     if (touchOn) return
-    setFree(true) // keys work right away, whether or not the mouse grab below is allowed
+    setFree(true)
     lockRef.current?.()
   }, [touchOn])
+  const teleport = useCallback(
+    (s) => {
+      if (!s) return
+      dispatchEvent(new CustomEvent('teleport', { detail: s }))
+      endTalk()
+    },
+    [endTalk],
+  )
 
   useEffect(() => {
     document.body.classList.toggle('freelook', free)
@@ -69,58 +92,114 @@ export default function App() {
   useEffect(() => {
     if (!free || talking) return
     if (isTouch) {
-      setTouch(true) // phones: the joystick needs no click, so just turn it on
+      setTouch(true)
       setFree(false)
       return
     }
-    // a click here always grabs the mouse for looking around, even with Tauhid in the crosshair;
-    // once the mouse is grabbed, clicking him (or pressing E) starts the chat
-    const click = (e) => !e.target.closest('button, a, .guide') && lockRef.current?.()
+    const click = (e) => !e.target.closest('button, a, .guide, .hud') && lockRef.current?.()
     addEventListener('mousedown', click)
     return () => removeEventListener('mousedown', click)
   }, [free, talking]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // while chatting, a click anywhere outside the chat closes it and gives the mouse back to looking
-  // around (the conversation is kept, so talking to him again picks up where you left off)
   useEffect(() => {
     if (!talking || touchOn) return
     const clickOut = (e) => {
-      if (e.button !== 0 || e.target.closest('.guide, button, a')) return
-      endTalk() // and back to mouse-look
+      if (e.button !== 0 || e.target.closest('.guide, button, a, .hud')) return
+      endTalk()
     }
     addEventListener('mousedown', clickOut)
     return () => removeEventListener('mousedown', clickOut)
   }, [talking, touchOn, endTalk])
 
+  // keys: G asks the guide from anywhere, T steps through the times of day
+  useEffect(() => {
+    const key = (e) => {
+      if (e.target.closest?.('input, textarea') || !playing) return
+      if (e.code === 'KeyG' && !talking) startTalk()
+      if (e.code === 'KeyM') setShowMap((v) => !v)
+      if (e.code === 'KeyT') {
+        const ids = Object.keys(W.times)
+        setTime((t) => ids[(ids.indexOf(t) + 1) % ids.length])
+      }
+    }
+    addEventListener('keydown', key)
+    return () => removeEventListener('keydown', key)
+  }, [playing, talking, startTalk])
+
+  const pct = Math.round((100 * loading.loaded) / Math.max(1, loading.total))
   return (
     <>
-      <Canvas camera={{ fov: 72, near: 0.05, far: 200, position: [SPAWN.x, EYE, SPAWN.z] }} dpr={[1, 1.75]}>
-        <World talking={talking} onTalk={startTalk} />
+      <Canvas
+        shadows
+        camera={{ fov: 70, near: 0.1, far: 4000, position: [SPAWN.x, floorAt(SPAWN.x, SPAWN.z) + EYE, SPAWN.z] }}
+        dpr={[1, 1.75]}
+        gl={{ antialias: true }}
+      >
+        <World time={time} talking={talking} onTalk={startTalk} onBoard={setBoard} />
         <TalkAim enabled={playing && !talking} onAim={setAim} onTalk={startTalk} />
-        <Player lockRef={lockRef} freeRef={freeRef} touchRef={touchRef} onLock={onLock} onWhere={onWhere} />
+        <Player lockRef={lockRef} mapRef={mapRef} freeRef={freeRef} touchRef={touchRef} onLock={onLock} onWhere={onWhere} />
       </Canvas>
 
       <div className="where">
         <span className="dot" style={me?.color ? { background: me.color } : undefined} />
         {where}
       </div>
+      {playing && (
+        <div className="hud">
+          <div className="hud-times">
+            {Object.entries(W.times).map(([id, t]) => (
+              <button key={id} className={id === time ? 'on' : ''} onClick={() => setTime(id)}>
+                {t.label}
+              </button>
+            ))}
+          </div>
+          <div className="hud-row">
+            <button className="hud-ask" onClick={() => setShowMap((v) => !v)}>
+              {showMap ? 'hide map' : 'map'} <kbd>M</kbd>
+            </button>
+            {!talking && (
+              <button className="hud-ask" onClick={startTalk}>
+                {W.guideIcon} Ask {W.guideName} <kbd>G</kbd>
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+      {/* the map stays drawn even when hidden, so it's up to date the moment you open it */}
+      <div className={`mapwrap${touchOn ? ' touch' : ''}${showMap && playing && !talking ? '' : ' hidden'}`}>
+        <Minimap drawRef={mapRef} />
+      </div>
       {playing && <div className="crosshair" />}
       {free && !talking && <div className="hint">Move the mouse to look · click to lock it · WASD to walk</div>}
       {aim && playing && !talking && (
         <div className="talkhint">
-          {touchOn ? <button onClick={startTalk}>💬 Talk to Tauhid</button> : locked ? 'Click or press E to talk to Tauhid' : 'Press E to talk to Tauhid'}
+          {touchOn ? <button onClick={startTalk}>💬 Talk to {W.guideName}</button> : locked ? `Click or press E to talk to ${W.guideName}` : `Press E to talk to ${W.guideName}`}
         </div>
       )}
-      {talking && <GuidePanel visitor={me?.name} onClose={endTalk} />}
+      {board && playing && !talking && (
+        <div className="board-card">
+          <p>{board.caption}</p>
+          <span>{board.credit}</span>
+        </div>
+      )}
+      {talking && <GuidePanel visitor={me?.name} onClose={endTalk} onTeleport={teleport} />}
       {touchOn && <TouchControls touchRef={touchRef} onPause={() => setTouch(false)} />}
 
       {!playing && (
         <div className="overlay" onClick={() => (isTouch ? setTouch(true) : lockRef.current?.())}>
           <div className="card">
-            {/* the greeting: uses your name from the Metaverse Browser when there is one */}
-            <div className="kicker">{me?.name ? `Welcome, ${me.name}` : 'Welcome'}</div>
+            <div className="kicker">{me?.name ? `Welcome, ${me.name}` : 'Welcome'} · {W.place}</div>
             <h1>{NAME}</h1>
             <p className="sub">{BLURB}</p>
+            <p className="by">A world by {W.author} · MGT 409, Yale SOM</p>
+            {!loading.done && (
+              <div className="loading">
+                <div className="loading-bar">
+                  <span style={{ width: `${pct}%` }} />
+                </div>
+                {loading.total > 1 ? `Loading the marble… ${pct}%` : 'Loading the marble…'}
+              </div>
+            )}
             <button className="go">{isTouch ? 'Tap to walk in' : 'Click to walk in'}</button>
             {!isTouch && (
               <button
@@ -145,8 +224,10 @@ export default function App() {
                   <span><b>Mouse</b> look</span>
                   <span><b>Shift</b> run</span>
                   <span><b>Space</b> jump</span>
-                  <span><b>C</b> crouch</span>
                   <span><b>E</b> talk</span>
+                  <span><b>G</b> ask the guide</span>
+                  <span><b>T</b> time of day</span>
+                  <span><b>M</b> map</span>
                   <span><b>Esc</b> pause</span>
                 </>
               )}

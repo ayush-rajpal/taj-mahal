@@ -1,70 +1,102 @@
-# World Starter
+# Taj Mahal · a world on the Metaverse Web
 
-**See it live:** https://zlisto.github.io/world_starter/ · Click **Use this template** on GitHub to start your own world.
+By **Ayush Rajpal** · made for MGT 409: AI Foundations for Managers (Yale SOM)
 
-A tiny 3D world that already speaks the Metaverse Web protocol (`mvw/0.1`, see [`https://github.com/zlisto/metaverse_web/blob/main/PROTOCOL.md`](https://github.com/zlisto/metaverse_web/blob/main/PROTOCOL.md)). Copy this folder, change the room, and link your world to everyone else's.
+Walk through the Taj Mahal in your browser: in through the Great Gate, down the charbagh garden past the reflecting pool, up the plinth stairs, through the great arch and into the tomb chamber with the cenotaphs of Mumtaz Mahal and Shah Jahan. Change the time of day and watch the marble turn pink at sunrise, gold at sunset and blue by moonlight.
 
-It has one room, first-person walking (keyboard + mouse, or an on-screen joystick on phones), two spawn points, and a portal to [Metaverse Square](https://zlisto.github.io/hub_world/), the plaza with a portal to every world in the registry.
+The whole complex was **built in Blender from code**, with dimensions taken from published figures, a public-domain site plan and measurements of a straight-on photo, and **textured with real images**: photo-scanned marble, sandstone and grass (CC0) and Wikimedia Commons photographs of the actual Taj, its calligraphy, inlay, jali screens and the Great Gate.
+
+**Amanat**, a Labubu dressed as a Mughal calligrapher (named after Amanat Khan, who designed the Taj's inscriptions), answers your questions **offline**: from a guidebook of about 190 questions and answers written from Wikipedia and Wikivoyage, and, when the guidebook doesn't cover something, by quoting the most relevant lines from those saved articles. No AI, no server, no API key.
+
+It's a world on the [Metaverse Web](https://github.com/zlisto/metaverse_web) (`mvw/0.1`): 3D worlds as websites, linked by portals you walk through. All six portals here lead to [Metaverse Square](https://zlisto.github.io/hub_world/), the plaza with a portal to every world.
+
+## Run it
 
 ```bash
 npm install
 npm run dev
 ```
 
-Then open http://localhost:5176/. To see it inside the Metaverse Browser, start `https://github.com/zlisto/metaverse_browser` (`npm run dev`, port 5175) and type `localhost:5176` in its address bar.
+Then open http://localhost:5179/. That's all: everything, including the guide, runs in the browser.
 
-## Meet your guide
+`npm run build` makes a static site in `dist/` that you can host anywhere (GitHub Pages deploys it automatically with `.github/workflows/pages.yml`).
 
-Tauhid Zaman stands by the portal. Look at him and click (or press **E**; on a phone, tap **Talk to Tauhid**) and a chat opens where he explains the Metaverse Web: what it is, portals, spawn points, manifests, and how to add your own world. His lines are fixed text in `src/guide/lessons.js`, so there's no AI and no server.
+## Controls
 
-His avatar comes from [evans-hall-3d](https://github.com/zlisto/evans-hall-3d), where he teaches in room 2200. Everything for him lives in `src/guide/`. To remove him from your copy, delete that folder, the `GUIDE` block in `src/layout.js`, the `<Zaman>` line in `src/World.jsx`, and the talk lines in `src/App.jsx`.
+| | |
+| --- | --- |
+| **W A S D** / arrows | walk (Shift runs) |
+| **Mouse** | look (click to lock it) |
+| **Space** | jump |
+| **E** | talk to Amanat when you're looking at them |
+| **G** | ask Amanat from anywhere |
+| **T** | change the time of day (or use the buttons, top right) |
+| **M** | show or hide the map (bottom right): you, Amanat, and the six exits (all to Metaverse Square) |
+| **Esc** | pause |
 
-## What's where
+On a phone: left thumb walks, right thumb drags to look. Amanat can also take you to the gate, the pool, the great arch, inside the tomb, the riverfront and the mosque.
 
-| File | What it does | Change it? |
-| --- | --- | --- |
-| `src/layout.js` | Room size, spawn points, the portal's destination, walls, area names | **Yes**, start here |
-| `src/World.jsx` | Everything you see: floor, walls, light, the portal | **Yes** |
-| `src/App.jsx` | Your world's name and blurb, the start screen and greeting | Name and blurb |
-| `public/.well-known/metaverse.json` | The manifest: name, description, spawns, portals | **Yes**, keep it in sync |
-| `vite.config.js` | Dev server port (5176) | Pick a free port if you run several worlds |
-| `src/Player.jsx`, `src/TouchControls.jsx` | Walking, looking, jumping | Optional |
-| `src/mvw.js`, `src/Portal.jsx` | The protocol client and the portal | **No**, these are the same file in every world |
-| `src/audio.js` | The portal whoosh | Optional |
+## Arrival points and portals (mvw/0.1)
 
-## Make it your own
+The manifest is at [`public/.well-known/metaverse.json`](public/.well-known/metaverse.json), generated from `src/wonder.js` by `node tools/make_manifest.mjs`.
 
-1. **Copy the folder** and rename it (e.g. `cp -r world_starter my_world`). Delete `node_modules` and `dist` from the copy if they came along.
-2. **Name it.** Set `NAME` and `BLURB` in `src/App.jsx`, the `<title>` in `index.html`, and `name` and `description` in `public/.well-known/metaverse.json`.
-3. **Build your room.** Change `ROOM` and `H` in `src/layout.js`, then add meshes, lights and models in `src/World.jsx`. If you add furniture you shouldn't walk through, push the player out of it in `collide()` (`https://github.com/zlisto/darul_kebab/blob/main/src/layout.js` has a box version).
-4. **Name your areas.** `locate()` in `src/layout.js` turns your position into words like `"My World · by the fireplace"`. The world sends it to the browser with `presence()` whenever it changes.
-5. **Spawn points.** Edit `SPAWNS` in `src/layout.js`. Keep `default`. Every id you add should also be listed under `spawns` in the manifest. Once someone links to a spawn id, don't rename it.
+| Spawn id | Where you arrive |
+| --- | --- |
+| `default` | On the plaza just inside the Great Gate, looking down the water channel to the tomb |
+| `from_square` (also `hub_portal`) | In the forecourt in front of the pink portal back to Metaverse Square |
+| `forecourt_west`, `forecourt_east` | In front of the other two forecourt portals |
+| `gate_exit` | Just inside the Great Gate, in front of its portal |
+| `north_exit`, `north_exit_west` | At the north end of the garden, in front of its two portals |
+| `great_gate`, `lotus_pool`, `taj_terrace`, `inside_tomb`, `riverfront`, `mosque`, `jawab` | Landmarks |
 
-## Link both ways
+There are six portals in three places, all to Metaverse Square and all marked EXIT on the map: the forecourt (three), just inside the Great Gate (one) and the north end of the garden (two). To link to this world from yours, use its address with `?spawn=default` or `?spawn=from_square`.
 
-**Your world → theirs.** In `src/layout.js`, `PORTAL` says where the portal goes:
+To list it in Metaverse Square, add this to `worlds.json` in [zlisto/metaverse_registry](https://github.com/zlisto/metaverse_registry) once the world is online:
 
-```js
-href: 'https://zlisto.github.io/hub_world/',  // their world's address
-spawn: 'by_starter_world',                    // a spawn id from THEIR manifest
-back: 'hub_portal',                           // a spawn id in YOUR world, right in front of this portal
+```json
+{ "id": "taj_mahal", "name": "Taj Mahal", "address": "https://<your-github-username>.github.io/<repo-name>/", "owner": "<your-github-username>" }
 ```
 
-To add more portals, add more `<Portal>` elements in `src/World.jsx` (each with its own `x`, `z`, `rot`, `href`, `spawn`, `back`, `label`), a matching spawn in front of each one, and a matching entry in the manifest's `portals` list. Read the other world's `.well-known/metaverse.json` to find its spawn ids.
+The square's portal then lands people at `from_square`, and its spawn in front of the portal here is `by_taj_mahal`.
 
-**Their world → yours.** Send the other world's owner:
+## How it's built
 
-- your world's address (e.g. `http://localhost:5176/`, or your hosted URL), and
-- the spawn id they should land at (here, `hub_portal` is the one in front of your portal to them).
+```
+tools/fetch_sources.py      downloads the real material: articles, CC0 textures, Commons photos (+ licences)
+blender/make_textures.py    straightens photo crops and draws them into facade textures, in metres
+blender/build_taj.py        builds the whole complex in Blender, exports public/models/taj_mahal.glb
+src/site.json               every dimension, shared by the texture maker, the Blender build and the world
+src/colliders.json          floors, ramps and walls, written by the Blender build
+knowledge/faq.json          the guidebook (about 190 questions, each with several phrasings)
+knowledge/lexicon.json      synonyms and ignored words for matching questions
+public/guidebook/passages.json   the saved Wikipedia/Wikivoyage articles, cut into searchable passages
+```
 
-They add a portal with `href` = your address and `spawn` = that id, plus a manifest entry. That's the whole handshake; no one has to approve anything.
+To rebuild the model after changing `src/site.json` or the build script (Blender 4.2+ and Python 3.11+ with Pillow and NumPy):
 
-**Get a portal in Metaverse Square.** Add your world to the [registry](https://github.com/zlisto/metaverse_registry#add-your-world) by pull request. The square rebuilds daily and puts a portal to every registered world in its ring. Its spawn in front of your portal is `by_<your id>`, so change `spawn: 'by_starter_world'` above to match your id.
+```bash
+python tools/fetch_sources.py textures      # once: CC0 materials -> assets/textures/
+python tools/fetch_sources.py photos        # once: Commons photos listed in assets/photos.json
+python blender/make_textures.py             # photos + materials -> blender/textures/
+blender -b --factory-startup -P blender/build_taj.py
+```
 
-The full checklist, including hosting on GitHub Pages (dot-folders like `.well-known` need a `.nojekyll` file or a GitHub Actions deploy), is in [`https://github.com/zlisto/metaverse_web/blob/main/PROTOCOL.md` section 7](https://github.com/zlisto/metaverse_web/blob/main/PROTOCOL.md#7-make-your-own-world-and-link-it-in).
+The world is React + Vite + three.js (@react-three/fiber), following the [World Starter](https://github.com/zlisto/world_starter) template and the Seven Wonders worlds:
 
-## Check it works
+- `src/wonder.js`: the world's name, the guide's outfit and greeting, times of day, spawns, portals, photo boards
+- `src/layout.js`: floors, walls (including the tomb's arches, corridor, chamber and screen), spawns, where you are
+- `src/TajModel.jsx`: loads the Blender model; adds the mirror-like water in the long channel and the tomb's lamp
+- `src/Atmosphere.jsx`: sky, sun, moon and stars; shadows fitted to the whole complex
+- `src/Minimap.jsx`: the map in the corner, in the same style as Evans Hall's, with every exit marked
+- `src/guide/`: Amanat (a Labubu, `Labubu.jsx` from evans-hall-3d), the chat, the guidebook matcher (`faq.js`) and the article search (`sources.js`)
+- `src/mvw.js`, `src/Portal.jsx`: the Metaverse Web client and portal, unchanged from the template
 
-- Open it on its own: walk into the portal and you land in Metaverse Square, in front of the portal back here.
-- Open it in the Metaverse Browser: the world info panel shows its name, the status bar shows where you are as you walk, the greeting says your name, and the portal still takes you to Metaverse Square (and Back brings you to the spawn in front of the portal).
-- `npm run build` makes a static site in `dist/` that you can host anywhere.
+Check the guide: `node tools/check_guidebook.mjs` asks it 90 questions offline and reports which answer each one gets.
+
+Sizes follow the real ones closely; details (garden planting, inner rooms, the crypt, much of the carving) are simplified, and the surroundings beyond the walls are invented.
+
+## Credits
+
+Everything used is openly licensed; see [`assets/CREDITS.md`](assets/CREDITS.md) for each photograph (author and licence) and texture, and [`knowledge/sources.json`](knowledge/sources.json) for the articles. Photographs from Wikimedia Commons keep their own licences (mostly CC BY-SA and CC BY); the guide's text draws on Wikipedia and Wikivoyage (CC BY-SA 4.0). Textures from ambientCG are CC0. The portal, the protocol client and the Labubu come from [zlisto/world_starter](https://github.com/zlisto/world_starter).
+
+Made by Ayush Rajpal for MGT 409: AI Foundations for Managers (Yale SOM).

@@ -1,0 +1,228 @@
+{
+  "textures": [
+    {
+      "id": "Marble012",
+      "source": "https://ambientcg.com/view?id=Marble012",
+      "license": "CC0 1.0",
+      "author": "ambientCG (Lennart Demes)"
+    },
+    {
+      "id": "Concrete012",
+      "source": "https://ambientcg.com/view?id=Concrete012",
+      "license": "CC0 1.0",
+      "author": "ambientCG (Lennart Demes)"
+    },
+    {
+      "id": "PavingStones135",
+      "source": "https://ambientcg.com/view?id=PavingStones135",
+      "license": "CC0 1.0",
+      "author": "ambientCG (Lennart Demes)"
+    },
+    {
+      "id": "Grass004",
+      "source": "https://ambientcg.com/view?id=Grass004",
+      "license": "CC0 1.0",
+      "author": "ambientCG (Lennart Demes)"
+    },
+    {
+      "id": "Ground037",
+      "source": "https://ambientcg.com/view?id=Ground037",
+      "license": "CC0 1.0",
+      "author": "ambientCG (Lennart Demes)"
+    }
+  ],
+  "photos": [
+    {
+      "key": "pietra_dura_1",
+      "title": "File:India Taj Mahal (08).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:India_Taj_Mahal_(08).jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Zorka Sojka",
+      "description": "Detail of exterior decoration with plant motifs made in \"pietra dura\" style, Taj Mahal, Agra, Uttar Pradesh, India"
+    },
+    {
+      "key": "pietra_dura_2",
+      "title": "File:India Taj Mahal (06).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:India_Taj_Mahal_(06).jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Zorka Sojka",
+      "description": "Detail of exterior decoration in \"pietra dura\" style with plant motif, Taj Mahal, Agra, Uttar Pradesh, India"
+    },
+    {
+      "key": "inlay_panels",
+      "title": "File:India Taj Mahal (07).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:India_Taj_Mahal_(07).jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Zorka Sojka",
+      "description": "Exterior decoration in \"pietra dura\" style lined with panels with calligraphic inscriptions, Taj Mahal, Agra, Uttar Pradesh, India"
+    },
+    {
+      "key": "calligraphy_side",
+      "title": "File:Taj Mahal Calligraphy Example.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_Calligraphy_Example.jpg",
+      "license": "CC BY-SA 3.0",
+      "author": "Bjørn Christian Tørrissen",
+      "description": "Vertical calligraphy on the sides of Taj Mahal."
+    },
+    {
+      "key": "calligraphy_close",
+      "title": "File:Taj Mahal Calligraphy (22851648099).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_Calligraphy_(22851648099).jpg",
+      "license": "CC0",
+      "author": "Gary Todd from Xinzheng, China",
+      "description": "Taj Mahal Complex, Agra, India. Complete indexed photo collection at WorldHistoryPics.com."
+    },
+    {
+      "key": "relief_dado",
+      "title": "File:Marble Relief Dado with Vegetal Motif - Taj Mahal - Agra 2014-05-14 3845.JPG",
+      "page": "https://commons.wikimedia.org/wiki/File:Marble_Relief_Dado_with_Vegetal_Motif_-_Taj_Mahal_-_Agra_2014-05-14_3845.JPG",
+      "license": "CC BY 3.0",
+      "author": "Biswarup Ganguly",
+      "description": "This is a photo of ASI monument number"
+    },
+    {
+      "key": "flowers_marble",
+      "title": "File:Flowers in marble, Taj Mahal, Agra, India 1.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Flowers_in_marble,_Taj_Mahal,_Agra,_India_1.jpg",
+      "license": "CC BY-SA 3.0",
+      "author": "Flowers_in_marble,_left_part,_Taj_Mahal,_Agra,_India.jpg: Yann (talk)\nFlowers_in",
+      "description": "Flowers in marble, Taj Mahal, Agra, India."
+    },
+    {
+      "key": "jali_screen",
+      "title": "File:Taj Mahal Jali screen.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_Jali_screen.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Darshanavenugopal",
+      "description": "Taj Mahal is known for its grandeur in white marble and stone in lay work."
+    },
+    {
+      "key": "dome_finial",
+      "title": "File:Taj Mahal Dome & Finial (22924891250).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_Dome_%26_Finial_(22924891250).jpg",
+      "license": "CC0",
+      "author": "Gary Todd from Xinzheng, China",
+      "description": "Taj Mahal Complex, Agra, India. Complete indexed photo collection at WorldHistoryPics.com."
+    },
+    {
+      "key": "plan_site",
+      "title": "File:Taj site plan.png",
+      "page": "https://commons.wikimedia.org/wiki/File:Taj_site_plan.png",
+      "license": "Public domain",
+      "author": "Mcginnly",
+      "description": "Taj Mahal Site Plan: The Taj Mahal complex can be conveniently divided into 5 sections:\n1. The 'moonlight garden' to the north of the river Yamuna.\n2. The river"
+    },
+    {
+      "key": "section_tomb",
+      "title": "File:Section of Taj Mahal (2).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Section_of_Taj_Mahal_(2).jpg",
+      "license": "No restrictions",
+      "author": "Internet Archive Book Images",
+      "description": "Identifier: handbooktravelle00john\nTitle: A handbook for travellers in India, Burma, and Ceylon .\nYear: 1911 (1910s)\nAuthors:  John Murray (Firm)\nSubjects:  Ind"
+    },
+    {
+      "key": "front_view",
+      "title": "File:Taj Mahal in Full Front View in 2013.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_in_Full_Front_View_in_2013.jpg",
+      "license": "CC BY-SA 2.0",
+      "author": "Envision Studio",
+      "description": "Taj Mahal in Full Front View in 2013"
+    },
+    {
+      "key": "reflection",
+      "title": "File:Taj Mahal Front View with Shadow in Water.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_Front_View_with_Shadow_in_Water.jpg",
+      "license": "CC BY-SA 2.0",
+      "author": "Envision Studio",
+      "description": "Taj Mahal Front View with Shadow in Water"
+    },
+    {
+      "key": "beato_1858",
+      "title": "File:Taj Mahal (front view).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_(front_view).jpg",
+      "license": "CC0",
+      "author": "Getty Museum Collection",
+      "description": "Photograph of the Taj Mahal clicked by Felice Beato"
+    },
+    {
+      "key": "sunrise",
+      "title": "File:Taj Mahal in the morning 2023.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_in_the_morning_2023.jpg",
+      "license": "CC0",
+      "author": "Shivansh2401",
+      "description": "Taj Mahal during sunrise in the summers"
+    },
+    {
+      "key": "great_gate",
+      "title": "File:20191204 Great Gate, Taj Mahal 0620 6532 DxO.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:20191204_Great_Gate,_Taj_Mahal_0620_6532_DxO.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Jakub Hałun",
+      "description": "The Great Gate of the Taj Mahal compound"
+    },
+    {
+      "key": "mosque",
+      "title": "File:Taj Mahal Mosque in Agra.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_Mosque_in_Agra.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Clément Bardot",
+      "description": "Taj Mahal Mosque in Agra, India"
+    },
+    {
+      "key": "side_view",
+      "title": "File:Taj Mahal side view 2.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_side_view_2.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Rangan Datta Wiki",
+      "description": ".mw-parser-output .messagebox{margin:4px 0;width:auto;border-collapse:collapse;border:2px solid var(--border-color-progressive,#6485d1);background-color:var(--b"
+    },
+    {
+      "key": "minaret",
+      "title": "File:Agra-Taj Mahal-41-Suedwestminarett-2018-gje.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Agra-Taj_Mahal-41-Suedwestminarett-2018-gje.jpg",
+      "license": "CC BY 4.0",
+      "author": "Gerd Eichmann",
+      "description": "Taj Mahal in Agra in India"
+    },
+    {
+      "key": "mehtab_bagh",
+      "title": "File:Taj Mahal From Mehtab Bagh (1).jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_From_Mehtab_Bagh_(1).jpg",
+      "license": "CC BY-SA 3.0",
+      "author": "Shagil Kannur",
+      "description": ""
+    },
+    {
+      "key": "river_terrace",
+      "title": "File:N-UP-A28 View of Taj Mahal Terrace on the banks of Yamuna.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:N-UP-A28_View_of_Taj_Mahal_Terrace_on_the_banks_of_Yamuna.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "MADHURANTHAKAN JAGADEESAN",
+      "description": "This is a photo of ASI monument number"
+    },
+    {
+      "key": "screen_bourne",
+      "title": "File:The Screen Enclosing the Sarcophagi in the Interior of the Taj, 28193801.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:The_Screen_Enclosing_the_Sarcophagi_in_the_Interior_of_the_Taj,_28193801.jpg",
+      "license": "Public domain",
+      "author": "Samuel Bourne",
+      "description": "Samuel Bourne. Agra; The Screen Enclosing the Sarcophagi in the Interior of the Taj, about 1866, Albumen silver print, 26.7 × 19.9 cm (10 1/2 × 7 13/16 in.), 84"
+    },
+    {
+      "key": "cenotaph_shah_jahan",
+      "title": "File:Cenotaph of Shah Jahan.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Cenotaph_of_Shah_Jahan.jpg",
+      "license": "CC BY-SA 3.0",
+      "author": "Royroydeb",
+      "description": "Cenotaph of Shah Jahan"
+    },
+    {
+      "key": "aerial_wellcome",
+      "title": "File:Aerial view of the Taj Mahal, India Wellcome V0037711.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Taj_Mahal,_India_Wellcome_V0037711.jpg",
+      "license": "CC BY 4.0",
+      "author": "",
+      "description": "An elelvated view of the Taj Mahal and its surrounding gardens, Agra, India.\n\nIconographic Collections\nKeywords: Building; India; Garden; Monument"
+    }
+  ]
+}

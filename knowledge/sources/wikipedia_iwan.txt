@@ -1,0 +1,80 @@
+# Iwan
+Source: https://en.wikipedia.org/wiki/Iwan (Wikipedia, CC BY-SA 4.0)
+
+An iwan (Persian: ایوان, romanized: eyvān, also ivan or ivān/īvān; Arabic: إيوان, romanized: ’īwān) is a rectangular hall or space, usually vaulted, walled on three sides, with one end entirely open. The formal gateway to the iwan is called pishtaq, a Persian term for a portal projecting from the facade of a building, usually decorated with calligraphy bands, glazed tilework, and geometric designs. Since the definition allows for some interpretation, the overall forms and characteristics can vary greatly in terms of scale, material, or decoration.
+Iwans are most commonly associated with Islamic architecture; however, the form is pre-Islamic Iranian in origin and was invented much earlier and fully developed in Mesopotamia around the third century CE, during the Parthian era.
+
+
+== Etymology ==
+Iwan is a Persian word that was subsequently borrowed into other languages such as Arabic and Turkish. The New Persian form is eyvān and its etymology is unclear.
+A theory by scholars like Ernst Herzfeld and Walter Bruno Henning proposed that the root of this term is Old Persian apadāna, but this is no longer taken for granted. The word apadāna appears in what modern scholars call the Apadana palace at Persepolis, where king Darius I declares in an inscription: "I, Darius, ... had this apadāna constructed". In this case, the word denoted a type of structure, the iwan proper and not the palace.
+The term in Old Persian means "unprotected", and the design allows the structure to be open to the elements on one side. At Persepolis, however, the apadāna takes the form of a veranda (a flat roof held up by columns rather than a vault) but is still open to the elements on only one side.
+By the time of the Parthian and the Sasanian Empires, the iwan had emerged as two types of structure: the old columned one and a newer vaulted structure; both, however, carrying the same native name of apadana/iwan, because both types are open on one side to the elements.
+Ivan is an alternative form of the name, used in Iran, reflecting the Persian pronunciation.
+
+
+== Origins ==
+Many scholars, including Edward Keall, André Godard, Roman Ghirshman, and Mary Boyce, discuss the invention of the iwan in Mesopotamia, the area around today's Iraq. Although debate remains among scholars as to how the iwan developed, there is a general consensus that the iwan evolved locally, and was thus not imported from another area. Similar structures, known as "pesgams", were found in many Zoroastrian homes in Yazd, where two or four halls would open onto a central court; however, it is not known whether these spaces were vaulted.
+The feature which most distinctly makes the iwan a landmark development in the history of Ancient Near Eastern architecture is the incorporation of a vaulted ceiling. A vault is a ceiling made from arches, known as arcuated, usually constructed with stone, concrete, or bricks. Earlier buildings would normally be covered in a trabeated manner, with post and lintel beams. However, vaulted ceilings did exist in the ancient world before the invention of the iwan, both within Mesopotamia and outside it. Mesopotamian examples include Susa, where the Elamites vaulted many of their buildings with barrel vaults, and Nineveh, where the Assyrians frequently vaulted their passages for fortification purposes.
+Outside Mesopotamia, a number of extant vaulted structures stand, including many examples from Ancient Egypt, Rome, and the Mycenaeans. For example, the Mycenaean Treasury of Atreus, constructed around 1250 BCE, features a large corbelled dome. Ancient Egyptian architecture began to use vaulting in its structures after the Third Dynasty, after around 2600 BCE, constructing very early barrel vaults using mud bricks.
+Iwans were a trademark of the Parthian Empire (247 BC – AD 224) and later the Sasanian architecture of Persia (224–651), later finding their way throughout the Arab and Islamic architecture which started developing in 7th century AD, after the period of Muhammad (c. 570–632). This development reached its peak during the Seljuk era, when iwans became a fundamental unit in architecture, and later the Mughal architecture. The form is not confined to any particular function, and is found in buildings for either secular or religious uses, and in both public and residential architecture.
+
+
+== Parthian iwans ==
+
+Although some scholars have asserted that the iwan form may have developed under the Seleucids, today most scholars agree that the Parthians were the inventors of the iwan. One of the earliest Parthian iwans was found at  Seleucia (Seleucia-on-the-Tigris), located on the Tigris River, where the shift from post-and-lintel construction to vaulting occurred around the 1st century CE. Other early iwans have been suggested at Ashur, where two buildings containing iwan-like foundations were found. The first building, located near the ruins of a ziggurat, featured a three-iwan façade. The proximity of the building to a ziggurat suggests that it may have been used for religious preparations or rituals. It could also indicate a palatial building, as it was common for the ziggurat and palace to be situated next to one another in the Ancient Near East. What seems to be a palace courtyard had iwans on each side, which remained a common features well into Islamic times.
+The second iwan building is located across a courtyard, and Walter Andrae, a German archaeologist, suggested that it served as an administrative building rather than as a religious center because there is no evidence of inscriptions or wall carvings. Although the absence of inscriptions or carvings does not equate necessarily to a civic function, it was not uncommon for iwans to serve a secular use, as they were frequently incorporated into palaces and community spaces. Other early sites including Parthian iwans include Hatra, the Parthian ruins at Dura Europos, and Uruk.
+
+
+== Sasanian iwans ==
+The Sasanian Empire also favored the iwan form, and adopted it into much of their architecture; however, they transformed the function. The Parthian iwan led to other spaces, but its primary function served as a room itself. In contrast, the Sasanian iwan served as a grand entranceway to a larger, more elegant space which was usually domed. Both the Parthian and Sasanian iwans were often elaborately decorated with inscriptions and sculpted reliefs including scenes of hunting, vegetal motifs, abstract, geometric patterns, and animal scenes. The reliefs’ style shows a blend of influences including other Near Eastern cultures, Roman, and Byzantine decorative traditions. For instance, the rock-cut iwan at Taq-e Bostan features Roman style figures, Eastern-inspired vegetal patterns and crenellations, and wide-eyed, stylized Byzantine-esque angels and mosaic interiors.
+
+
+=== Iwan of Khosrau ===
+
+The most famous example of a Sasanian iwan is the Taq Kasra ("Iwan of Khosrau"), part of a palace complex in Mada'in, which is the only visible remaining structure of the ancient Sasanian capital of Ctesiphon. It is near the modern town of Salman Pak, Iraq, on the Tigris River about twenty-five miles south of Baghdad. Construction began during the reign of Khosrau I after a campaign against the Eastern Romans in 540 AD. The arched iwan hall, open on the facade side, was about 37 meters high 26 meters across and 50 meters long, the largest vault ever constructed at the time. Early photographs and 19th-century drawings show that the remaining part of the hall has reduced since then.
+The dating for the Taq Kasra has been debated throughout history; however, a variety of documents detailing the arrival of Byzantine sculptors and architects sent by the Byzantine Emperor Justinian, suggest that the correct date for the construction is around 540 CE. The 540 date suggests that the construction of the Taq Kasra, and perhaps Justinian's “help” was in response to the victory of Sasanian king Khosrau I over Antioch in 540, which is depicted in the mosaics decorating the interior of the Taq Kasra. The Taq Kasra was finally demolished for the most part by al-Mansur, who reused the bricks to build his palace complex.
+
+
+== Islamic iwans ==
+
+Islamic art and architecture was also heavily influenced inspired by Roman, Byzantine, and Sasanian designs, both due to the presence of extant examples and contact between cultures. For example, the Great Mosque of Damascus was built in the early eighth century CE on the site of a Roman Christian church, and incorporates a nave-like element with a tall arcade and clerestory. The Sasanian Empire also had a tremendous impact on the development of Islamic architecture; however, there was some overlap between the Sasanians and the Muslims making it difficult at times to determine who was influencing whom. Islamic art and architecture borrowed many Sasanian decorative motifs and architectural forms, including the iwan.
+Iwans were used frequently in Islamic non-religious architecture before the twelfth century, including houses, community spaces, and civic structures such as the bridge of Si-o-se-pol in Isfahan. Furthermore, Islamic architecture incorporated the Sasanian placement for the iwan by making it a grand entrance to the prayer hall or to a mosque tomb, and often placing it before a domed space. The iwan became common in Islamic religious architecture from the twelfth century onward.
+Within the Islamic world the iwan was especially important in the architecture of Central Asia and Greater Iran, but it was also adopted into the local architectural traditions of other regions. It was highly adaptable and it appears in a variety of contexts and in different configurations. Iwans could be placed along the sides of the interior courtyards of buildings, as they were in many madrasas, or on the exterior of buildings, as at the Taj Mahal and other Mughal mausoleums. 
+Under the Ayyubids and Mamluks, who ruled Egypt and the Levantine region, it became a common feature of madrasa architecture, although in Cairo the vaulted iwans of earlier periods were replaced with flat-roofed iwans in the later Mamluk period. Starting in the late 13th and 14th centuries, the word iwan in Mamluk Egypt itself seems to have been become more restricted, on the one hand, to secular architecture while, on the other hand, it was used in this context to denote large domed structures in addition to vaulted halls. The celebrated monumental throne hall of Sultan al-Nasir Muhammad was thus called the Great Iwan (al-Iwan al-Kabir) even though its main element was a domed hall, not a vaulted hall.
+
+
+=== Four-iwan plan ===
+
+The four-iwan plan (cruciform) is one of the most characteristic floor plans of Islamic architecture, consisting of four iwans arranged around a central square or rectangular courtyard (durqāʿa or ṣaḥn), with the iwans aligned with the central axes of the courtyard. For cruciform mosques and cruciform madrasas, one of the iwans could be oriented towards the qibla (direction of prayer) and include a mihrab in order to serve as a prayer space.
+The history of the evolution of the standard four-iwan plan has been debated by scholars. The four-iwan plan was already in use in palace and temple architecture during both the Parthian and Sasanian periods. The earliest known appearance of the four-iwan plan in Islamic architecture is at the dār al-imāra (governor's palace) in Kufa, as rebuilt by the Umayyad governor Ziyād ibn Abīh in the late 7th century. It only became common in mosque design in the twelfth century, long after the iwan's invention in the first century CE. 
+The first patrons to incorporate this layout into mosques were the Seljuks, with the first example probably being the Seljuk modifications to the Great Mosque of Isfahan in the early 12th century, though the layout also appears in other mosques in Iran built or renovated by the Seljuks around the same time. André Godard attributes both the origin and spread of this design to the appearance of madrasas, which also began with the Seljuks, and he further argued that the layout was derived from the style of domestic architecture indigenous to Khorasan. The details of Godard's origin theory have not all been accepted by other scholars, but it is widely-attested that the four-iwan layout spread to other regions with the subsequent proliferation of madrasas across the Islamic world. In some regions it also spread to other building types such as caravanserais and bimaristans.
+In the Ayyubid and Mamluk periods of Egypt and Syria the four-iwan plan was prominently used in the architecture of madrasas, with the most monumental example being the massive 14th-century Madrasa-mosque of Sultan Hasan. In some more distant regions, like the Maghreb, the four-iwan plan was not commonly adopted for mosque architecture, but it most likely influenced the axial designs of local madrasas that began under Marinid and Hafsid rule. In early Ottoman architecture, particularly as it developed in Bursa around the 14th century, the four-iwan plan was adapted in a pragmatic way for religious buildings. In these early Ottoman designs the central court is covered by a dome instead of being open to the sky and one of the four iwans is repurposed as the vestibule of the building.
+
+
+== See also ==
+Exedra – Semicircular niche or recess, often lined with seats
+Liwan – Hall in Arabic houses
+
+
+== Notes ==
+
+
+=== References ===
+
+
+=== Bibliography ===
+
+
+== Further reading ==
+Blair, Sheila, and Bloom, Jonathan M., The Art and Architecture of Islam, 1250–1800, 1995, Yale University Press and Pelican History of Art. ISBN 0300064659.
+Henri Frankfort, Michael Roaf, Donald Matthews. The Art and Architecture of the Ancient Orient. New Haven: Yale University Press, 1996. ISBN 9780300064704
+
+
+== External links ==
+
+Oxford Art Online on Iwans
+Columbia’s Archive of Islamic Architecture Archived 2018-07-10 at the Wayback Machine
+Columbia’s Archive of Ancient Architecture Archived 2018-07-12 at the Wayback Machine
+UCSJ Tutorial on Islamic Architecture
+Sheila Blair’s Islamic Arts

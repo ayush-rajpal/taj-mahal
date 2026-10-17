@@ -480,3 +480,224 @@ body,
 .freelook canvas {
   cursor: none;
 }
+
+/* ---------- Taj Mahal additions: time of day, ask button, photo captions, typing to the guide */
+.hud {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  z-index: 5;
+}
+
+.hud-times {
+  display: flex;
+  padding: 3px;
+  background: rgba(11, 11, 13, 0.78);
+  border: 1px solid var(--pink);
+  border-radius: 999px;
+}
+
+.hud-times button,
+.hud-ask {
+  border: 0;
+  background: none;
+  color: var(--pink-soft);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.hud-times button.on {
+  background: var(--pink);
+  color: var(--black);
+  font-weight: 700;
+}
+
+.hud-ask {
+  background: rgba(11, 11, 13, 0.78);
+  border: 1px solid var(--pink);
+  color: #fff;
+}
+
+.hud-ask kbd {
+  margin-left: 6px;
+  padding: 0 5px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  font-size: 11px;
+  color: #bbb;
+}
+
+.board-card {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  max-width: min(420px, calc(100vw - 32px));
+  padding: 12px 16px;
+  background: rgba(11, 11, 13, 0.82);
+  border: 1px solid var(--pink);
+  border-radius: 14px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.45;
+  pointer-events: none;
+}
+
+.board-card p {
+  margin: 0 0 6px;
+}
+
+.board-card span {
+  color: #a9a9b2;
+  font-size: 12px;
+}
+
+.loading {
+  margin: -6px 0 16px;
+  color: #bdbdc4;
+  font-size: 13px;
+}
+
+.loading-bar {
+  height: 6px;
+  margin-bottom: 6px;
+  border-radius: 999px;
+  background: #26262c;
+  overflow: hidden;
+}
+
+.loading-bar span {
+  display: block;
+  height: 100%;
+  background: var(--pink);
+  transition: width 0.3s;
+}
+
+.guide-src {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #9a9aa3;
+}
+
+.guide-related,
+.guide-places {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.guide-related button,
+.guide-places button {
+  border: 1px solid #3a3a44;
+  background: none;
+  color: var(--pink-soft);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.guide-related button:hover,
+.guide-places button:hover {
+  border-color: var(--pink);
+}
+
+.guide-places {
+  margin: 0 0 10px;
+}
+
+.guide-input {
+  display: flex;
+  gap: 8px;
+  padding: 0 16px 12px;
+}
+
+.guide-input input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid #3a3a44;
+  background: #16161b;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+.guide-input input:focus {
+  border-color: var(--pink);
+}
+
+.guide-input button {
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--pink);
+  color: var(--black);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.guide-input button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+/* ---------- the map in the corner (same look as Evans Hall) */
+.hud-row {
+  display: flex;
+  gap: 8px;
+}
+
+.mapwrap {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  border: 2px solid var(--pink);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 24px rgba(255, 79, 163, 0.35);
+  pointer-events: none;
+  z-index: 3;
+}
+
+.mapwrap.hidden {
+  display: none;
+}
+
+.minimap {
+  display: block;
+  height: auto;
+}
+
+/* on phones (and with the on-screen joystick) the jump button owns the bottom corner */
+.mapwrap.touch {
+  top: 110px;
+  bottom: auto;
+}
+
+.mapwrap.touch .minimap {
+  width: 190px !important;
+}
+
+@media (pointer: coarse), (max-width: 700px) {
+  .mapwrap {
+    top: 110px;
+    bottom: auto;
+  }
+  .minimap {
+    width: 150px !important;
+  }
+}
+
+.by {
+  margin: -10px 0 18px;
+  color: var(--pink-soft);
+  font-size: 13px;
+}

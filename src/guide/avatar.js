@@ -4,7 +4,7 @@ import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 import { TALKERS } from './talk.js'
 
-// Shared bits for the chat-able professor avatars (Zaman.jsx, Schott.jsx, ...).
+// Shared bits for chat-able avatars (here: guide/Guide.jsx, the Labubu guide).
 // Avatars are built in meters and face +z.
 
 const mats = new Map()

@@ -1,0 +1,2388 @@
+[
+  {
+    "id": "what",
+    "topic": "overview",
+    "starter": true,
+    "q": "What is the Taj Mahal?",
+    "alts": [
+      "tell me about the taj mahal",
+      "what is this place",
+      "what am i looking at",
+      "what is this building",
+      "explain the taj",
+      "overview of the taj mahal",
+      "what is it"
+    ],
+    "a": "The Taj Mahal is an ivory-white marble **mausoleum** on the south bank of the Yamuna river in **Agra, India**. The Mughal emperor **Shah Jahan** commissioned it in 1631 as a tomb for his favourite wife, **Mumtaz Mahal**, and he was later buried there beside her.\n\nThe tomb is the centrepiece of a 17-hectare complex with a mosque, a guest house (the jawab), a great gate and a formal charbagh garden. It is a UNESCO World Heritage Site and one of the New 7 Wonders of the World."
+  },
+  {
+    "id": "who_built",
+    "topic": "history",
+    "starter": true,
+    "q": "Who built the Taj Mahal?",
+    "alts": [
+      "who made the taj mahal",
+      "who commissioned it",
+      "who ordered it built",
+      "which emperor built it",
+      "who constructed the taj",
+      "who was it built by"
+    ],
+    "a": "It was commissioned by **Shah Jahan**, the fifth Mughal emperor (ruled 1628–1658), in memory of his wife **Mumtaz Mahal**.\n\nThe actual work was led by a board of architects under **Ustad Ahmad Lahori**, the emperor's court architect, and carried out by more than **20,000** workers and artisans."
+  },
+  {
+    "id": "why_built",
+    "topic": "history",
+    "starter": true,
+    "q": "Why was the Taj Mahal built?",
+    "alts": [
+      "what was the reason for building it",
+      "why did shah jahan build it",
+      "purpose of the taj mahal",
+      "what is the story behind the taj",
+      "is it a symbol of love",
+      "love story of the taj"
+    ],
+    "a": "Shah Jahan built it as a tomb for **Mumtaz Mahal**, who died on 17 June 1631 giving birth to their **14th child**, a daughter named Gauhar Ara Begum. Court historians say he was devastated: he stayed away from royal affairs for a week and gave up music and fine clothes for two years.\n\nThat's why the Taj is remembered as a monument to love. It's also a symbol of Shah Jahan's wealth and power, and its whole plan is meant as **Mumtaz Mahal's mansion in the garden of Paradise**."
+  },
+  {
+    "id": "when_built",
+    "topic": "history",
+    "starter": true,
+    "q": "When was the Taj Mahal built?",
+    "alts": [
+      "what year was it built",
+      "when was it constructed",
+      "when did construction start",
+      "when was it finished",
+      "when was it completed",
+      "how old is the taj mahal",
+      "date of construction"
+    ],
+    "a": "- **1631**: Shah Jahan commissions the tomb after Mumtaz Mahal's death.\n- **1632**: construction begins.\n- **1643**: the first ceremony at the tomb, the 12th anniversary of her death.\n- **1648**: the mausoleum is finished.\n- **1653**: the rest of the complex (mosque, jawab, gate, gardens) is completed.\n\nSo it's well over 370 years old."
+  },
+  {
+    "id": "how_long",
+    "topic": "history",
+    "q": "How long did it take to build the Taj Mahal?",
+    "alts": [
+      "how many years did it take",
+      "how long was construction",
+      "how long to build",
+      "how many years to finish"
+    ],
+    "a": "About **22 years** for the whole complex: construction began in 1632, the mausoleum itself was finished in 1648 (about 16 years), and the surrounding buildings and gardens took another five years, until 1653."
+  },
+  {
+    "id": "cost",
+    "topic": "history",
+    "q": "How much did the Taj Mahal cost?",
+    "alts": [
+      "what was the cost of building it",
+      "how much money was spent",
+      "price of the taj mahal",
+      "how expensive was it",
+      "cost in todays money"
+    ],
+    "a": "The complex cost an estimated **₹32 million** at the time. That's roughly **₹52.8 billion (about US$827 million)** in 2015 money.\n\nIt was a heavy burden even for the Mughal Empire at its height; Wikivoyage notes it strained the empire's resources around Agra."
+  },
+  {
+    "id": "workers",
+    "topic": "history",
+    "q": "How many people worked on the Taj Mahal?",
+    "alts": [
+      "how many workers built it",
+      "how many artisans",
+      "number of workers",
+      "who were the workers",
+      "where did the craftsmen come from"
+    ],
+    "a": "More than **20,000** artisans, labourers, painters and others worked on it.\n\nThey came from far and wide: sculptors from Bukhara, calligraphers from Syria and Persia, designers from southern India, stone cutters from Baluchistan, and even Italian artisans. Specialists included the Ottoman dome designer Ismail Afandi, the calligrapher Amanat Khan and the finial caster Qazim Khan."
+  },
+  {
+    "id": "architect",
+    "topic": "people",
+    "starter": true,
+    "q": "Who was the architect of the Taj Mahal?",
+    "alts": [
+      "who designed the taj mahal",
+      "who was the designer",
+      "chief architect",
+      "ustad ahmad lahori",
+      "who planned it"
+    ],
+    "a": "The chief architect is usually named as **Ustad Ahmad Lahori** (c. 1580–1649), \"Master Ahmad of Lahore\", Shah Jahan's court architect, from a family of Timurid architects originally from Herat. He's credited with the **Red Fort** in Delhi and may have designed the Taj with Mir Abd-ul Karim and Makramat Khan.\n\nHe led a multinational board: the Ottoman dome designer **Ismail Afandi**, Persian architects **Ustad Isa**, **Isa Muhammad Effendi** and **Puru**, the calligrapher **Amanat Khan**, and the finial caster **Qazim Khan**."
+  },
+  {
+    "id": "mumtaz",
+    "topic": "people",
+    "starter": true,
+    "q": "Who was Mumtaz Mahal?",
+    "alts": [
+      "tell me about mumtaz mahal",
+      "who was shah jahans wife",
+      "who was the empress",
+      "arjumand banu begum",
+      "who is the taj for"
+    ],
+    "a": "**Mumtaz Mahal** (born Arjumand Banu Begum, 1593–1631) was Shah Jahan's favourite wife and empress of the Mughal Empire from 1628 until her death. She came from a Persian noble family; her aunt was the powerful empress **Nur Jahan**.\n\nShe married Prince Khurram (the future Shah Jahan) in 1612, went with him even on military campaigns, and bore him 14 children. Her title means \"the exalted one of the palace\"."
+  },
+  {
+    "id": "mumtaz_death",
+    "topic": "people",
+    "q": "How did Mumtaz Mahal die?",
+    "alts": [
+      "where did mumtaz mahal die",
+      "when did mumtaz die",
+      "cause of death of mumtaz",
+      "did she die in childbirth",
+      "where was she first buried"
+    ],
+    "a": "She died on **17 June 1631** in **Burhanpur** in the Deccan, of a haemorrhage after about 30 hours of labour with her 14th child. Shah Jahan was there on a military campaign.\n\nShe was first buried in the walled Zainabad garden beside the Tapti river. Her body was later brought to Agra, and a spot in the north-western part of the Taj garden marks where she lay before being moved into the tomb."
+  },
+  {
+    "id": "shahjahan",
+    "topic": "people",
+    "starter": true,
+    "q": "Who was Shah Jahan?",
+    "alts": [
+      "tell me about shah jahan",
+      "who was the emperor",
+      "prince khurram",
+      "what else did shah jahan build",
+      "shah jahan biography"
+    ],
+    "a": "**Shah Jahan** (1592–1666), born Prince Khurram, was the fifth Mughal emperor, ruling from 1628 until 1658. His reign is seen as the high point of Mughal architecture: besides the Taj Mahal he built the **Red Fort** and the **Jama Masjid** in Delhi (his new capital, Shahjahanabad) and commissioned the jewelled **Peacock Throne**.\n\nIn 1658 his son Aurangzeb deposed him and kept him confined in Agra Fort until he died."
+  },
+  {
+    "id": "shahjahan_end",
+    "topic": "people",
+    "q": "What happened to Shah Jahan at the end of his life?",
+    "alts": [
+      "was shah jahan imprisoned",
+      "did his son lock him up",
+      "where did shah jahan die",
+      "agra fort prison",
+      "could shah jahan see the taj from prison",
+      "aurangzeb and shah jahan"
+    ],
+    "a": "After Shah Jahan fell ill in 1658, his sons fought over the throne. **Aurangzeb** won, declared his father unfit to rule and confined him in **Agra Fort** from 1658 until his death on 22 January 1666. His daughter **Jahanara** chose to share his confinement and nursed him.\n\nAgra Fort is a short way up the Yamuna, and from it you can see the Taj across the river bend, so the story goes that he spent his last years gazing at his wife's tomb."
+  },
+  {
+    "id": "shahjahan_buried",
+    "topic": "interior",
+    "q": "Who is buried in the Taj Mahal?",
+    "alts": [
+      "is shah jahan buried in the taj mahal",
+      "who is buried here",
+      "where is shah jahan buried",
+      "is the emperor buried here too",
+      "are both buried there",
+      "how many people are buried in the taj"
+    ],
+    "a": "Two people: **Mumtaz Mahal**, at the exact centre of the tomb, and **Shah Jahan**, buried beside her after he died in 1666. Their son Aurangzeb chose to bury him there rather than build him a tomb of his own.\n\nThe marble cenotaphs you see in the chamber are memorials; the real graves are in a crypt directly below. Shah Jahan's sits off to the west of hers: the only asymmetrical thing in the whole complex."
+  },
+  {
+    "id": "children",
+    "topic": "people",
+    "q": "How many children did Shah Jahan and Mumtaz Mahal have?",
+    "alts": [
+      "how many kids did mumtaz have",
+      "who were their children",
+      "was aurangzeb her son",
+      "dara shikoh",
+      "jahanara begum"
+    ],
+    "a": "They had **14 children**, of whom seven survived to adulthood. They included Crown Prince **Dara Shikoh**, Princess **Jahanara Begum** (who later cared for her father in captivity) and **Aurangzeb**, who became the sixth Mughal emperor. Mumtaz died giving birth to the 14th, **Gauhar Ara Begum**."
+  },
+  {
+    "id": "name",
+    "topic": "overview",
+    "q": "What does Taj Mahal mean?",
+    "alts": [
+      "meaning of the name taj mahal",
+      "why is it called the taj mahal",
+      "what does the name mean",
+      "where does the name come from"
+    ],
+    "a": "The name is Urdu, drawn from Persian and Arabic: **tāj** means \"crown\" and **mahal** means \"palace\", so roughly **\"Crown of the Palace\"**. Many people also hear in it an echo of **Mumtaz Mahal**, the empress buried there."
+  },
+  {
+    "id": "where",
+    "topic": "overview",
+    "starter": true,
+    "q": "Where is the Taj Mahal?",
+    "alts": [
+      "where is it located",
+      "which city is it in",
+      "location of the taj mahal",
+      "what country is the taj in",
+      "is it in delhi",
+      "how far from delhi"
+    ],
+    "a": "In **Agra**, in the state of **Uttar Pradesh** in northern India, on the south bank of the **Yamuna** river. Agra is about **200 km** from Delhi; fast trains like the Vande Bharat and Shatabdi expresses do the trip in around two hours.\n\nAgra was a Mughal capital, and **Agra Fort**, also a UNESCO site, is about a 30-minute walk upriver."
+  },
+  {
+    "id": "height",
+    "topic": "architecture",
+    "starter": true,
+    "q": "How tall is the Taj Mahal?",
+    "alts": [
+      "what is the height of the taj mahal",
+      "how high is the dome",
+      "how many meters tall",
+      "how many feet tall",
+      "how tall are the minarets"
+    ],
+    "a": "- The whole tomb rises about **73 m (240 ft)** to the tip of its finial.\n- The main **dome** is about 23 m tall and sits on a **12 m drum**, topped by a **9.6 m gilded finial**.\n- Each of the four **minarets** is more than **40 m (130 ft)** tall.\n- The great arches (pishtaqs) on each face are **33 m** high."
+  },
+  {
+    "id": "size",
+    "topic": "architecture",
+    "q": "How big is the Taj Mahal complex?",
+    "alts": [
+      "how large is the complex",
+      "dimensions of the taj mahal",
+      "size of the plinth",
+      "how big is the base",
+      "how many acres",
+      "area of the taj mahal"
+    ],
+    "a": "- The whole complex covers about **17 hectares (42 acres)** and sits on a platform about **300 m** long.\n- The tomb stands on a square marble **plinth** about **95.5 m** on each side and 6 m high.\n- The tomb itself is a cube with chamfered (cut-off) corners, about **57 m** on each of its long sides.\n- The **charbagh** garden is about **300 m** square."
+  },
+  {
+    "id": "style",
+    "topic": "architecture",
+    "q": "What architectural style is the Taj Mahal?",
+    "alts": [
+      "what style of architecture is it",
+      "is it islamic architecture",
+      "is it persian or indian",
+      "mughal architecture",
+      "what influenced the design",
+      "indo islamic"
+    ],
+    "a": "It's the masterpiece of **Mughal architecture**, which blends Persian, Central Asian, Islamic and Indian traditions. The domed tomb in a four-part garden follows earlier Mughal tombs, especially **Humayun's Tomb** in Delhi, and the jewel-like **Tomb of I'timād-ud-Daulah** in Agra, often called the \"Baby Taj\".\n\nIndian touches include the domed kiosks (**chhatris**) on the roof and the lotus motifs."
+  },
+  {
+    "id": "symmetry",
+    "topic": "architecture",
+    "q": "Is the Taj Mahal perfectly symmetrical?",
+    "alts": [
+      "why is it symmetrical",
+      "symmetry of the taj",
+      "is everything symmetrical",
+      "what is not symmetrical",
+      "only asymmetrical thing"
+    ],
+    "a": "Almost perfectly. The tomb has four identical faces, the mosque on the west is mirrored by the **jawab** on the east, and the garden is laid out symmetrically along the north–south axis.\n\nThe one exception is inside: **Shah Jahan's cenotaph** was added beside Mumtaz Mahal's after his death, so it sits off-centre, to the west of hers."
+  },
+  {
+    "id": "marble",
+    "topic": "materials",
+    "starter": true,
+    "q": "What is the Taj Mahal made of?",
+    "alts": [
+      "what materials were used",
+      "is it made of marble",
+      "where did the marble come from",
+      "makrana marble",
+      "what stone is it made of",
+      "is it all marble",
+      "red sandstone"
+    ],
+    "a": "The tomb is built mainly of **brick and lime mortar**, faced inside and out with **white marble** from **Makrana** in Rajasthan. The other buildings use **red sandstone** quarried near **Fatehpur Sikri**.\n\nThe white marble is inlaid with **28 kinds of precious and semi-precious stones**, and the calligraphy is in black marble or jasper."
+  },
+  {
+    "id": "transport",
+    "topic": "materials",
+    "q": "How did they move the marble to Agra?",
+    "alts": [
+      "how was the marble transported",
+      "did they use elephants",
+      "how did they carry the stones",
+      "elephants and oxen",
+      "scaffolding",
+      "how many elephants were used",
+      "were elephants used to build it"
+    ],
+    "a": "A **15 km** earthen ramp was built to the site, and the marble and other materials were hauled up it on specially built wagons by teams of **oxen and elephants**.\n\nInstead of wooden scaffolding, the builders raised an enormous **brick scaffold** that mirrored the tomb as it grew."
+  },
+  {
+    "id": "stones",
+    "topic": "decoration",
+    "starter": true,
+    "q": "What precious stones are in the Taj Mahal?",
+    "alts": [
+      "what gems are inlaid",
+      "what are the colored stones",
+      "jewels in the taj mahal",
+      "where did the stones come from",
+      "precious stones used",
+      "semi precious stones"
+    ],
+    "a": "**28 kinds** of precious and semi-precious stones were set into the marble, brought from across Asia:\n- **jade** and **crystal** from China\n- **turquoise** from Tibet\n- **lapis lazuli** from Afghanistan\n- **sapphire** from Sri Lanka\n- **carnelian** from Arabia\nplus jasper, agate, onyx and others. Look closely at the arches here: those red and green flowers are photos of the real inlay."
+  },
+  {
+    "id": "pietra_dura",
+    "topic": "decoration",
+    "q": "What is pietra dura?",
+    "alts": [
+      "what is the inlay work",
+      "how was the inlay made",
+      "parchin kari",
+      "what are the flowers on the walls",
+      "inlaid flowers",
+      "how did they inlay stones"
+    ],
+    "a": "**Pietra dura** (Italian for \"hard stone\"; in India, **parchin kari**) is inlay: thin slices of coloured stone are cut and polished to fit exactly into shapes carved out of the marble, making flowers and vines that look painted but are solid stone.\n\nOn the Taj, some single flowers are made from dozens of pieces. Agra's craftsmen still make inlay work today."
+  },
+  {
+    "id": "calligraphy",
+    "topic": "decoration",
+    "starter": true,
+    "q": "What does the writing on the Taj Mahal say?",
+    "alts": [
+      "what is the calligraphy",
+      "what are the black letters",
+      "who did the calligraphy",
+      "amanat khan",
+      "quran verses on the taj",
+      "what language is the writing",
+      "inscriptions"
+    ],
+    "a": "The black lettering framing the arches is **Quranic verse**, written in an ornate **thuluth** script and inlaid in jasper or black marble. The southern gate's inscription roughly translates as: \"O Soul, thou art at rest. Return to the Lord at peace with Him, and He at peace with you.\"\n\nThe calligrapher was **Abdul Haq**, whom Shah Jahan honoured with the title **Amanat Khan**. Your guide is named after him, and at the base of the inner dome he signed his work: \"Written by the insignificant being, Amanat Khan Shirazi.\""
+  },
+  {
+    "id": "calligraphy_size",
+    "topic": "decoration",
+    "q": "Why does the calligraphy get bigger toward the top?",
+    "alts": [
+      "are the letters the same size",
+      "optical illusion in the calligraphy",
+      "why are the letters bigger higher up"
+    ],
+    "a": "It's an optical correction. Letters higher up the arch are farther from your eye, so the calligraphers made them progressively **larger** toward the top. From the ground, the whole inscription seems to be one even size."
+  },
+  {
+    "id": "carvings",
+    "topic": "decoration",
+    "q": "What are the carved flowers on the lower walls?",
+    "alts": [
+      "relief carvings",
+      "carved marble flowers",
+      "dado panels",
+      "what are the flower carvings",
+      "bas relief"
+    ],
+    "a": "Around the base of the walls are **dado** panels with flowers carved in low relief straight into the marble: tulips, irises, lilies and other plants, framed by bands of inlay. Flowers everywhere fit the idea of the tomb as a house in paradise."
+  },
+  {
+    "id": "jali",
+    "topic": "decoration",
+    "q": "What is a jali?",
+    "alts": [
+      "what is the marble screen",
+      "lattice screen",
+      "pierced marble windows",
+      "jali screen around the tombs",
+      "what are the windows made of"
+    ],
+    "a": "A **jali** is a screen of stone carved right through into a lattice. The Taj's jalis let in soft light and air while keeping privacy.\n\nThe most famous is the **octagonal screen** of eight pierced marble panels around the cenotaphs, inlaid with stones. It replaced an earlier screen of **gold** in 1643."
+  },
+  {
+    "id": "dome",
+    "topic": "architecture",
+    "starter": true,
+    "q": "Tell me about the dome.",
+    "alts": [
+      "how big is the dome",
+      "what shape is the dome",
+      "onion dome",
+      "is the dome hollow",
+      "double dome",
+      "what is inside the dome"
+    ],
+    "a": "The main dome is an **onion dome** about **23 m** high, sitting on a **12 m** cylindrical drum (inner diameter 18.4 m), which makes it look even taller. Between drum and dome runs a moulding carved like a **twisted rope**, and the top is decorated with a **lotus** design. It's even slightly asymmetrical.\n\nIt's a **double dome**: the ceiling you see inside the tomb is a much lower \"false\" inner dome, about 25 m above the floor, decorated with a sun motif."
+  },
+  {
+    "id": "finial",
+    "topic": "architecture",
+    "q": "What is on top of the dome?",
+    "alts": [
+      "what is the finial",
+      "is the top made of gold",
+      "crescent moon on top",
+      "spire on the dome",
+      "golden top"
+    ],
+    "a": "A **9.6 m gilded finial** crowns the dome, mixing Persian and Indian design elements and topped by a **crescent moon** whose horns point heavenward, a typical Islamic motif.\n\nIt was originally made of **gold**. A Mughal historian recorded that the gold covering was carried off when the Jats raided Agra in the 18th century, and in the early 19th century the finial was replaced by the **gilded bronze** copy you see today."
+  },
+  {
+    "id": "minarets",
+    "topic": "architecture",
+    "starter": true,
+    "q": "Why do the minarets lean outward?",
+    "alts": [
+      "are the minarets leaning",
+      "why are the towers tilted",
+      "what are the four towers for",
+      "purpose of the minarets",
+      "how tall are the four towers",
+      "minaret tilt earthquake",
+      "how many minarets are there",
+      "how many minarets"
+    ],
+    "a": "The four **minarets**, each over **40 m** tall, stand at the corners of the plinth. They were built tilted very slightly **outward**, so that if one ever fell, for instance in an earthquake, it would fall away from the tomb instead of onto it.\n\nEach is divided into three almost equal parts by balconies and topped by a chhatri. They echo mosque minarets, where the call to prayer is given, but here they mostly frame the tomb."
+  },
+  {
+    "id": "chhatri",
+    "topic": "architecture",
+    "q": "What are the small domes on the roof?",
+    "alts": [
+      "what are chhatris",
+      "small domed pavilions",
+      "kiosks on the roof",
+      "what are the little domes"
+    ],
+    "a": "They're **chhatris**, open domed kiosks on columns, a feature of Indian (especially Rajput) architecture. Four sit around the main dome, each minaret is topped by one, and the Great Gate has a row of 22 small ones along its top."
+  },
+  {
+    "id": "iwan",
+    "topic": "architecture",
+    "q": "What are the big arches on each side?",
+    "alts": [
+      "what is a pishtaq",
+      "what is an iwan",
+      "the huge arched doorways",
+      "main arch of the taj"
+    ],
+    "a": "Each face of the tomb has a huge **iwan**, a deep vaulted arch, set in a tall rectangular frame called a **pishtaq**, about 33 m high. On either side are two smaller arched alcoves stacked one above the other, and the same pattern repeats on the cut-off corners."
+  },
+  {
+    "id": "garden",
+    "topic": "garden",
+    "starter": true,
+    "q": "What is the garden called?",
+    "alts": [
+      "tell me about the garden",
+      "what is a charbagh",
+      "why is the garden divided into four",
+      "paradise garden",
+      "garden layout",
+      "mughal garden"
+    ],
+    "a": "It's a **charbagh**, a Persian-style \"four garden\". Two main walkways (khiyaban) with water channels divide it into four quarters, and raised paths split each quarter into four **sunken flower beds**, 16 in all, with a walkway round the edge. The design stands for the **gardens of Paradise** and their four rivers.\n\nThe first Mughal emperor, **Babur**, brought the charbagh to India. Unusually, the tomb stands at the far end by the river, not in the centre."
+  },
+  {
+    "id": "garden_british",
+    "topic": "garden",
+    "q": "Did the garden always look like this?",
+    "alts": [
+      "why are there lawns",
+      "were there fruit trees",
+      "who changed the garden",
+      "original garden",
+      "british changes to the garden"
+    ],
+    "a": "No. Originally it was planted with fruit trees and abundant flowers. As the Mughal Empire declined the garden was neglected, and under British rule it was relandscaped with **English-style lawns**. Viceroy **Lord Curzon**'s restoration, finished in 1908, gave it much of the look it still has. Felice Beato's 1858 photo on the board in the garden shows how thickly planted it used to be."
+  },
+  {
+    "id": "pool",
+    "topic": "garden",
+    "starter": true,
+    "q": "What is the raised pool in the middle of the garden?",
+    "alts": [
+      "what is the central pool",
+      "reflecting pool",
+      "lotus pool",
+      "al hawd al kawthar",
+      "tank of abundance",
+      "the pool where the taj reflects",
+      "where can i see the reflection",
+      "where is the best reflection"
+    ],
+    "a": "At the crossing of the channels is a raised marble tank called **al Hawd al-Kawthar**, the \"Tank of Abundance\", named after the pool promised to the Prophet Muhammad in paradise. Its still water and the long north–south channel are where the famous **reflection** of the Taj appears. Walk to the edge of the channel here and look down."
+  },
+  {
+    "id": "diana",
+    "topic": "garden",
+    "q": "Is this where Princess Diana sat?",
+    "alts": [
+      "princess diana bench",
+      "diana bench",
+      "famous bench at the taj",
+      "where did diana sit"
+    ],
+    "a": "Yes: the marble bench on the south side of the raised pool, facing the tomb, is often called the **\"Diana bench\"** after Princess Diana was photographed sitting there alone in **1992**. It's one of the most popular photo spots in the garden; you'll find it on the pool platform here."
+  },
+  {
+    "id": "fountains",
+    "topic": "garden",
+    "q": "How do the fountains work?",
+    "alts": [
+      "how did the fountains get water",
+      "fountain water supply",
+      "water system of the garden"
+    ],
+    "a": "Water came from the **Yamuna**. A channel fed an underground reservoir; animal-turned wheels and pulleys lifted it to a tank, and an **aqueduct** carried it round to the garden, where **earthenware pipes** under the ground spread it out.\n\nThe central tank's five fountains used large interconnected **copper vessels**, and the drop from walls **9.47 m** high gave the water its pressure."
+  },
+  {
+    "id": "gate",
+    "topic": "buildings",
+    "starter": true,
+    "q": "Tell me about the Great Gate.",
+    "alts": [
+      "what is the main gate",
+      "darwaza i rauza",
+      "great gateway",
+      "red gate",
+      "entrance gate",
+      "why does the gate have 22 domes",
+      "tell me about the gate",
+      "the gate",
+      "what is this gate"
+    ],
+    "a": "The **Great Gate** (Darwaza-i-Rauza) is the monumental entrance from the forecourt into the garden. It mirrors the tomb's design in red sandstone, with white marble, bas-relief and pietra dura inlay, and its arch is framed by Quranic calligraphy that roughly translates as **\"O Soul, thou art at rest. Return to the Lord at peace with Him, and He at peace with you.\"**\n\nThe row of **22 small domes** on top is popularly said to stand for the 22 years the complex took to build. The gate in this world is textured with a real straight-on photo of it."
+  },
+  {
+    "id": "mosque",
+    "topic": "buildings",
+    "starter": true,
+    "q": "What is the red building on the west side?",
+    "alts": [
+      "tell me about the mosque",
+      "is there a mosque at the taj",
+      "red sandstone mosque",
+      "why is the taj closed on friday",
+      "west building",
+      "masjid"
+    ],
+    "a": "That's the **mosque**, built of red sandstone with three white marble domes, in the same style as other mosques of its time. It faces west, toward Mecca, and it's still used: Friday prayers are held there, which is why the Taj Mahal is **closed to sightseers every Friday**. Its twin on the east side, the jawab, copies it but has no mihrab (prayer niche)."
+  },
+  {
+    "id": "jawab",
+    "topic": "buildings",
+    "q": "What is the building on the east side?",
+    "alts": [
+      "what is the jawab",
+      "why is there a copy of the mosque",
+      "east building",
+      "guest house",
+      "mirror building"
+    ],
+    "a": "That's the **jawab**, Persian for \"answer\". It copies the mosque exactly to keep the complex symmetrical, but because it faces east, away from Mecca, it can't be used as a mosque. It probably served as a guest house or assembly hall."
+  },
+  {
+    "id": "inside",
+    "topic": "interior",
+    "starter": true,
+    "q": "What is inside the Taj Mahal?",
+    "alts": [
+      "what is inside the tomb",
+      "can you go inside",
+      "interior of the taj",
+      "what is in the main chamber",
+      "inside the dome"
+    ],
+    "a": "The heart of the tomb is an **octagonal chamber** with 7.3 m sides, its walls about 25 m high up to a false inner dome decorated with a sun motif. In the middle, inside an octagonal marble **jali** screen, are the **cenotaphs** of Mumtaz Mahal and Shah Jahan. A large lamp hangs above them.\n\nWalk through the great south arch and down the corridor here to see it."
+  },
+  {
+    "id": "cenotaph",
+    "topic": "interior",
+    "q": "Are the bodies really in those tombs?",
+    "alts": [
+      "what is a cenotaph",
+      "where are the real graves",
+      "are the tombs empty",
+      "where are mumtaz and shah jahan really buried",
+      "false tombs"
+    ],
+    "a": "No. The two marble boxes in the chamber are **cenotaphs**, false tombs for show, because Muslim tradition discourages elaborate decoration of graves. The **real graves** are in a plainer crypt directly below.\n\nBoth lie north–south with the heads to the north, and the bodies were laid on their sides facing west, toward Mecca."
+  },
+  {
+    "id": "cenotaph_decoration",
+    "topic": "interior",
+    "q": "What is written on the cenotaphs?",
+    "alts": [
+      "cenotaph inscriptions",
+      "what does mumtaz tomb say",
+      "epitaph",
+      "decoration on the tombs",
+      "pen box on the tomb"
+    ],
+    "a": "Mumtaz Mahal's cenotaph is inlaid with flowers and Quranic verses, and its epitaph reads: \"The illumined grave of Arjumand Bano Begam, entitled Mumtaz Mahal, who died in the year 1631.\" Shah Jahan's carries his titles and date of death in 1666.\n\nBy custom, his has a **pen box** on top (a man's tomb) and hers a flat **writing tablet** (a woman's)."
+  },
+  {
+    "id": "lamp",
+    "topic": "interior",
+    "q": "What is the lamp hanging inside?",
+    "alts": [
+      "who gave the lamp",
+      "lord curzon lamp",
+      "chandelier inside the taj"
+    ],
+    "a": "The large lamp over the cenotaphs was commissioned by **Lord Curzon**, Viceroy of India, as part of the restoration completed in **1908**. Earlier chandeliers of agate and silver had been carried off in the 18th century by the Jat rulers of Bharatpur."
+  },
+  {
+    "id": "black_taj",
+    "topic": "myths",
+    "starter": true,
+    "q": "Was there going to be a Black Taj Mahal?",
+    "alts": [
+      "black taj mahal",
+      "did shah jahan plan a black taj",
+      "black marble taj across the river",
+      "is the black taj real",
+      "second taj"
+    ],
+    "a": "Probably not. The legend comes from the \"fanciful writings\" of **Jean-Baptiste Tavernier**, a French traveller and gem merchant who visited Agra in 1665: Shah Jahan supposedly planned a twin tomb in **black marble** across the river, but was deposed before it could be built.\n\nBlackened marble found across the river at **Mehtab Bagh** turned out, after excavation in the 1990s, to be white stone that had darkened. In 2006, archaeologists who rebuilt part of Mehtab Bagh's pool found a likelier origin: the white tomb casts a **dark reflection** in it."
+  },
+  {
+    "id": "hands_cut",
+    "topic": "myths",
+    "q": "Did Shah Jahan cut off the workers' hands?",
+    "alts": [
+      "were the workers hands cut off",
+      "were the builders killed",
+      "myth about workers",
+      "were the architects blinded",
+      "is it true the hands were chopped"
+    ],
+    "a": "There's **no evidence** for it. Stories that Shah Jahan killed, blinded or cut off the hands of the architects and craftsmen so they could never build anything as beautiful again are myths; historians find nothing to support them. Many of the same craftsmen and their families went on working on other Mughal buildings."
+  },
+  {
+    "id": "tejo",
+    "topic": "myths",
+    "q": "Was the Taj Mahal originally a temple?",
+    "alts": [
+      "tejo mahalaya",
+      "was it a hindu temple",
+      "was it built by someone else",
+      "who really built the taj",
+      "shiva temple claim"
+    ],
+    "a": "No. Claims that someone other than Shah Jahan's builders made it are **not supported by the archaeological record**. In **2000** India's Supreme Court dismissed P. N. Oak's petition claiming a Hindu king built it, and in **2005** the Allahabad High Court dismissed a similar one. In **2015** the Union Minister of Culture told Parliament there was no evidence it was ever a temple, and in **2017** the Archaeological Survey of India said the same."
+  },
+  {
+    "id": "myths_other",
+    "topic": "myths",
+    "q": "Are there other legends about the Taj Mahal?",
+    "alts": [
+      "taj mahal legends",
+      "myths about the taj",
+      "famous stories about the taj",
+      "is it true that"
+    ],
+    "a": "A few popular ones, none proven:\n- a planned **Black Taj** across the river (from Tavernier's stories; no evidence);\n- the builders' **hands cut off** (no evidence);\n- a plan by **Lord William Bentinck** in the 1830s to demolish it and auction the marble (no evidence; it grew from a sale of discarded marble from Agra Fort);\n- beating the outline of the finial drawn in the courtyard makes **water** come out (officials still find broken bangles around it);\n- an **Italian** or **French** designer (19th-century theories, long discredited)."
+  },
+  {
+    "id": "color_change",
+    "topic": "visiting",
+    "starter": true,
+    "q": "Does the Taj Mahal change colour?",
+    "alts": [
+      "why does it look pink",
+      "colour changes during the day",
+      "does it glow at night",
+      "sunrise colour",
+      "golden at sunset",
+      "what colour is the taj"
+    ],
+    "a": "It seems to. The polished white marble picks up the light and moisture in the air: it looks **pinkish in the morning**, **milky white** in daylight, **golden** in moonlight, and sometimes even bluish. The sky is part of the design twice over, reflected in the pools and on the building itself.\n\nTry the **Sunrise**, **Day**, **Sunset** and **Moonlight** buttons at the top right (or press **T**) to see it change here."
+  },
+  {
+    "id": "hours",
+    "topic": "visiting",
+    "starter": true,
+    "q": "When is the Taj Mahal open?",
+    "alts": [
+      "what are the opening hours",
+      "visiting hours",
+      "is it open every day",
+      "is it closed on friday",
+      "what time does it open",
+      "timings of the taj"
+    ],
+    "a": "It's open **every day except Friday**, from **one hour before sunrise to 45 minutes before sunset**. On Fridays it closes to sightseers for prayers at the mosque.\n\nThere's also limited **night viewing** around the full moon (except during Ramadan). Times can change, so check the official Archaeological Survey of India site before you go."
+  },
+  {
+    "id": "night",
+    "topic": "visiting",
+    "q": "Can you visit the Taj Mahal at night?",
+    "alts": [
+      "night viewing",
+      "full moon visit",
+      "moonlight viewing",
+      "is it open at night",
+      "see the taj by moonlight"
+    ],
+    "a": "Only on special nights: the complex opens for **limited night viewing on the day of the full moon**, except during the month of Ramadan, with small groups booked in advance. Press **Moonlight** at the top right to see it by moonlight here."
+  },
+  {
+    "id": "tickets",
+    "topic": "visiting",
+    "q": "How much are tickets to the Taj Mahal?",
+    "alts": [
+      "ticket price",
+      "entry fee",
+      "how much does it cost to visit",
+      "where to buy tickets",
+      "admission price",
+      "how much is the entry fee for foreigners",
+      "ticket price for foreigners",
+      "how much for foreign tourists"
+    ],
+    "a": "There are three prices, much lower for Indian citizens. As of 2024:\n- **₹50** for Indian citizens\n- **₹540** for citizens of SAARC and BIMSTEC countries\n- **₹1,100** for other foreign visitors\nTickets are sold by the **Archaeological Survey of India** (ASI), online and at the gates. Prices change, so check the official site before you go. Since 2019, visitors who stay more than **three hours** can be fined."
+  },
+  {
+    "id": "best_time",
+    "topic": "visiting",
+    "q": "What is the best time to visit the Taj Mahal?",
+    "alts": [
+      "best time of day to visit",
+      "best season to visit",
+      "when should i go",
+      "how to avoid crowds",
+      "best month to visit",
+      "sunrise or sunset"
+    ],
+    "a": "- **Season:** October to March, when Agra is cool and dry; summers are very hot and the monsoon is humid.\n- **Time of day:** go at **opening, around sunrise**, for the softest pink light and the thinnest crowds; late afternoon gives golden light.\n- **Avoid Fridays** (closed) and public holidays, when it's packed."
+  },
+  {
+    "id": "getting_there",
+    "topic": "visiting",
+    "q": "How do I get to the Taj Mahal?",
+    "alts": [
+      "how to reach the taj mahal",
+      "train from delhi",
+      "how to get to agra",
+      "metro to the taj",
+      "transport to the taj"
+    ],
+    "a": "Agra is about **200 km** from Delhi: fast trains such as the Vande Bharat, Shatabdi or Taj Express take about two to three hours. In Agra, the **Agra Metro** runs between Agra Fort and the Taj, and e-rickshaws and electric buses are easy.\n\nPolluting vehicles aren't allowed near the complex, so you walk or take an electric bus from the parking areas to one of the **three gates**."
+  },
+  {
+    "id": "photo",
+    "topic": "visiting",
+    "q": "Can you take photos at the Taj Mahal?",
+    "alts": [
+      "is photography allowed",
+      "can i take pictures inside",
+      "are cameras allowed",
+      "photos inside the tomb"
+    ],
+    "a": "Yes in the gardens and grounds, which is where the classic shots are, but **not inside the main tomb chamber**. Expect a security check at the entrance; food and large bags aren't allowed in."
+  },
+  {
+    "id": "visitors",
+    "topic": "visiting",
+    "q": "How many people visit the Taj Mahal?",
+    "alts": [
+      "number of visitors",
+      "how popular is it",
+      "how many tourists a year",
+      "annual visitors",
+      "how many visitors come each year",
+      "how many people visit every year",
+      "visitors per year"
+    ],
+    "a": "About **five million** people visited in the 2022–23 financial year, making it India's most famous monument and one of the most visited sites in the world. To reduce crowding, visitors who stay longer than three hours can be fined (since 2019)."
+  },
+  {
+    "id": "pollution",
+    "topic": "conservation",
+    "starter": true,
+    "q": "Why is the Taj Mahal turning yellow?",
+    "alts": [
+      "pollution and the taj mahal",
+      "is the marble discoloured",
+      "why is it brown",
+      "acid rain damage",
+      "how is the taj protected",
+      "taj trapezium zone"
+    ],
+    "a": "Since the late 20th century **air pollution** has stained the marble yellow-brown; acid rain, industry such as the **Mathura oil refinery** and a polluted Yamuna have all played a part.\n\nIn the 1990s, after the Supreme Court case **M. C. Mehta v. Union of India**, India created the **Taj Trapezium Zone**: about 10,400 km² around the monument with strict emission rules. Polluting vehicles are banned near the Taj, and the marble is treated with **mud packs** to bring back its white colour."
+  },
+  {
+    "id": "war",
+    "topic": "conservation",
+    "q": "Was the Taj Mahal ever hidden during a war?",
+    "alts": [
+      "scaffolding in world war 2",
+      "was it camouflaged",
+      "protected from bombing",
+      "taj during wars"
+    ],
+    "a": "Yes. In **1942** the government covered it with scaffolding to disguise it from possible Japanese air attacks, and scaffolding went up again during the India–Pakistan wars of **1965 and 1971** to mislead bomber pilots."
+  },
+  {
+    "id": "damage",
+    "topic": "conservation",
+    "q": "Has the Taj Mahal been damaged or looted?",
+    "alts": [
+      "was the taj looted",
+      "jat raid",
+      "what was stolen from the taj",
+      "restoration of the taj",
+      "lord curzon restoration"
+    ],
+    "a": "Yes. In the 18th century the **Jat** rulers of Bharatpur raided Agra and carried off two chandeliers (one of agate, one of silver) and, it's said, the gold covering of the finial. By the late 1800s parts of the complex were in poor repair, and Viceroy **Lord Curzon** ordered a major restoration, completed in **1908**. More recently there have been concerns about falling groundwater, cracks and slight tilting of the minarets."
+  },
+  {
+    "id": "unesco",
+    "topic": "overview",
+    "q": "Is the Taj Mahal a UNESCO World Heritage Site?",
+    "alts": [
+      "when did it become a world heritage site",
+      "unesco listing",
+      "is it a world heritage site",
+      "heritage status"
+    ],
+    "a": "Yes, since **1983**, cited as \"the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage\". Agra Fort nearby is a World Heritage Site too."
+  },
+  {
+    "id": "wonder",
+    "topic": "overview",
+    "q": "Is the Taj Mahal one of the Seven Wonders of the World?",
+    "alts": [
+      "is it a wonder of the world",
+      "seven wonders list",
+      "why isnt it an ancient wonder"
+    ],
+    "a": "Yes: in **2007** it was named one of the **New 7 Wonders of the World** in a worldwide poll. It isn't one of the *ancient* Seven Wonders, which were all built more than 2,000 years earlier; you can visit those, including the **Mausoleum at Halicarnassus**, the tomb that gave every mausoleum its name, through **Metaverse Square**: any of the portals here takes you there."
+  },
+  {
+    "id": "mehtab_bagh",
+    "topic": "buildings",
+    "q": "What is across the river?",
+    "alts": [
+      "mehtab bagh",
+      "moonlight garden",
+      "what is on the other side of the yamuna",
+      "view from across the river",
+      "garden across the river"
+    ],
+    "a": "Across the Yamuna is **Mehtab Bagh**, the \"Moonlight Garden\", a square charbagh about 300 m on each side, perfectly **aligned with the Taj**. A large octagonal pond on its south edge reflects the tomb.\n\nIt had silted up almost completely by the 1990s; excavation and restoration revealed pools, fountains and pavilions, but no foundations of a \"Black Taj\"."
+  },
+  {
+    "id": "river",
+    "topic": "buildings",
+    "q": "Why was the Taj Mahal built next to the river?",
+    "alts": [
+      "the yamuna river",
+      "riverfront terrace",
+      "why on the river bank",
+      "agra riverfront gardens"
+    ],
+    "a": "Agra's nobles built their tombs and pleasure gardens along the **Yamuna**, which made a grand waterfront city. Placing the tomb at the river end of the garden, instead of in its centre, let it be seen against the open sky and from the river and Agra Fort.\n\nThe riverfront terrace was built up on brick foundations, and the river is part of the design: the view north from the terrace looks straight across to Mehtab Bagh."
+  },
+  {
+    "id": "agra_fort",
+    "topic": "buildings",
+    "q": "What is Agra Fort?",
+    "alts": [
+      "tell me about agra fort",
+      "red fort agra",
+      "can you see the taj from agra fort"
+    ],
+    "a": "**Agra Fort** is the great red sandstone fortress-palace of the Mughals, about 2.5 km up the Yamuna from the Taj. Akbar rebuilt it and Shah Jahan added white marble palaces; it's where Aurangzeb confined Shah Jahan in his last years. It's a UNESCO World Heritage Site too, and the Taj is visible from its riverside terraces."
+  },
+  {
+    "id": "baby_taj",
+    "topic": "architecture",
+    "q": "What is the Baby Taj?",
+    "alts": [
+      "tomb of itimad ud daulah",
+      "bachcha taj",
+      "taj inspiration",
+      "what inspired the taj mahal",
+      "humayuns tomb"
+    ],
+    "a": "The **Tomb of I'timād-ud-Daulah** in Agra, built for Mumtaz Mahal's grandfather in the 1620s, is nicknamed the **\"Baby Taj\"**. It was one of the first Mughal buildings faced in white marble with pietra dura inlay, a clear forerunner of the Taj. **Humayun's Tomb** in Delhi pioneered the big domed tomb in a charbagh garden."
+  },
+  {
+    "id": "copies",
+    "topic": "architecture",
+    "q": "Are there copies of the Taj Mahal?",
+    "alts": [
+      "bibi ka maqbara",
+      "replica of the taj",
+      "imitations of the taj",
+      "taj of the deccan"
+    ],
+    "a": "The best-known is **Bibi Ka Maqbara** in Aurangabad, built in the 1660s by Aurangzeb's son for his mother and nicknamed the **\"Taj of the Deccan\"**. Smaller replicas exist around the world, from Bangladesh to casinos in the US."
+  },
+  {
+    "id": "symbol",
+    "topic": "overview",
+    "q": "Why is the Taj Mahal so famous?",
+    "alts": [
+      "why is it important",
+      "what makes the taj special",
+      "why do people love the taj",
+      "significance of the taj mahal"
+    ],
+    "a": "Because it combines a moving story, a grieving emperor's monument to his wife, with near-perfect proportions, symmetry and craftsmanship: white marble that changes colour with the light, 28 kinds of inlaid stone, and calligraphy designed to read evenly from the ground. It has become a symbol of India itself. Rabindranath Tagore called it \"a teardrop on the cheek of time\"."
+  },
+  {
+    "id": "tagore",
+    "topic": "overview",
+    "q": "What did Tagore say about the Taj Mahal?",
+    "alts": [
+      "teardrop on the cheek of time",
+      "famous quotes about the taj",
+      "poems about the taj"
+    ],
+    "a": "The poet **Rabindranath Tagore** described the Taj Mahal as **\"a teardrop on the cheek of time\"**, one of the most quoted lines about it."
+  },
+  {
+    "id": "bricks",
+    "topic": "materials",
+    "q": "Is the Taj Mahal solid marble?",
+    "alts": [
+      "what is inside the walls",
+      "is it brick underneath",
+      "foundations of the taj",
+      "what is the platform made of"
+    ],
+    "a": "No. The structure is mostly **brick and lime mortar**, faced with a veneer of white marble outside and in the main chamber. The other buildings and inner surfaces are lined with red sandstone.\n\nUnder the tomb, piles were dug and filled with **lime and stone** to form its footings, and the platform above the ground was built of brick and mortar."
+  },
+  {
+    "id": "orientation",
+    "topic": "architecture",
+    "q": "Which way does the Taj Mahal face?",
+    "alts": [
+      "orientation of the taj",
+      "is the taj facing north or south",
+      "where is the main entrance of the tomb",
+      "which direction does it face",
+      "what direction does the taj face"
+    ],
+    "a": "The complex runs exactly **north–south**: you enter from the **south** through the Great Gate, walk north through the garden, and the tomb stands at the **north** end on the Yamuna. All four faces of the tomb are identical, but its main door faces the garden.\n\nThe corners are placed so that, seen from the centre, the sun rises and sets over them at the summer and winter solstices, making the Taj a kind of symbolic horizon."
+  },
+  {
+    "id": "taj_ganj",
+    "topic": "buildings",
+    "q": "What is the town next to the Taj Mahal?",
+    "alts": [
+      "taj ganj",
+      "mumtazabad",
+      "town south of the taj",
+      "bazaar near the taj"
+    ],
+    "a": "South of the complex is **Taj Ganj** (originally called **Mumtazabad**), built with caravanserais, bazaars and markets to serve the workers and visitors. It's still a busy neighbourhood of hotels, cafés and shops."
+  },
+  {
+    "id": "forecourt",
+    "topic": "buildings",
+    "q": "What is the forecourt?",
+    "alts": [
+      "jilaukhana",
+      "courtyard before the gate",
+      "area outside the great gate"
+    ],
+    "a": "Between the town and the Great Gate is the **jilaukhana**, a forecourt where visitors used to dismount and gather before entering. In this world three of the six portals to Metaverse Square stand there."
+  },
+  {
+    "id": "aurangzeb",
+    "topic": "people",
+    "q": "Who was Aurangzeb?",
+    "alts": [
+      "tell me about aurangzeb",
+      "shah jahans son",
+      "sixth mughal emperor"
+    ],
+    "a": "**Aurangzeb** (ruled 1658–1707) was Shah Jahan and Mumtaz Mahal's son. He won the war of succession against his brothers, including the crown prince Dara Shikoh, and confined his father in Agra Fort. After Shah Jahan died, Aurangzeb had him buried in the Taj next to Mumtaz."
+  },
+  {
+    "id": "jahanara",
+    "topic": "people",
+    "q": "Who was Jahanara Begum?",
+    "alts": [
+      "shah jahans daughter",
+      "jahanara",
+      "who looked after shah jahan",
+      "what did jahanara write",
+      "jahanara sufi",
+      "jahanara writings"
+    ],
+    "a": "**Jahanara Begum** was the eldest surviving daughter of Shah Jahan and Mumtaz Mahal and one of the most powerful women of the Mughal court. When Aurangzeb confined their father in Agra Fort, she chose to share his eight years of captivity and nursed him until his death. She was also a writer and devoted Sufi, best known for a biography of the Sufi saint **Mu'in ad-Din Chishti**, whom she considered her spiritual master."
+  },
+  {
+    "id": "nur_jahan",
+    "topic": "people",
+    "q": "Who was Nur Jahan?",
+    "alts": [
+      "mumtaz aunt",
+      "empress nur jahan"
+    ],
+    "a": "**Nur Jahan** was the chief wife of Emperor Jahangir (Shah Jahan's father) and the real power behind his throne. She was **Mumtaz Mahal's aunt**: Mumtaz's father, Asaf Khan, was her brother. She later backed a rival for the throne and was put under house arrest when Shah Jahan became emperor."
+  },
+  {
+    "id": "mughal_empire",
+    "topic": "history",
+    "q": "Who were the Mughals?",
+    "alts": [
+      "mughal empire",
+      "mughal emperors",
+      "what was the mughal empire"
+    ],
+    "a": "The **Mughals** ruled much of the Indian subcontinent from **1526**, when **Babur** founded the empire, into the 18th century. Their great emperors were Babur, Humayun, **Akbar**, **Jahangir**, **Shah Jahan** and **Aurangzeb**. They were famous patrons of architecture, painting and gardens, and the Taj Mahal is the high point of their building."
+  },
+  {
+    "id": "religion",
+    "topic": "overview",
+    "q": "Is the Taj Mahal a religious building?",
+    "alts": [
+      "is the taj a mosque",
+      "can you pray at the taj",
+      "is it islamic",
+      "religious significance"
+    ],
+    "a": "It's a **tomb**, an Islamic mausoleum covered in Quranic verse, not a place of worship itself. The **mosque** on its west side is a working mosque used for Friday prayers, which is why the complex is closed to tourists on Fridays."
+  },
+  {
+    "id": "day_trip",
+    "topic": "visiting",
+    "q": "How much time do I need at the Taj Mahal?",
+    "alts": [
+      "how long should i spend",
+      "how long is a visit",
+      "time needed to see the taj"
+    ],
+    "a": "Two to three hours is plenty to walk the garden, see the tomb inside and visit the mosque and jawab. Note that since 2019 visitors who stay longer than **three hours** can be fined. Many people combine it with **Agra Fort** (a 30-minute walk) in a day trip from Delhi."
+  },
+  {
+    "id": "other_sights",
+    "topic": "visiting",
+    "q": "What else can I see in Agra?",
+    "alts": [
+      "things to do in agra",
+      "other monuments in agra",
+      "places near the taj",
+      "fatehpur sikri"
+    ],
+    "a": "- **Agra Fort**, the Mughal fortress-palace (UNESCO).\n- **Tomb of I'timād-ud-Daulah**, the \"Baby Taj\".\n- **Mehtab Bagh**, the garden across the river with the best sunset view of the Taj.\n- **Akbar's Tomb** at Sikandra.\n- **Fatehpur Sikri**, Akbar's abandoned red sandstone capital, about 40 km away (UNESCO).\nAgra's shops still sell marble inlay work like the Taj's."
+  },
+  {
+    "id": "world_built",
+    "topic": "this world",
+    "starter": true,
+    "q": "How was this virtual Taj Mahal made?",
+    "alts": [
+      "how did you build this world",
+      "is this a real model",
+      "was this made in blender",
+      "how was this 3d model made",
+      "where do the textures come from",
+      "is this accurate",
+      "who made this world"
+    ],
+    "a": "Everything here was **built in Blender** from code (blender/build_taj.py), with dimensions taken from Wikipedia's figures, a public-domain site plan and measurements of a straight-on photograph.\n\nThe surfaces use **real images**: photo-scanned marble, sandstone and grass from ambientCG (CC0), plus Wikimedia Commons photos of the actual Taj, its calligraphy, pietra dura flowers, jali windows and carved dados, and a straight-on photo of the Great Gate. The photo boards in the garden credit each photographer. Sizes are close to the real ones, but details are simplified."
+  },
+  {
+    "id": "guide_ai",
+    "topic": "this world",
+    "q": "Are you a real person?",
+    "alts": [
+      "are you an ai",
+      "who are you",
+      "how do you answer questions",
+      "are you chatgpt",
+      "how does this guide work",
+      "where do your answers come from",
+      "are you a robot"
+    ],
+    "a": "I'm a guide character, a Labubu dressed as a Mughal calligrapher and named after **Amanat Khan**, who designed the Taj's inscriptions. I'm not an AI and I don't go online: my answers come from my **guidebook**, written from Wikipedia and Wikivoyage articles, and when the guidebook doesn't cover something I quote the most relevant lines from those saved articles, with a link so you can read more."
+  },
+  {
+    "id": "metaverse",
+    "topic": "this world",
+    "q": "What is the Metaverse Web?",
+    "alts": [
+      "where can i go from here",
+      "what are the portals",
+      "how do portals work",
+      "metaverse square",
+      "other worlds"
+    ],
+    "a": "This world is part of the **Metaverse Web**: 3D worlds as websites, linked by portals you walk through. All six portals here lead to **Metaverse Square**, the plaza with a portal to every world. They're in three places, marked **EXIT** on the map: the forecourt south of the Great Gate, just inside the Great Gate, and the north end of the garden. Or ask me and I'll send you."
+  },
+  {
+    "id": "controls",
+    "topic": "this world",
+    "q": "How do I move around?",
+    "alts": [
+      "controls",
+      "how do i walk",
+      "how do i run",
+      "how do i get inside",
+      "keyboard controls",
+      "how to climb the plinth"
+    ],
+    "a": "- **WASD** or arrows to walk, **mouse** to look, **Shift** to run, **Space** to jump.\n- **E** to talk to me when you're looking at me, or **G** to ask me from anywhere.\n- **T** (or the buttons top right) changes the time of day, and **M** shows or hides the map.\nClimb the plinth by the stairs in the middle of its south side, then walk through the great arch and down the corridor to reach the cenotaphs. I can also take you places: ask me or use the buttons in this chat."
+  },
+  {
+    "id": "red_vs_white",
+    "topic": "materials",
+    "q": "Why are the other buildings red and the tomb white?",
+    "alts": [
+      "why is the mosque red",
+      "red and white buildings",
+      "why white marble for the tomb"
+    ],
+    "a": "Red sandstone was the everyday Mughal building stone; white marble was precious. Here only the tomb is white.\n\nThe art historian **Ebba Koch** reads the whole plan as two halves: the white tomb and garden stand for the afterlife and paradise, the red sandstone side (forecourt and bazaars) for the worldly side, and the **Great Gate** marks the passage between the two. The white represents Mumtaz Mahal's enlightenment, spirituality and faith."
+  },
+  {
+    "id": "earthquake",
+    "topic": "conservation",
+    "q": "Could the Taj Mahal survive an earthquake?",
+    "alts": [
+      "is the taj safe",
+      "is the taj sinking",
+      "are the minarets falling",
+      "structural problems",
+      "groundwater and the taj"
+    ],
+    "a": "It has stood for more than 370 years, and the minarets were deliberately tilted outward so they would fall away from the tomb in a collapse. There are modern worries, though: falling groundwater in the Yamuna basin, cracks noted in parts of the tomb in 2010, and signs of slight tilting in the minarets. The Archaeological Survey of India monitors it closely."
+  },
+  {
+    "id": "mumtaz_born",
+    "topic": "people",
+    "q": "When was Mumtaz Mahal born?",
+    "alts": [
+      "mumtaz mahal birthday",
+      "how old was mumtaz when she died",
+      "mumtaz mahal age",
+      "where was mumtaz born",
+      "mumtaz family"
+    ],
+    "a": "She was born **Arjumand Banu Begum** on **27 April 1593** in **Agra**, into a Persian noble family. Her father was **Asaf Khan**, a powerful Mughal official, and her aunt was the empress **Nur Jahan**. She died in 1631, aged 38."
+  },
+  {
+    "id": "mumtaz_marriage",
+    "topic": "people",
+    "q": "When did Shah Jahan marry Mumtaz Mahal?",
+    "alts": [
+      "when did they get married",
+      "how did shah jahan meet mumtaz",
+      "wedding of shah jahan and mumtaz",
+      "how long were they married",
+      "were they engaged"
+    ],
+    "a": "They were betrothed in **1607** and married five years later, in **1612**, in Agra, when she was 19 and he was 20 (still Prince Khurram). After the wedding he gave her the title **Mumtaz Mahal**. They were married for 19 years and had 14 children."
+  },
+  {
+    "id": "mumtaz_title",
+    "topic": "people",
+    "q": "What does the name Mumtaz Mahal mean?",
+    "alts": [
+      "meaning of mumtaz mahal",
+      "what were mumtaz titles",
+      "what was mumtaz real name",
+      "padshah begum",
+      "queen of the world"
+    ],
+    "a": "**Mumtaz Mahal** means roughly \"the exalted one of the palace\"; her birth name was Arjumand Banu Begum. When Shah Jahan became emperor in 1628 he made her chief empress with titles including **Padshah Begum** (\"first lady\") and **Malika-i-Jahan** (\"Queen of the World\")."
+  },
+  {
+    "id": "mumtaz_life",
+    "topic": "people",
+    "q": "What was Mumtaz Mahal like?",
+    "alts": [
+      "what kind of person was mumtaz",
+      "did mumtaz travel with shah jahan",
+      "was mumtaz political",
+      "mumtaz personality",
+      "where did mumtaz live"
+    ],
+    "a": "Court writers describe her as Shah Jahan's constant companion; she even travelled with him on military campaigns, which is how she came to die far from home in Burhanpur. Unlike her aunt Nur Jahan she showed **no ambition for political power**. She lived with Shah Jahan in the richly decorated **Khas Mahal** in Agra Fort and looked after a riverside garden in Agra now called **Zahara Bagh**."
+  },
+  {
+    "id": "shahjahan_wives",
+    "topic": "people",
+    "q": "How many wives did Shah Jahan have?",
+    "alts": [
+      "did shah jahan have other wives",
+      "shah jahan's wives",
+      "was mumtaz his only wife",
+      "first wife of shah jahan"
+    ],
+    "a": "Several. He married **Kandahari Begum** in 1610, **Mumtaz Mahal** in 1612 and **Izz-un-Nissa (Akbarabadi Mahal)** in 1617, among others. Mumtaz was by far his favourite. His other wives are buried in mausoleums **outside the Taj complex walls**."
+  },
+  {
+    "id": "shahjahan_born",
+    "topic": "people",
+    "q": "When was Shah Jahan born?",
+    "alts": [
+      "shah jahan birthday",
+      "where was shah jahan born",
+      "who were shah jahan's parents",
+      "how old was shah jahan when he died",
+      "shah jahan childhood"
+    ],
+    "a": "He was born **Prince Khurram** on **5 January 1592** in **Lahore** (in today's Pakistan), the third son of Prince Salim, later Emperor **Jahangir**. His grandfather **Akbar** doted on him and had him raised in his own household. He died in January 1666, aged 74."
+  },
+  {
+    "id": "shahjahan_name",
+    "topic": "people",
+    "q": "What does Shah Jahan mean?",
+    "alts": [
+      "meaning of the name shah jahan",
+      "why was he called shah jahan",
+      "khurram name"
+    ],
+    "a": "**Shah Jahan** is Persian for **\"King of the World\"**, the regnal name Prince Khurram took when he became emperor in 1628."
+  },
+  {
+    "id": "shahjahan_reign",
+    "topic": "people",
+    "q": "When did Shah Jahan rule?",
+    "alts": [
+      "how did shah jahan become emperor",
+      "shah jahan reign",
+      "when was shah jahan emperor",
+      "coronation of shah jahan",
+      "how long did he rule"
+    ],
+    "a": "From **1628 to 1658**. When Jahangir died in 1627, Shah Jahan's father-in-law **Asaf Khan** outmanoeuvred Nur Jahan's favourite, Prince Shahryar, and Shah Jahan was crowned in **Agra Fort**. His reign is called the **golden age of Mughal architecture**. It ended when his son Aurangzeb deposed him in 1658."
+  },
+  {
+    "id": "shahjahan_grief",
+    "topic": "people",
+    "q": "How did Shah Jahan react to Mumtaz's death?",
+    "alts": [
+      "was shah jahan sad",
+      "shah jahan grief",
+      "what did shah jahan do after mumtaz died",
+      "how much did he love her"
+    ],
+    "a": "Court historians say he was **\"paralysed by grief\"**. He stayed away from royal affairs for a week, and for **two years** gave up listening to music and wearing lavish clothes. Contemporary writers said he never showed anyone else the affection he had shown her."
+  },
+  {
+    "id": "shahjahan_buildings",
+    "topic": "people",
+    "q": "What else did Shah Jahan build?",
+    "alts": [
+      "shah jahan monuments",
+      "other buildings by shah jahan",
+      "did shah jahan build the red fort",
+      "shah jahan architecture",
+      "jama masjid delhi"
+    ],
+    "a": "A great deal; his reign is the **golden age of Mughal architecture**:\n- the **Red Fort** and the **Jama Masjid** in Delhi, centre of his new capital **Shahjahanabad**\n- the **Shalimar Gardens** in Lahore, and a renovation of Lahore Fort\n- white marble palaces and mosques inside **Agra Fort**\n- the jewelled **Peacock Throne**\nHe preferred elegant refinement to sheer size."
+  },
+  {
+    "id": "peacock_throne",
+    "topic": "people",
+    "q": "What is the Peacock Throne?",
+    "alts": [
+      "takht e taus",
+      "shah jahan throne",
+      "jewelled throne"
+    ],
+    "a": "The **Peacock Throne** (Takht-e-Taus) was the fabulously jewelled throne Shah Jahan had made to celebrate his reign, one of the most famous treasures of the Mughal court."
+  },
+  {
+    "id": "ustad_ahmad",
+    "topic": "people",
+    "q": "Who was Ustad Ahmad Lahori?",
+    "alts": [
+      "tell me about ustad ahmad lahori",
+      "ahmad mimar",
+      "chief architect biography",
+      "what else did the architect design"
+    ],
+    "a": "**Ustad Ahmad Lahori** (c. 1580–1649), also called Ahmad Mi'mar (\"Ahmad the Architect\"), was Shah Jahan's chief architect, from a family of Timurid architects originally from Herat. He's credited with designing the **Red Fort** in Delhi, helped lay out the new capital Shahjahanabad, and is generally named as the lead designer of the Taj. His style blends Indo-Islamic and Persian architecture."
+  },
+  {
+    "id": "amanat_khan",
+    "topic": "people",
+    "q": "Who was Amanat Khan?",
+    "alts": [
+      "who is the guide named after",
+      "abdul haq calligrapher",
+      "who wrote the calligraphy",
+      "amanat khan shirazi"
+    ],
+    "a": "**Amanat Khan** was the title Shah Jahan gave **Abdul Haq**, the chief calligrapher of the Taj Mahal, who came from Shiraz in Persia. He designed the flowing **thuluth** inscriptions of Quranic verse on the arches and gate, and signed his work at the base of the inner dome: \"Written by the insignificant being, Amanat Khan Shirazi.\" I'm named after him."
+  },
+  {
+    "id": "other_builders",
+    "topic": "people",
+    "q": "Who else helped design and build the Taj Mahal?",
+    "alts": [
+      "who were the other architects",
+      "ismail afandi",
+      "who made the dome",
+      "who made the finial",
+      "masons of the taj",
+      "qazim khan"
+    ],
+    "a": "A multinational board worked under Ustad Ahmad Lahori:\n- **Ismail Afandi**, an Ottoman dome designer\n- the Persian architects **Ustad Isa**, **Isa Muhammad Effendi** and **Puru**\n- **Amanat Khan Shirazi**, chief calligrapher\n- **Qazim Khan**, who cast the finial\n- masonry supervisors **Muhammad Hanif**, **Mir Abdul Karim** and **Mukkarimat**\nThe garden may have been designed by **Ali Mardan**, who is linked to the similar Shalimar Gardens."
+  },
+  {
+    "id": "gauhar_ara",
+    "topic": "people",
+    "q": "Who was Gauhar Ara Begum?",
+    "alts": [
+      "what happened to the baby",
+      "did the 14th child survive",
+      "mumtaz last child",
+      "youngest child of shah jahan"
+    ],
+    "a": "**Gauhar Ara Begum** (\"adorned in gems\") was the 14th and youngest child of Shah Jahan and Mumtaz Mahal, born on **17 June 1631**, the day her mother died. She survived and lived about 75 years, until around **1706**, keeping a low profile through the reigns of her father and her brother Aurangzeb."
+  },
+  {
+    "id": "dara_shikoh",
+    "topic": "people",
+    "q": "Who was Dara Shikoh?",
+    "alts": [
+      "shah jahan's eldest son",
+      "the crown prince",
+      "who was the heir to the throne",
+      "what happened to dara shikoh"
+    ],
+    "a": "**Dara Shikoh** (1615–1659) was Shah Jahan and Mumtaz Mahal's eldest son and Shah Jahan's chosen heir, named heir-apparent in 1633. When Shah Jahan fell ill in 1658, Dara acted as regent, but his brother **Aurangzeb** defeated him in the war of succession and had him **executed in 1659**. He's buried in Humayun's Tomb in Delhi."
+  },
+  {
+    "id": "jahangir",
+    "topic": "people",
+    "q": "Who was Jahangir?",
+    "alts": [
+      "shah jahan's father",
+      "fourth mughal emperor",
+      "emperor before shah jahan",
+      "salim"
+    ],
+    "a": "**Jahangir** (born Prince Salim) was the fourth Mughal emperor, who ruled from 1605 until his death in 1627. He was Shah Jahan's father and the husband of **Nur Jahan**, Mumtaz Mahal's aunt. Shah Jahan succeeded him after a struggle with his half-brother Shahryar."
+  },
+  {
+    "id": "akbar",
+    "topic": "people",
+    "q": "Who was Akbar?",
+    "alts": [
+      "shah jahan's grandfather",
+      "akbar the great",
+      "third mughal emperor",
+      "who built agra fort"
+    ],
+    "a": "**Akbar** was the third Mughal emperor and Shah Jahan's grandfather. He made **Agra** his capital in 1558, rebuilt **Agra Fort** in red sandstone between 1565 and 1573, and built a whole new city, **Fatehpur Sikri**, nearby. He was so fond of the young Khurram that he raised him in his own household."
+  },
+  {
+    "id": "babur",
+    "topic": "people",
+    "q": "Who was Babur?",
+    "alts": [
+      "founder of the mughal empire",
+      "first mughal emperor",
+      "who brought the charbagh to india"
+    ],
+    "a": "**Babur**, from Central Asia, founded the Mughal Empire in **1526** after the First Battle of Panipat. He brought the Persian **charbagh** garden to India, the four-part paradise garden that frames the Taj Mahal."
+  },
+  {
+    "id": "asaf_khan",
+    "topic": "people",
+    "q": "Who was Mumtaz Mahal's father?",
+    "alts": [
+      "asaf khan",
+      "mumtaz father",
+      "who was abul hasan asaf khan",
+      "shah jahan father in law"
+    ],
+    "a": "**Abu'l-Hasan Asaf Khan**, a wealthy noble who held high office in the Mughal Empire and was the brother of the empress **Nur Jahan**. As grand vizier he secured the throne for his son-in-law Shah Jahan in 1627."
+  },
+  {
+    "id": "itimad",
+    "topic": "people",
+    "q": "Who was Mumtaz Mahal's grandfather?",
+    "alts": [
+      "mirza ghiyas beg",
+      "itimad ud daulah person",
+      "pillar of the state",
+      "nur jahan's father"
+    ],
+    "a": "**Mirza Ghiyas Beg**, a Persian who entered Akbar's service in Agra in 1577 and rose to be prime minister under Jahangir, with the title **I'timād-ud-Daulah** (\"Pillar of the State\"). His daughter Nur Jahan built his tomb in Agra, the jewel-like \"**Baby Taj**\"."
+  },
+  {
+    "id": "jai_singh",
+    "topic": "history",
+    "q": "Who owned the land where the Taj Mahal stands?",
+    "alts": [
+      "how did shah jahan get the land",
+      "raja jai singh",
+      "why was this site chosen",
+      "who sold the land",
+      "what was here before the taj"
+    ],
+    "a": "The site, on the Yamuna just south of walled Agra, held a mansion belonging to **Raja Jai Singh I**. Shah Jahan loved the spot and chose it for the tomb, and Jai Singh gave it to him in exchange for a **large palace in the centre of Agra**."
+  },
+  {
+    "id": "tavernier",
+    "topic": "people",
+    "q": "Who was Jean-Baptiste Tavernier?",
+    "alts": [
+      "tavernier",
+      "french traveller who visited the taj",
+      "who started the black taj story"
+    ],
+    "a": "**Jean-Baptiste Tavernier** was a French traveller and gem merchant who visited Agra in **1665**. His writings are the source of the legend that Shah Jahan planned a **Black Taj** across the river, a story historians treat as fanciful. Some 19th-century theories that a Frenchman designed the Taj also leaned on his work."
+  },
+  {
+    "id": "curzon",
+    "topic": "people",
+    "q": "Who was Lord Curzon?",
+    "alts": [
+      "curzon restoration",
+      "british viceroy and the taj",
+      "who restored the taj",
+      "who planted the lawns"
+    ],
+    "a": "**Lord Curzon** was the British viceroy of India who, at the end of the 19th century, ordered a major restoration of the Taj Mahal, completed in **1908**. He also commissioned the large **lamp** in the tomb chamber and replaced the overgrown garden with the **European-style lawns** you still see."
+  },
+  {
+    "id": "ebba_koch",
+    "topic": "people",
+    "q": "Who is Ebba Koch?",
+    "alts": [
+      "art historian of the taj",
+      "expert on mughal architecture",
+      "koch interpretation"
+    ],
+    "a": "**Ebba Koch** is an art historian and leading expert on Mughal architecture and the Taj Mahal. She reads the whole complex as a picture of earthly life and the afterlife: a white marble half (tomb and garden, the otherworldly side) mirrored by a red sandstone half for the worldly markets, with the Great Gate as the passage between them."
+  },
+  {
+    "id": "nur_jahan_power",
+    "topic": "people",
+    "q": "Did Nur Jahan support Shah Jahan?",
+    "alts": [
+      "nur jahan and shah jahan",
+      "nur jahan stepmother",
+      "conflict with nur jahan",
+      "shahryar"
+    ],
+    "a": "No, they became rivals. Nur Jahan backed her son-in-law **Shahryar** for the throne and sent Shah Jahan on distant campaigns; he even rebelled against his father in 1622. After Jahangir's death in 1627 Shah Jahan won the succession and put Nur Jahan under house arrest, where she lived quietly until her death."
+  },
+  {
+    "id": "mughal_succession",
+    "topic": "history",
+    "q": "What was the war of succession?",
+    "alts": [
+      "why did aurangzeb fight his brothers",
+      "mughal war of succession",
+      "1658 war",
+      "what happened when shah jahan got sick"
+    ],
+    "a": "When Shah Jahan fell ill in **1658**, his sons fought for the throne. **Aurangzeb**, the third son, defeated his brothers, executed the crown prince **Dara Shikoh** and the others, declared his father unfit to rule even after he recovered, and confined him in Agra Fort until his death in 1666."
+  },
+  {
+    "id": "foundations",
+    "topic": "history",
+    "q": "How were the foundations built?",
+    "alts": [
+      "what are the foundations of the taj",
+      "how was the site prepared",
+      "how does it stand by the river",
+      "why hasn't it sunk"
+    ],
+    "a": "About **1.2 hectares** was excavated, filled with earth to reduce seepage, and levelled **50 m** above the riverbank. Under the tomb, piles were dug and filled with **lime and stone** to form the footings, and a brick-and-mortar platform was built on top."
+  },
+  {
+    "id": "lifting",
+    "topic": "history",
+    "q": "How did they lift the heavy stones?",
+    "alts": [
+      "how were blocks raised",
+      "what machines did they use",
+      "pulley system",
+      "building technology of the taj",
+      "how did they get water for building"
+    ],
+    "a": "An elaborate **post-and-beam pulley system** raised the blocks into place, and a giant **brick scaffold** that mirrored the tomb gave the builders access. Materials came up a **15 km earthen ramp** on wagons pulled by oxen and elephants, and water was drawn from the river by animal-powered devices."
+  },
+  {
+    "id": "first_ceremony",
+    "topic": "history",
+    "q": "When was the first ceremony at the Taj Mahal?",
+    "alts": [
+      "first anniversary at the taj",
+      "urs ceremony",
+      "when was it first used",
+      "1643 ceremony"
+    ],
+    "a": "On **6 February 1643**, while the building was only partly finished, Shah Jahan held an observance there for the **12th anniversary** of Mumtaz Mahal's death."
+  },
+  {
+    "id": "leaks",
+    "topic": "history",
+    "q": "Did the Taj Mahal ever leak?",
+    "alts": [
+      "roof leaks",
+      "was there damage after it was built",
+      "aurangzeb letter about the taj",
+      "rain damage"
+    ],
+    "a": "Yes, early on. In **December 1652** Prince Aurangzeb wrote to his father that the tomb, the mosque and the assembly hall had developed extensive **leaks** during the previous rainy season."
+  },
+  {
+    "id": "old_name",
+    "topic": "history",
+    "q": "What did the Mughals call the Taj Mahal?",
+    "alts": [
+      "original name of the taj",
+      "padshahnama",
+      "rauza i munawwara",
+      "illumined tomb",
+      "what was it called in shah jahan's time"
+    ],
+    "a": "In his 1636 chronicle, the **Padshahnama**, the court historian Abdul Hamid Lahori calls it **rauza-i munawwara**, \"the illumined (or illustrious) tomb\". The name \"Taj Mahal\" may also echo the second half of \"Mumtaz\"."
+  },
+  {
+    "id": "first_burial_garden",
+    "topic": "garden",
+    "q": "Where was Mumtaz Mahal buried before the tomb was ready?",
+    "alts": [
+      "temporary grave of mumtaz",
+      "was mumtaz buried in the garden",
+      "where did her body go first",
+      "zainabad garden",
+      "how was her body moved to agra"
+    ],
+    "a": "First in **Burhanpur**, in the walled Zainabad garden by the Tapti river, where she died. Her body was then brought to Agra; a place in the **north-western quarter** of the Taj garden marks where she lay before being moved to her final resting place inside the tomb."
+  },
+  {
+    "id": "gold_screen",
+    "topic": "interior",
+    "q": "Was there once a gold screen around the tombs?",
+    "alts": [
+      "golden screen",
+      "gold railing",
+      "what was there before the marble screen",
+      "silver screen"
+    ],
+    "a": "Yes. For the **second anniversary** of Mumtaz Mahal's death, in 1633, the cenotaphs were surrounded by a screen made of **gold**. It was replaced in **1643** by the octagonal pierced **marble** screen you see today."
+  },
+  {
+    "id": "asi",
+    "topic": "conservation",
+    "q": "Who looks after the Taj Mahal?",
+    "alts": [
+      "who maintains the taj",
+      "archaeological survey of india",
+      "who owns the taj mahal",
+      "who manages it",
+      "monument of national importance"
+    ],
+    "a": "The **Archaeological Survey of India** (ASI), which has maintained it since independence in **1947**. The Taj, its grounds and its buildings are a **Monument of National Importance**. A 2025 government report said it earned **₹297 crore** (about US$31 million) in five years, the most of any ASI monument."
+  },
+  {
+    "id": "bentinck",
+    "topic": "myths",
+    "q": "Did the British plan to demolish the Taj Mahal?",
+    "alts": [
+      "lord bentinck taj",
+      "was the taj going to be sold",
+      "auction the marble",
+      "did someone try to destroy the taj"
+    ],
+    "a": "There's **no evidence** for it. The story that **Lord William Bentinck**, governor-general in the 1830s, planned to demolish the Taj and auction its marble seems to have grown out of his fund-raising sale of discarded marble from **Agra Fort**, according to his biographer."
+  },
+  {
+    "id": "storms",
+    "topic": "conservation",
+    "q": "Has the Taj Mahal been damaged recently?",
+    "alts": [
+      "recent damage",
+      "storm damage",
+      "cracks in the taj",
+      "repairs to the taj",
+      "restoration today"
+    ],
+    "a": "Minor damage was reported after storms on **11 April 2018** and **31 May 2020**, and cracks were noted in parts of the tomb in 2010, with signs of slight tilting in the minarets. In the 2020s the government has applied **mud packs** to restore the white colour and replaced broken marble."
+  },
+  {
+    "id": "famine",
+    "topic": "history",
+    "q": "Was building the Taj Mahal hard on the people?",
+    "alts": [
+      "did it cause a famine",
+      "was it a burden on the empire",
+      "cost to the people"
+    ],
+    "a": "It was a heavy burden. Even at the height of the empire, building the Taj strained Mughal resources, and Wikivoyage notes it caused a small **famine** around Agra. The complex cost about **₹32 million** at the time."
+  },
+  {
+    "id": "italian_designer",
+    "topic": "myths",
+    "q": "Was the Taj Mahal designed by a European?",
+    "alts": [
+      "did an italian design the taj",
+      "geronimo veroneo",
+      "austin of bordeaux",
+      "french architect myth"
+    ],
+    "a": "No. In 1879 Henry George Keene promoted the idea that an Italian, **Geronimo Veroneo**, designed it, and others claimed a Frenchman, **Austin of Bordeaux**. Both theories rest on misread travellers' accounts and have no support; the Taj was designed by Shah Jahan's own board of architects under Ustad Ahmad Lahori."
+  },
+  {
+    "id": "contracts",
+    "topic": "myths",
+    "q": "Did the builders promise never to build anything like it again?",
+    "alts": [
+      "contracts not to copy the taj",
+      "were craftsmen forbidden to work again"
+    ],
+    "a": "Some stories say the craftsmen signed contracts promising never to work on a similar design, and darker ones claim they were mutilated. **No evidence** supports either; historians treat them as legends."
+  },
+  {
+    "id": "plinth",
+    "topic": "architecture",
+    "q": "What is the plinth?",
+    "alts": [
+      "how high is the plinth",
+      "what is the platform the taj stands on",
+      "marble base",
+      "size of the plinth",
+      "what is the floor pattern around the plinth"
+    ],
+    "a": "The tomb and minarets stand on a square white marble **plinth** about **6 m** high and **95.5 m** on each side. Around it, the main platform is paved with an interlocking pattern of **white marble octagons set into red sandstone four-pointed stars**, framed by a border."
+  },
+  {
+    "id": "platform",
+    "topic": "architecture",
+    "q": "What does the whole complex stand on?",
+    "alts": [
+      "how big is the riverfront platform",
+      "riverfront terrace size",
+      "what is the terrace made of",
+      "how high is the platform"
+    ],
+    "a": "The complex sits on a platform about **300 m** long and **8.7 m** high on the bank of the Yamuna, laid out in patterns of dark and light sandstone. The terrace between the mosque and the jawab, where the tomb stands, overlooks the river."
+  },
+  {
+    "id": "stairs",
+    "topic": "architecture",
+    "q": "How do you get up onto the plinth?",
+    "alts": [
+      "where are the stairs",
+      "how to climb the platform",
+      "stairs to the tomb",
+      "how do i get onto the marble platform"
+    ],
+    "a": "On the south side of the plinth, facing the garden, there are **two flights of stairs**, partly covered, on either side. They are the only way up from ground level to the tomb. In this world they're on the south face of the plinth, either side of the centre."
+  },
+  {
+    "id": "chamfered",
+    "topic": "architecture",
+    "q": "Why does the tomb have cut-off corners?",
+    "alts": [
+      "chamfered corners",
+      "is the taj octagonal",
+      "how many sides does the tomb have",
+      "shape of the tomb",
+      "eight sided building"
+    ],
+    "a": "The tomb is a large multi-chambered cube with its four corners **chamfered** (cut off), which turns it into an eight-sided building about **57.3 m** across on each long side. The pattern of arches on the main faces repeats in miniature on the cut corners, so the design is symmetrical from every direction."
+  },
+  {
+    "id": "hasht_behesht",
+    "topic": "architecture",
+    "q": "What is the hasht-behesht plan?",
+    "alts": [
+      "hasht behesht",
+      "eight paradises plan",
+      "plan of the tomb",
+      "nine part plan"
+    ],
+    "a": "**Hasht-behesht** (Persian, \"eight paradises\") is a plan with a central domed hall surrounded by eight rooms, used for pavilions and tombs. The Taj's plan follows it, inspired, like its charbagh garden, by **Humayun's Tomb** in Delhi."
+  },
+  {
+    "id": "gur_e_amir",
+    "topic": "architecture",
+    "q": "What buildings inspired the Taj Mahal?",
+    "alts": [
+      "inspiration for the taj",
+      "gur e amir",
+      "timur's tomb",
+      "what was the taj based on",
+      "earlier tombs"
+    ],
+    "a": "It grew out of Timurid and Mughal tombs: the **Gur-e Amir** in Samarkand, tomb of Timur, ancestor of the Mughals, and **Humayun's Tomb** in Delhi, which gave it the charbagh garden and the hasht-behesht plan. The jewel-like **Tomb of I'timād-ud-Daulah** in Agra pioneered the white marble and pietra dura."
+  },
+  {
+    "id": "drum",
+    "topic": "architecture",
+    "q": "What is the drum under the dome?",
+    "alts": [
+      "what holds up the dome",
+      "cylinder under the dome",
+      "how big is the drum",
+      "rope moulding"
+    ],
+    "a": "The dome sits on a **12 m** high cylindrical **drum** with an inner diameter of **18.4 m**, which lifts it high above the roof. Where drum and dome meet, a moulding is carved like a **twisted rope**."
+  },
+  {
+    "id": "lotus",
+    "topic": "architecture",
+    "q": "What is the lotus design on the dome?",
+    "alts": [
+      "lotus on top of the dome",
+      "flower at the top of the dome",
+      "inverted lotus",
+      "indian elements of the taj"
+    ],
+    "a": "The top of the main dome, and of the four small domes, is decorated with a **lotus** design, an Indian motif, from which the gilded finial rises. It's one of the ways the Taj blends Persian and Indian traditions."
+  },
+  {
+    "id": "guldasta",
+    "topic": "architecture",
+    "q": "What are the thin spires on the corners?",
+    "alts": [
+      "guldastas",
+      "pinnacles on the walls",
+      "small towers on the roof edge",
+      "decorative spires"
+    ],
+    "a": "They're **guldastas**, tall slender pinnacles rising from the edges of the walls, beside each great arch and at the corners. They're decorative, adding to the building's lightness and vertical lift."
+  },
+  {
+    "id": "chhatri_light",
+    "topic": "architecture",
+    "q": "What are the four small domed pavilions around the main dome for?",
+    "alts": [
+      "corner domes",
+      "chattris on the roof",
+      "do the small domes have a purpose",
+      "four smaller domes"
+    ],
+    "a": "The four **chhatris** at the corners of the roof repeat the onion shape of the main dome. They stand on columns over the roof and help bring **light** into the building, besides framing the great dome."
+  },
+  {
+    "id": "minaret_climb",
+    "topic": "architecture",
+    "q": "Are there stairs inside the minarets?",
+    "alts": [
+      "can you climb the minarets",
+      "inside a minaret",
+      "how do you get to the top of the minaret",
+      "minaret balconies"
+    ],
+    "a": "Yes. Steps lead up inside each minaret to the top, where rectangular openings below the little dome let in light and air. Each tower is split into three nearly equal parts by balconies and topped by a chhatri."
+  },
+  {
+    "id": "balconies",
+    "topic": "architecture",
+    "q": "What are the smaller arches beside the big arch?",
+    "alts": [
+      "stacked arches",
+      "side arches of the taj",
+      "small arched alcoves",
+      "balconies on the facade"
+    ],
+    "a": "On either side of each great arch (pishtaq) are **two smaller arched balconies stacked one above the other**. The same pattern repeats, smaller, on the chamfered corners."
+  },
+  {
+    "id": "interior_walls",
+    "topic": "interior",
+    "q": "What do the inside walls look like?",
+    "alts": [
+      "interior decoration",
+      "inside walls of the tomb",
+      "arches inside the chamber",
+      "decoration inside the taj"
+    ],
+    "a": "Inside, **two tiers of eight arches** line the octagonal chamber, echoing the outside. The four central upper arches are balconies whose outer windows have intricate **jali** screens. The walls are covered in carved flower dados, gemstone inlay and calligraphy panels, up to about **25 m**, where a false inner dome with a **sun motif** closes the room."
+  },
+  {
+    "id": "interior_light",
+    "topic": "interior",
+    "q": "How does light get inside the tomb?",
+    "alts": [
+      "is it dark inside",
+      "windows of the taj",
+      "light inside the chamber",
+      "how is the interior lit"
+    ],
+    "a": "Mostly through **jali screens**: the inner walls are open along the main axes, fitted with pierced marble screens that filter daylight into the chamber, and the upper balconies have jali windows too. The four roof **chhatris** help bring light in, and a lamp hangs over the cenotaphs."
+  },
+  {
+    "id": "side_rooms",
+    "topic": "interior",
+    "q": "Are there other rooms in the tomb?",
+    "alts": [
+      "rooms around the main chamber",
+      "how many rooms in the taj",
+      "corner rooms",
+      "upper floor of the taj"
+    ],
+    "a": "Yes. On three sides of the main chamber are elongated rooms flanked by small square cells with decorated ceilings, probably used by visitors and **Quran reciters** to rest. Staircases lead from the ground floor up to the roof, with corridors and a system of ventilation shafts."
+  },
+  {
+    "id": "crypt",
+    "topic": "interior",
+    "q": "What is in the crypt below the tomb?",
+    "alts": [
+      "lower tomb chamber",
+      "real tombs underground",
+      "basement of the taj",
+      "where are the real cenotaphs"
+    ],
+    "a": "From the southern entrance room a stairway leads down to the **lower tomb chamber**: a rectangular room with marble walls and a plain coved ceiling, where Mumtaz Mahal and Shah Jahan are actually buried. Mumtaz's real tomb is largely undecorated except for the **Ninety-Nine Names of God** inscribed on its side."
+  },
+  {
+    "id": "jali_panels",
+    "topic": "interior",
+    "q": "How is the screen around the cenotaphs made?",
+    "alts": [
+      "the octagonal screen",
+      "how many panels in the jali",
+      "marble screen inside",
+      "is the screen carved from one piece"
+    ],
+    "a": "It's made of **eight marble panels**, each carved right through into fine lattice (mahjar-i mushabbak) and inlaid with semi-precious stones, forming an octagon round the two cenotaphs. It was installed in **1643**, replacing a screen of gold."
+  },
+  {
+    "id": "shahjahan_epitaph",
+    "topic": "interior",
+    "q": "What does Shah Jahan's cenotaph say?",
+    "alts": [
+      "shah jahan tomb inscription",
+      "epitaph of shah jahan",
+      "what is written on shah jahan's tomb"
+    ],
+    "a": "Surrounded by inlaid red poppies, it reads: \"This is the sacred grave of His Most Exalted Majesty, Dweller in Paradise, Second Lord of the Auspicious Conjunction, Shah Jahan, Padshah; may it ever be fragrant! The year 1076\" (AD 1666). His real tomb below carries a longer epitaph giving his death on the 26th of Rajab, 1076 AH."
+  },
+  {
+    "id": "red_decoration",
+    "topic": "decoration",
+    "q": "How are the red sandstone buildings decorated?",
+    "alts": [
+      "decoration of the mosque",
+      "white lines on the red buildings",
+      "herringbone inlay",
+      "geometric patterns"
+    ],
+    "a": "The domes and vaults of the sandstone buildings carry incised and painted tracery in elaborate geometric forms, and **herringbone** inlays fill the spaces between elements. As a rule, **white** inlay is used on red sandstone and **dark** inlay on white marble, and floors and walkways are laid in contrasting tiles in tessellated patterns."
+  },
+  {
+    "id": "no_figures",
+    "topic": "decoration",
+    "q": "Why are there no people or animals in the decoration?",
+    "alts": [
+      "no human images",
+      "why only flowers and writing",
+      "types of decoration",
+      "islamic art rules"
+    ],
+    "a": "In line with the Islamic avoidance of human and animal figures in religious settings, the decoration keeps to three kinds: **calligraphy**, **abstract** geometric forms and **plant** motifs: flowers, vines and fruit, carved, inlaid in stone or painted."
+  },
+  {
+    "id": "thuluth",
+    "topic": "decoration",
+    "q": "What script is the calligraphy written in?",
+    "alts": [
+      "thuluth script",
+      "what font is the calligraphy",
+      "what is the writing made of",
+      "is the writing painted"
+    ],
+    "a": "Mostly **thuluth**, a flowing, ornate Arabic script, made of **jasper or black marble** inlaid into white marble panels. The higher panels use slightly larger letters to cancel out the foreshortening when you look up at them."
+  },
+  {
+    "id": "pietra_dura_origin",
+    "topic": "decoration",
+    "q": "Where did pietra dura come from?",
+    "alts": [
+      "origin of pietra dura",
+      "is pietra dura italian",
+      "florence inlay",
+      "how did inlay reach india"
+    ],
+    "a": "The technique appeared in **Rome** in the 16th century and matured in **Florence**. By the early 1600s Florentine inlaid objects had reached the Mughal court, where the art was reinterpreted in an Indian style called **parchin kari**. Its most sumptuous expression is the Taj Mahal."
+  },
+  {
+    "id": "buy_inlay",
+    "topic": "visiting",
+    "q": "Can I buy inlay work like the Taj's in Agra?",
+    "alts": [
+      "souvenirs in agra",
+      "marble inlay shops",
+      "what to buy in agra",
+      "agra handicrafts"
+    ],
+    "a": "Yes. Because of the Taj there's a flourishing **pietra dura** industry in Agra, and many shops sell marble boxes, plaques and jewellery with inlay resembling the Taj's. Agra's famous sweet is **petha**."
+  },
+  {
+    "id": "khiyaban",
+    "topic": "garden",
+    "q": "How many flower beds are in the garden?",
+    "alts": [
+      "16 parterres",
+      "garden walkways",
+      "khiyaban",
+      "how is the garden divided",
+      "sunken flower beds"
+    ],
+    "a": "**Sixteen.** Two main walkways (**khiyaban**) divide the garden into four quarters, raised paths split each quarter into four **sunken** beds (parterres), and a walkway runs round the outside connecting them all."
+  },
+  {
+    "id": "five_fountains",
+    "topic": "garden",
+    "q": "How many fountains are in the central tank?",
+    "alts": [
+      "fountains in the lotus pool",
+      "how many fountains",
+      "central fountain"
+    ],
+    "a": "The raised marble tank in the centre of the garden has **five fountains**, and more fountains run along the avenues and channels. Its long reflecting pool runs north–south to hold the image of the tomb."
+  },
+  {
+    "id": "original_plants",
+    "topic": "garden",
+    "q": "What plants grew in the garden originally?",
+    "alts": [
+      "what flowers were in the garden",
+      "were there fruit trees",
+      "roses in the garden",
+      "how did the garden look in mughal times"
+    ],
+    "a": "Early accounts describe a garden overflowing with plants: abundant **roses**, **daffodils** and **fruit trees**, with avenues of trees and fountains. It was neglected as the empire declined, and under British rule it was relandscaped as formal lawns."
+  },
+  {
+    "id": "river_paradise",
+    "topic": "garden",
+    "q": "Is the river part of the garden's design?",
+    "alts": [
+      "yamuna river of paradise",
+      "was the river planned into the garden",
+      "mehtab bagh and the taj garden"
+    ],
+    "a": "Probably. Since **Mehtab Bagh** was rediscovered on the opposite bank, the Archaeological Survey of India has suggested that the **Yamuna** itself was built into the design, meant to be seen as one of the **rivers of Paradise** flowing between two gardens."
+  },
+  {
+    "id": "garden_designer",
+    "topic": "garden",
+    "q": "Who designed the garden?",
+    "alts": [
+      "ali mardan",
+      "garden architect",
+      "shalimar gardens and the taj"
+    ],
+    "a": "Possibly **Ali Mardan**. The Taj garden's layout and features are so similar to the **Shalimar Gardens** in Lahore that both may have been designed by him."
+  },
+  {
+    "id": "charbagh_quran",
+    "topic": "garden",
+    "q": "What does the four-part garden symbolise?",
+    "alts": [
+      "meaning of the charbagh",
+      "four rivers of paradise",
+      "charbagh quran",
+      "paradise garden meaning"
+    ],
+    "a": "The charbagh represents the gardens of **Paradise** described in the Quran's 55th chapter, Ar-Rahman (\"And for him who fears to stand before his Lord are two gardens…\"), and its four water channels stand for the four rivers of Paradise named in a hadith: Sayhan, Jayhan, the Euphrates and the Nile."
+  },
+  {
+    "id": "walls",
+    "topic": "buildings",
+    "q": "Is the Taj Mahal complex walled?",
+    "alts": [
+      "walls around the taj",
+      "red walls",
+      "is the river side open",
+      "arcades inside the walls",
+      "music house"
+    ],
+    "a": "Yes, on three sides: **crenellated red sandstone walls** enclose the garden, while the side facing the Yamuna is open. Along the inside of the walls run columned arcades with domed chhatris and smaller buildings such as the **Music House**."
+  },
+  {
+    "id": "other_tombs",
+    "topic": "buildings",
+    "q": "Is anyone else buried at the Taj Mahal complex?",
+    "alts": [
+      "other tombs near the taj",
+      "tombs of shah jahan's other wives",
+      "servants tombs",
+      "who else is buried nearby"
+    ],
+    "a": "Inside the tomb, only Mumtaz Mahal and Shah Jahan. **Outside the complex walls** there are other mausoleums for Shah Jahan's other wives, royals and favourite servants."
+  },
+  {
+    "id": "gates_visitors",
+    "topic": "visiting",
+    "q": "How many entrances does the Taj Mahal have?",
+    "alts": [
+      "entry gates",
+      "east gate west gate south gate",
+      "how do visitors get in",
+      "which entrance should i use"
+    ],
+    "a": "Visitors come in through **three gates** into the forecourt, then walk through the Great Gate into the garden. Polluting vehicles aren't allowed near the complex, so people walk or take **electric buses** from the parking areas."
+  },
+  {
+    "id": "gate_symbol",
+    "topic": "buildings",
+    "q": "What does the Great Gate symbolise?",
+    "alts": [
+      "meaning of the gate",
+      "why is the gate in the middle",
+      "gate between two worlds"
+    ],
+    "a": "In Ebba Koch's reading, the complex is split into a **worldly** red sandstone half (forecourt and bazaars) and an **otherworldly** half (the garden and white tomb), mirror images of each other. The Great Gate in the middle marks the **passage between the two worlds**, and stepping through it you see Paradise laid out ahead."
+  },
+  {
+    "id": "mihrab",
+    "topic": "buildings",
+    "q": "What is a mihrab?",
+    "alts": [
+      "prayer niche",
+      "why does the jawab have no mihrab",
+      "direction of mecca in the mosque"
+    ],
+    "a": "A **mihrab** is the niche in a mosque's wall that shows the direction of Mecca, which worshippers face to pray. The Taj's mosque has one on its west side; the **jawab**, its mirror image, lacks a mihrab, since it faces the wrong way, and has inlaid patterns on its floor instead."
+  },
+  {
+    "id": "assembly_hall",
+    "topic": "buildings",
+    "q": "What was the purpose of the jawab?",
+    "alts": [
+      "was it a guest house",
+      "what was the assembly hall",
+      "why build a mirror building",
+      "what was the copy of the mosque for"
+    ],
+    "a": "Mainly **symmetry**: it balances the mosque. It probably served as a **guest house** or assembly hall; a 1652 letter from Aurangzeb mentions the complex's \"assembly hall\" leaking."
+  },
+  {
+    "id": "makrana",
+    "topic": "materials",
+    "q": "Where is Makrana?",
+    "alts": [
+      "makrana marble",
+      "where does the marble come from exactly",
+      "marble quarry",
+      "is makrana marble special"
+    ],
+    "a": "**Makrana** is a town in **Rajasthan**, about 110 km west of Jaipur. It supplied the Taj's white marble, and many of its craftsmen and stonemasons. **Makrana marble** has been recognised as a Global Heritage Stone Resource by the International Union of Geological Sciences."
+  },
+  {
+    "id": "sandstone_source",
+    "topic": "materials",
+    "q": "Where does the red sandstone come from?",
+    "alts": [
+      "red stone quarry",
+      "fatehpur sikri sandstone",
+      "sandstone origin"
+    ],
+    "a": "The red sandstone was quarried near **Fatehpur Sikri** in Uttar Pradesh, the old Mughal capital of Akbar, about 40 km from Agra."
+  },
+  {
+    "id": "driving",
+    "topic": "visiting",
+    "q": "Can I drive up to the Taj Mahal?",
+    "alts": [
+      "parking at the taj",
+      "are cars allowed",
+      "electric buses",
+      "how do i get from the parking"
+    ],
+    "a": "No. To protect the marble from pollution, polluting vehicles aren't allowed near the complex. You park in the designated areas and **walk** or ride an **electric bus**, tonga (horse cart) or e-rickshaw to one of the three gates."
+  },
+  {
+    "id": "time_limit",
+    "topic": "visiting",
+    "q": "Is there a time limit for visiting?",
+    "alts": [
+      "how long can i stay",
+      "three hour rule",
+      "fine for staying too long",
+      "overtourism rules"
+    ],
+    "a": "Yes. Since **2019**, to fight overcrowding, visitors who stay longer than **three hours** can be fined."
+  },
+  {
+    "id": "scams",
+    "topic": "visiting",
+    "q": "Are there scams or touts at the Taj Mahal?",
+    "alts": [
+      "touts in agra",
+      "hawkers",
+      "is agra safe for tourists",
+      "tips for visiting agra"
+    ],
+    "a": "Wikivoyage warns that touts and hawkers swarm Agra's monuments, but **inside the Taj complex** it's free of scams and touts. Buy tickets from the official counters or the ASI website."
+  },
+  {
+    "id": "food",
+    "topic": "visiting",
+    "q": "What food is Agra famous for?",
+    "alts": [
+      "what to eat in agra",
+      "petha",
+      "agra sweets",
+      "dal moth",
+      "restaurants near the taj"
+    ],
+    "a": "Agra's speciality is **petha**, a very sweet translucent candy (try the plain ivory one or the yellow angoori), and **dal moth**, a spicy lentil mix. Spicy **chaat** stalls draw crowds all over town."
+  },
+  {
+    "id": "taj_mahotsav",
+    "topic": "visiting",
+    "q": "What is the Taj Mahotsav?",
+    "alts": [
+      "taj festival",
+      "festival in agra",
+      "events at the taj",
+      "february festival agra"
+    ],
+    "a": "The **Taj Mahotsav** (\"Taj Festival\") is a 10-day event held every year from **18 to 27 February** at Shilpgram in Agra, inspired by Mughal-era culture. About **400 artisans** from all over India show their crafts, from Agra's marble inlay and zardozi embroidery to Kashmiri shawls, alongside music and dance."
+  },
+  {
+    "id": "dignitaries",
+    "topic": "visiting",
+    "q": "Do famous people visit the Taj Mahal?",
+    "alts": [
+      "celebrities at the taj",
+      "world leaders visit",
+      "presidents at the taj",
+      "famous visitors"
+    ],
+    "a": "Often: foreign dignitaries regularly visit the Taj on trips to India. The best-known photo is of **Princess Diana** sitting alone on the marble bench by the central pool in 1992, which is still called the \"Diana bench\"."
+  },
+  {
+    "id": "revenue",
+    "topic": "visiting",
+    "q": "How much money does the Taj Mahal make?",
+    "alts": [
+      "taj mahal revenue",
+      "ticket income",
+      "highest earning monument"
+    ],
+    "a": "A 2025 government report said the Taj earned about **₹297 crore** (around US$31 million) over five years, making it the highest-earning monument run by the Archaeological Survey of India."
+  },
+  {
+    "id": "agra_city",
+    "topic": "visiting",
+    "q": "Tell me about Agra.",
+    "alts": [
+      "what is agra like",
+      "agra city",
+      "agra history",
+      "was agra the mughal capital"
+    ],
+    "a": "**Agra**, in Uttar Pradesh about 200 km from Delhi, was a Mughal capital: Akbar made it his capital in 1558. It's home to two UNESCO World Heritage Sites, the **Taj Mahal** and **Agra Fort**, with a third, **Fatehpur Sikri**, nearby. Today it's a busy tourist city known for marble inlay work and petha sweets."
+  },
+  {
+    "id": "ttz",
+    "topic": "conservation",
+    "q": "What is the Taj Trapezium Zone?",
+    "alts": [
+      "ttz",
+      "protected zone around the taj",
+      "pollution rules in agra",
+      "mc mehta case"
+    ],
+    "a": "A protected area of about **10,400 km²** around Agra, shaped like a trapezium, covering three Mughal World Heritage Sites (**Taj Mahal, Agra Fort, Fatehpur Sikri**) and over 40 other monuments. It was set up in the 1990s after the Supreme Court's **M. C. Mehta v. Union of India** ruling: industries there may not burn coke or coal, and the courts limit tree felling, construction and industrial expansion."
+  },
+  {
+    "id": "mud_pack",
+    "topic": "conservation",
+    "q": "How is the marble cleaned?",
+    "alts": [
+      "mud pack treatment",
+      "how do they keep it white",
+      "cleaning the taj",
+      "restoring the white colour"
+    ],
+    "a": "With **mud packs**: a layer of clay is spread on the stained marble and washed off once dry, drawing out grime and restoring the white colour. In the 2020s the government has used them alongside replacing broken marble."
+  },
+  {
+    "id": "humayun",
+    "topic": "architecture",
+    "q": "What is Humayun's Tomb?",
+    "alts": [
+      "humayun tomb delhi",
+      "first garden tomb",
+      "taj mahal predecessor",
+      "bega begum"
+    ],
+    "a": "**Humayun's Tomb** in Delhi, built 1565–1572 for the second Mughal emperor and commissioned by his widow **Bega Begum**, was the **first garden-tomb** on the subcontinent, designed by the Persian architects Mirak Mirza Ghiyas and his son. Modelled on Timur's Gur-e Amir, it set the pattern that reached its peak in the Taj. Shah Jahan's son **Dara Shikoh** is buried there."
+  },
+  {
+    "id": "itimad_tomb",
+    "topic": "architecture",
+    "q": "Who built the Baby Taj?",
+    "alts": [
+      "tomb of itimad ud daulah",
+      "bacha taj",
+      "nur jahan tomb for her father",
+      "draft of the taj"
+    ],
+    "a": "The empress **Nur Jahan** built it between **1622 and 1628** for her father, Mirza Ghiyas Beg (I'timād-ud-Daulah), Mumtaz Mahal's grandfather. Often called a \"jewel box\" and a draft of the Taj, it moved Mughal tombs from red sandstone toward **white marble and pietra dura**. Unlike most Mughal tombs it has no central dome."
+  },
+  {
+    "id": "bibi_ka_maqbara",
+    "topic": "architecture",
+    "q": "What is the Taj of the Deccan?",
+    "alts": [
+      "bibi ka maqbara aurangabad",
+      "copy of the taj in aurangabad",
+      "dakkhani taj",
+      "azam shah tomb for his mother"
+    ],
+    "a": "**Bibi Ka Maqbara** in Aurangabad, commissioned in **1660** by Prince **Azam Shah**, Aurangzeb's son, for his mother **Dilras Banu Begum**. It strikingly resembles the Taj Mahal, the tomb of Aurangzeb's own mother, and is nicknamed the \"Taj of the Deccan\"."
+  },
+  {
+    "id": "fatehpur_sikri",
+    "topic": "visiting",
+    "q": "What is Fatehpur Sikri?",
+    "alts": [
+      "akbar's city",
+      "abandoned mughal city",
+      "day trip from agra"
+    ],
+    "a": "**Fatehpur Sikri** is the red sandstone city the emperor **Akbar** built near Agra in the 16th century and later abandoned. It's a UNESCO World Heritage Site, and its quarries supplied the red sandstone for the Taj complex."
+  },
+  {
+    "id": "agra_fort_detail",
+    "topic": "buildings",
+    "q": "How far is Agra Fort from the Taj Mahal?",
+    "alts": [
+      "agra fort distance",
+      "walk to agra fort",
+      "agra fort and taj",
+      "lal qila agra"
+    ],
+    "a": "About **2.5 km** northwest, up the Yamuna, about a 30-minute walk. Akbar rebuilt the fort in red sandstone (1565–1573) and Shah Jahan added white marble palaces after 1628, including the Musamman Burj. It's where Aurangzeb confined Shah Jahan, who could see the Taj from there."
+  },
+  {
+    "id": "new7_list",
+    "topic": "overview",
+    "q": "What are the New 7 Wonders of the World?",
+    "alts": [
+      "list of new seven wonders",
+      "other new wonders",
+      "when were the new wonders chosen",
+      "how was the taj chosen as a wonder",
+      "what are the new seven wonders",
+      "new seven wonders",
+      "new 7 wonders"
+    ],
+    "a": "Chosen in a worldwide online and telephone poll announced on **7 July 2007** in Lisbon: the **Taj Mahal**, the **Great Wall of China**, **Petra**, **Christ the Redeemer**, **Machu Picchu**, **Chichén Itzá** and the **Colosseum**, with the Great Pyramid of Giza as an honorary candidate. The poll was criticised as unscientific because people could vote more than once."
+  },
+  {
+    "id": "halicarnassus",
+    "topic": "this world",
+    "q": "What is the Mausoleum at Halicarnassus?",
+    "alts": [
+      "why is there a portal to the mausoleum",
+      "where does the word mausoleum come from",
+      "ancient wonder tomb"
+    ],
+    "a": "The tomb of **Mausolus**, a ruler in what is now Turkey, built in the 4th century BCE and one of the ancient **Seven Wonders**. It was so famous that every grand tomb since has been called a **mausoleum**, including the Taj. You can reach it from **Metaverse Square**, which any portal here takes you to."
+  },
+  {
+    "id": "symbol_power",
+    "topic": "overview",
+    "q": "Is the Taj Mahal only a symbol of love?",
+    "alts": [
+      "symbol of power",
+      "what does the taj symbolise",
+      "meaning of the taj mahal",
+      "symbolism of the taj"
+    ],
+    "a": "No. Besides love it's a symbol of Shah Jahan's **wealth and power** and of a prospering empire. Its strict symmetry about a central axis expresses a ruler who brings **balance and harmony**, and its whole plan is meant as **Mumtaz Mahal's mansion in the garden of Paradise**. Today it's a symbol of India itself."
+  },
+  {
+    "id": "sky_design",
+    "topic": "overview",
+    "q": "Why does the Taj reflect the sky?",
+    "alts": [
+      "sky in the design",
+      "reflection of the sky",
+      "presence of god in the design"
+    ],
+    "a": "The sky is built into the design twice: in the reflecting pools and on the polished marble itself, which takes on the colours of the sky through the day. Some see this as a way of implying the presence of God at the site."
+  },
+  {
+    "id": "what_to_do",
+    "topic": "this world",
+    "q": "What can I do here?",
+    "alts": [
+      "things to do in this world",
+      "what should i see",
+      "where should i go first",
+      "give me a tour",
+      "tour of the taj",
+      "what can i do here",
+      "things to do here",
+      "where should i go"
+    ],
+    "a": "A good walk:\n- through the **Great Gate** from the forecourt for the classic first view\n- down the garden to the **lotus pool** and Diana's bench, and look into the channel for the reflection\n- up the **stairs** onto the plinth and through the great south arch\n- down the corridor into the **tomb chamber** to see the cenotaphs and the jali screen\n- out to the **riverfront terrace**, then the **mosque** and **jawab**\nRead the photo boards on the way, and try the time-of-day buttons. The map in the corner (M) shows where you are and the exits. I can also take you to any of these: use the buttons in this chat."
+  },
+  {
+    "id": "photo_boards",
+    "topic": "this world",
+    "q": "What are the photo boards?",
+    "alts": [
+      "pictures in the garden",
+      "real photos of the taj",
+      "who took the photos",
+      "photo credits"
+    ],
+    "a": "They're **real photographs** of the Taj Mahal from Wikimedia Commons, from Felice Beato's 1858 view to close-ups of the calligraphy and inlay, each credited to its photographer and licence. Several of them are the very photos this world's textures were made from."
+  },
+  {
+    "id": "accuracy",
+    "topic": "this world",
+    "q": "How accurate is this model?",
+    "alts": [
+      "is this to scale",
+      "is the model realistic",
+      "what is different from the real taj",
+      "real size"
+    ],
+    "a": "The main dimensions follow the real ones: the 95.5 m plinth, the 57.3 m tomb, the dome on its drum, minarets over 40 m, and a 300 m square garden, measured from Wikipedia's figures, a public-domain site plan and a straight-on photo. Details are simplified: the garden's planting, the inner rooms and crypt, and much of the carving and inlay are approximations, and the surroundings beyond the walls are invented."
+  },
+  {
+    "id": "who_made_world",
+    "topic": "this world",
+    "q": "Who made this world?",
+    "alts": [
+      "who built this virtual taj",
+      "why was this made",
+      "class project",
+      "mgt 409",
+      "who created this",
+      "who is the author",
+      "who designed this world"
+    ],
+    "a": "It was made by **Ayush Rajpal** for Yale SOM's **MGT 409** course, as a world on the **Metaverse Web**, the network of linked 3D worlds started in that course. The model was built in Blender from code, the textures from real photographs, and I, the guide, am a Labubu like the guides in the course's Seven Wonders worlds."
+  },
+  {
+    "id": "labubu",
+    "topic": "this world",
+    "q": "Why is the guide a Labubu?",
+    "alts": [
+      "what is a labubu",
+      "why do you look like that",
+      "cute guide"
+    ],
+    "a": "The guides in the Metaverse Web's Seven Wonders worlds are all **Labubus** dressed for their place and period, so I'm dressed as a Mughal calligrapher: a white jama robe, a gold sash, a turban with a jewel and plume, and a reed pen."
+  },
+  {
+    "id": "exits",
+    "topic": "this world",
+    "q": "Where are the exits?",
+    "alts": [
+      "how do i leave",
+      "how do i get out",
+      "where is the portal",
+      "how do i go to another world",
+      "where are the portals",
+      "exit",
+      "how do i get back to metaverse square"
+    ],
+    "a": "There are six portals, all leading to **Metaverse Square**, in three places marked **EXIT** on the map (press **M**):\n- the **forecourt**, south of the Great Gate (three side by side)\n- **just inside the Great Gate**, on your left as you arrive\n- the **north end of the garden**, below the riverfront terrace (two)\nWalk through one, or ask me and I'll send you straight there."
+  }
+]

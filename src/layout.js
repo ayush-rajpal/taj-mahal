@@ -1,73 +1,104 @@
 import { pickSpawn } from './mvw.js'
+import W from './wonder.js'
+import SITE from './site.json'
+import COL from './colliders.json'
 
-// The shape of your world, in one place. Units are meters.
-// Axes: +x = east, -z = north, y = up. The camera looks toward -z when yaw = 0.
-// Change the room here; World.jsx draws it and Player.jsx walks in it.
+// The walkable shape of this world. Units are meters; +x = east, -z = north (the Yamuna), y = up.
+// The Blender build (blender/build_taj.py) writes colliders.json: floors (platforms and ramps), solid
+// boxes, round posts (minarets, towers, trees) and water. The tomb's own outline, with its great arch,
+// corridor and chamber, is worked out here from site.json.
 
-export const H = 3.2 // ceiling height
-export const SPEED = { walk: 12, run: 20 } // meters per second; Shift runs
-export const EYE = 1.65 // eye height when standing
-export const R_PLAYER = 0.35 // how close you can get to a wall
-export const ROOM = { xMin: -5, xMax: 5, zMin: -5, zMax: 5 }
+export const EYE = 1.65
+export const R_PLAYER = 0.35
+export const MAX_STEP = 0.7 // you can step up this much at once; taller edges work like walls
+export const SPEED = W.speed
 
-// Arrival points (mvw/0.1, see ../PROTOCOL.md section 2). ?spawn=<id> picks one; unknown ids
-// fall back to `default`. Other worlds link to these ids, so never rename one once it's shared.
-// yaw: 0 faces north (-z), Math.PI faces south (+z).
-export const SPAWNS = {
-  default: { x: 0, z: 2, yaw: 0 }, // middle of the room, facing the portal
-  hub_portal: { x: 0, z: -3.3, yaw: Math.PI }, // just in front of the portal, facing into the room
-  evans_portal: { x: 2.2, z: -3.3, yaw: Math.PI }, // in front of the Evans Hall door
-}
+// ---- arrival points (mvw/0.1): ?spawn=<id> picks one ------------------------------------------------
+export const EXITS = W.exits
+const ahead = (p, d) => ({ x: p.x + Math.sin(p.rot) * d, z: p.z + Math.cos(p.rot) * d })
+export const SPAWNS = { default: W.spawn, ...W.landmarks }
+// one spawn in front of every portal, facing away from it (from_square is the forecourt's pink portal)
+for (const e of EXITS) SPAWNS[e.back] = { ...ahead(e, 2.4), yaw: e.rot + Math.PI }
+SPAWNS.hub_portal = SPAWNS.from_square // the World Starter's name for the spot by the portal to the square
 export const SPAWN = pickSpawn(SPAWNS)
+export const GUIDE = W.guide
 
-// The portal on the north wall. `spawn` is a spawn id in THEIR world (from their manifest);
-// `back` is the spawn id in THIS world that puts you next to this portal when you press Back.
-export const PORTAL = {
-  x: 0,
-  z: ROOM.zMin + 0.1,
-  href: import.meta.env.DEV ? 'http://localhost:5178/' : 'https://zlisto.github.io/hub_world/', // local copy while developing
-  spawn: 'by_starter_world', // the square's spawn in front of ITS portal back to here
-  back: 'hub_portal',
-  label: 'Metaverse Square',
-}
-
-// Tauhid's real classroom: Evans Hall room 2200
-export const EVANS = {
-  x: 2.4,
-  z: ROOM.zMin + 0.1,
-  href: import.meta.env.DEV ? 'http://localhost:5173/' : 'https://zlisto.github.io/evans-hall-3d/',
-  spawn: 'room_2200',
-  back: 'evans_portal',
-  label: 'Evans Hall · 2200',
-  sub: "Tauhid's classroom",
-}
-
-// Tauhid, your guide: standing near the portal, turned toward where you arrive. Talk to him to
-// learn how the Metaverse Web works (src/guide/). Delete this and <Guide> in World.jsx to remove him.
-export const GUIDE = { x: -1.7, z: -2.6, r: 0.45 }
-GUIDE.rot = Math.atan2(SPAWNS.default.x - GUIDE.x, SPAWNS.default.z - GUIDE.z)
-
-// Keep the player inside the room: clamp to the walls, minus the player's radius.
-// For furniture, push the player out of boxes here too (see darul_kebab/src/layout.js).
-export function collide(pos) {
-  pos.x = Math.max(ROOM.xMin + R_PLAYER, Math.min(ROOM.xMax - R_PLAYER, pos.x))
-  pos.z = Math.max(ROOM.zMin + R_PLAYER, Math.min(ROOM.zMax - R_PLAYER, pos.z))
-  // and out of the guide
-  const dx = pos.x - GUIDE.x
-  const dz = pos.z - GUIDE.z
-  const d = Math.hypot(dx, dz)
-  const rr = R_PLAYER + GUIDE.r
-  if (d < rr && d > 1e-6) {
-    pos.x = GUIDE.x + (dx / d) * rr
-    pos.z = GUIDE.z + (dz / d) * rr
+// ---- floors ----------------------------------------------------------------------------------------
+// flat platforms { x0, x1, z0, z1, h } and ramps { ..., h0, h1 } rising from h0 at the south end (z1)
+// to h1 at the north end (z0). The highest one under you is the floor.
+export function floorAt(x, z) {
+  let y = 0
+  for (const p of COL.platforms) {
+    if (!(x > p.x0 && x < p.x1 && z > p.z0 && z < p.z1)) continue
+    const h = p.h ?? p.h0 + ((p.z1 - z) / (p.z1 - p.z0)) * (p.h1 - p.h0)
+    if (h > y) y = h
   }
-  return pos
+  return y
 }
 
-// Where you are, in plain words. Sent to the Metaverse Browser with presence() whenever it changes.
+// ---- walls -----------------------------------------------------------------------------------------
+const T = SITE.tomb
+const TAN8 = Math.tan(Math.PI / 8)
+const inOct = (ax, az, h, c) => ax < h && az < h && ax + az < 2 * h - c
+const PLINTH_TOP = SITE.levels.plinth
+
+// The tomb: an octagon with a pishtaq on each side. You can walk into each great arch, down the
+// corridor and into the chamber, but not through the marble screen round the cenotaphs.
+function inTomb(x, z, r) {
+  const ax = Math.abs(x)
+  const az = Math.abs(z)
+  const big = Math.max(ax, az) // fold the four sides onto one
+  const small = Math.min(ax, az)
+  const p = T.pishtaq
+  const solid = inOct(ax, az, T.half + r, T.chamfer) || (small < p.half + r && big < T.half + p.proj + r)
+  if (!solid) return false
+  const core = T.half - T.depth
+  if (small < p.arch.w / 2 - r && big > core - 0.05) return false // inside the great arch
+  const c = T.chamber
+  if (small < c.corridor_half - r && big > c.ri - 1) return false // the corridor to the chamber
+  const ri = c.ri - r
+  if (inOct(ax, az, ri, ri * (1 - TAN8))) {
+    const rj = c.jali_ri + r
+    return inOct(ax, az, rj, rj * (1 - TAN8)) // the screen round the cenotaphs
+  }
+  return true
+}
+
+const CIRCLES = [...COL.circles, { x: GUIDE.x, z: GUIDE.z, r: 0.45 }]
+
+export function blocked(x, z, footY) {
+  const r = R_PLAYER
+  if (footY > PLINTH_TOP - 1 && inTomb(x, z, r)) return true
+  for (const b of COL.boxes) {
+    if (x > b.x0 - r && x < b.x1 + r && z > b.z0 - r && z < b.z1 + r) return true
+  }
+  for (const w of COL.water) {
+    if (footY < 0.3 && x > w.x0 - r && x < w.x1 + r && z > w.z0 - r && z < w.z1 + r) return true
+  }
+  for (const c of CIRCLES) {
+    const rr = c.r + r
+    if ((x - c.x) ** 2 + (z - c.z) ** 2 < rr * rr) return true
+  }
+  // the walls already close the garden; this keeps you inside the complex and forecourt
+  const S = SITE.site
+  if (z > S.garden_s + 0.8) return Math.abs(x) > S.forecourt_half - 1 || z > S.forecourt_s - 1
+  return Math.abs(x) > S.half_width - 1.2 || z < S.terrace_n + 1
+}
+
+// Try to move from (x, z) by (dx, dz): whole step, else slide along one axis. Returns the new spot.
+export function move(x, z, dx, dz, footY) {
+  const stuck = blocked(x, z, footY) // arrived inside something (a spawn or teleport): let them walk out
+  const ok = (nx, nz) => floorAt(nx, nz) - footY <= MAX_STEP && (stuck || !blocked(nx, nz, Math.max(footY, floorAt(nx, nz))))
+  if (ok(x + dx, z + dz)) return [x + dx, z + dz]
+  if (dx && ok(x + dx, z)) return [x + dx, z]
+  if (dz && ok(x, z + dz)) return [x, z + dz]
+  return [x, z]
+}
+
+// ---- where you are, in plain words (sent to the Metaverse Browser with presence()) -----------------
 export function locate(x, z) {
-  if (Math.hypot(x - GUIDE.x, z - GUIDE.z) < 2.2) return 'Starter World · with Tauhid, your guide'
-  if (Math.hypot(x - EVANS.x, z - EVANS.z) < 2.2) return 'Starter World · by the portal to Evans Hall'
-  if (z < PORTAL.z + 2) return 'Starter World · by the portal to Metaverse Square'
-  return 'Starter World · in the room'
+  if (Math.hypot(x - GUIDE.x, z - GUIDE.z) < 2.6) return `${W.name} · with ${W.guideName}, your guide`
+  for (const e of EXITS) if (Math.hypot(x - e.x, z - e.z) < 3) return `${W.name} · by the portal to ${e.label}`
+  for (const a of W.areas) if (a.test(x, z)) return `${W.name} · ${a.label}`
+  return `${W.name} · ${W.elsewhere}`
 }

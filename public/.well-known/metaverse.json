@@ -1,26 +1,66 @@
 {
   "protocol": "mvw/0.1",
-  "name": "Starter World",
-  "description": "A plain empty room, the starting point for a new world. One portal on the north wall leads to Metaverse Square, the plaza with a portal to every world. Another leads to Evans Hall room 2200, where Tauhid teaches for real.",
+  "name": "Taj Mahal",
+  "description": "Shah Jahan's white marble tomb for Mumtaz Mahal in Agra, built in Blender from real photographs: the Great Gate, the charbagh garden and reflecting pools, the plinth and minarets, and the tomb chamber with its cenotaphs. Amanat the calligrapher, a Labubu guide, answers questions offline from a guidebook. Made by Ayush Rajpal.",
   "spawns": {
-    "default": "The middle of the room, facing the portal on the north wall",
-    "hub_portal": "In front of the portal to Metaverse Square on the north wall, facing into the room",
-    "evans_portal": "In front of the portal to Evans Hall on the north wall, facing into the room"
+    "default": "On the plaza just inside the Great Gate, looking down the water channel to the tomb",
+    "from_square": "In the forecourt in front of the middle portal back to Metaverse Square, facing the Great Gate",
+    "forecourt_west": "In the forecourt in front of the left portal to Metaverse Square",
+    "forecourt_east": "In the forecourt in front of the right portal to Metaverse Square",
+    "gate_exit": "Just inside the Great Gate, in front of the portal to Metaverse Square",
+    "north_exit": "At the north end of the garden, in front of the portal to Metaverse Square",
+    "north_exit_west": "At the north end of the garden, in front of the second portal to Metaverse Square",
+    "hub_portal": "Same as from_square",
+    "great_gate": "In the forecourt, facing the Great Gate",
+    "lotus_pool": "On the raised marble pool by its bench, facing the tomb",
+    "taj_terrace": "On the marble plinth in front of the great arch",
+    "inside_tomb": "Inside the tomb chamber, facing the cenotaphs",
+    "riverfront": "On the riverfront terrace, looking across the Yamuna to Mehtab Bagh",
+    "mosque": "On the terrace facing the mosque",
+    "jawab": "On the terrace facing the jawab"
   },
   "portals": [
     {
-      "id": "to_metaverse_square",
+      "id": "to_square",
       "label": "Metaverse Square",
       "href": "https://zlisto.github.io/hub_world/",
-      "spawn": "by_starter_world",
-      "where": "The glowing doorway in the middle of the north wall"
+      "spawn": "by_taj_mahal",
+      "where": "In the forecourt, south of the Great Gate (the middle of three doorways)"
     },
     {
-      "id": "to_evans_hall",
-      "label": "Evans Hall · 2200",
-      "href": "https://zlisto.github.io/evans-hall-3d/",
-      "spawn": "room_2200",
-      "where": "A gold doorway on the north wall, next to Metaverse Square"
+      "id": "to_square_forecourt_west",
+      "label": "Metaverse Square",
+      "href": "https://zlisto.github.io/hub_world/",
+      "spawn": "by_taj_mahal",
+      "where": "In the forecourt, the left of three doorways"
+    },
+    {
+      "id": "to_square_forecourt_east",
+      "label": "Metaverse Square",
+      "href": "https://zlisto.github.io/hub_world/",
+      "spawn": "by_taj_mahal",
+      "where": "In the forecourt, the right of three doorways"
+    },
+    {
+      "id": "to_square_gate",
+      "label": "Metaverse Square",
+      "href": "https://zlisto.github.io/hub_world/",
+      "spawn": "by_taj_mahal",
+      "where": "Just inside the Great Gate, on your left as you arrive"
+    },
+    {
+      "id": "to_square_north",
+      "label": "Metaverse Square",
+      "href": "https://zlisto.github.io/hub_world/",
+      "spawn": "by_taj_mahal",
+      "where": "At the north end of the garden, below the riverfront terrace"
+    },
+    {
+      "id": "to_square_north_west",
+      "label": "Metaverse Square",
+      "href": "https://zlisto.github.io/hub_world/",
+      "spawn": "by_taj_mahal",
+      "where": "Beside the north exit, at the north end of the garden"
     }
   ]
 }
