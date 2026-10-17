@@ -2352,12 +2352,11 @@
       "who built this virtual taj",
       "why was this made",
       "class project",
-      "mgt 409",
       "who created this",
       "who is the author",
       "who designed this world"
     ],
-    "a": "It was made by **Ayush Rajpal** for Yale SOM's **MGT 409** course, as a world on the **Metaverse Web**, the network of linked 3D worlds started in that course. The model was built in Blender from code, the textures from real photographs, and I, the guide, am a Labubu like the guides in the course's Seven Wonders worlds."
+    "a": "It was made by **Ayush Rajpal**, as a world on the **Metaverse Web**, a network of linked 3D worlds you walk between through portals. The model was built in Blender from code, the textures from real photographs, and I, the guide, am a Labubu like the guides in the Metaverse Web's Seven Wonders worlds."
   },
   {
     "id": "labubu",

@@ -1,6 +1,6 @@
 # Taj Mahal · a world on the Metaverse Web
 
-By **Ayush Rajpal** · made for MGT 409: AI Foundations for Managers (Yale SOM)
+By **Ayush Rajpal**
 
 Walk through the Taj Mahal in your browser: in through the Great Gate, down the charbagh garden past the reflecting pool, up the plinth stairs, through the great arch and into the tomb chamber with the cenotaphs of Mumtaz Mahal and Shah Jahan. Change the time of day and watch the marble turn pink at sunrise, gold at sunset and blue by moonlight.
 
@@ -99,4 +99,4 @@ Sizes follow the real ones closely; details (garden planting, inner rooms, the c
 
 Everything used is openly licensed; see [`assets/CREDITS.md`](assets/CREDITS.md) for each photograph (author and licence) and texture, and [`knowledge/sources.json`](knowledge/sources.json) for the articles. Photographs from Wikimedia Commons keep their own licences (mostly CC BY-SA and CC BY); the guide's text draws on Wikipedia and Wikivoyage (CC BY-SA 4.0). Textures from ambientCG are CC0. The portal, the protocol client and the Labubu come from [zlisto/world_starter](https://github.com/zlisto/world_starter).
 
-Made by Ayush Rajpal for MGT 409: AI Foundations for Managers (Yale SOM).
+Made by Ayush Rajpal.
