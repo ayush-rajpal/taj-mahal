@@ -35,7 +35,13 @@ export default function App() {
   const loading = useLoading()
   const [time, setTime] = useState(W.defaultTime)
   const [board, setBoard] = useState(null)
-  const [showMap, setShowMap] = useState(true)
+  // phones (portrait, or landscape with little height) start with the map folded away: it would cover the view
+  const [compact] = useState(() => matchMedia('(max-width: 640px), (pointer: coarse) and (max-height: 500px)').matches)
+  const [showMap, setShowMap] = useState(!compact)
+  const nextTime = useCallback(() => {
+    const ids = Object.keys(W.times)
+    setTime((t) => ids[(ids.indexOf(t) + 1) % ids.length])
+  }, [])
   const mapRef = useRef()
   const onLock = useCallback((v) => {
     setLocked(v)
@@ -117,14 +123,11 @@ export default function App() {
       if (e.target.closest?.('input, textarea') || !playing) return
       if (e.code === 'KeyG' && !talking) startTalk()
       if (e.code === 'KeyM') setShowMap((v) => !v)
-      if (e.code === 'KeyT') {
-        const ids = Object.keys(W.times)
-        setTime((t) => ids[(ids.indexOf(t) + 1) % ids.length])
-      }
+      if (e.code === 'KeyT') nextTime()
     }
     addEventListener('keydown', key)
     return () => removeEventListener('keydown', key)
-  }, [playing, talking, startTalk])
+  }, [playing, talking, startTalk, nextTime])
 
   const pct = Math.round((100 * loading.loaded) / Math.max(1, loading.total))
   return (
@@ -142,7 +145,17 @@ export default function App() {
 
       <div className="where">
         <span className="dot" style={me?.color ? { background: me.color } : undefined} />
-        {where}
+        {/* on a phone only the place shows; the world's name is on the page already */}
+        <span className="where-text">
+          {where.startsWith(`${W.name} · `) ? (
+            <>
+              <span className="where-world">{W.name} · </span>
+              {where.slice(W.name.length + 3)}
+            </>
+          ) : (
+            where
+          )}
+        </span>
       </div>
       {playing && (
         <div className="hud">
@@ -155,6 +168,10 @@ export default function App() {
             <kbd title="Press T to switch the lighting">T</kbd>
           </div>
           <div className="hud-row">
+            {/* phones: one button that steps through the times of day, in place of the row above */}
+            <button className="hud-ask hud-cycle" onClick={nextTime}>
+              {W.times[time].label} ↻
+            </button>
             <button className="hud-ask" onClick={() => setShowMap((v) => !v)}>
               {showMap ? 'hide map' : 'map'} <kbd>M</kbd>
             </button>
@@ -178,7 +195,7 @@ export default function App() {
         </div>
       )}
       {board && playing && !talking && (
-        <div className="board-card">
+        <div className={`board-card${touchOn ? ' touch' : ''}`}>
           <p>{board.caption}</p>
           <span>{board.credit}</span>
         </div>

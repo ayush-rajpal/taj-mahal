@@ -211,7 +211,7 @@ ${hit.entry.a}`, source: 'guidebook', related: related(q) })
           Ask
         </button>
       </form>
-      <div className="guide-foot">All answers come from the guidebook and saved Wikipedia articles, no AI · Esc to keep exploring</div>
+      <div className="guide-foot">All answers come from the guidebook and saved Wikipedia articles, no AI · {matchMedia('(pointer: coarse)').matches ? '× to keep exploring' : 'Esc to keep exploring'}</div>
     </div>
   )
 }

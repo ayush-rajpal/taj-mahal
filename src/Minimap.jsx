@@ -216,6 +216,8 @@ export default function Minimap({ drawRef }) {
     drawRef.current(W.spawn.x, W.spawn.z, 0, -1)
   }, [drawRef])
   // shown at 1.6x its plan size (still sharp: it's drawn at 2x), shrinking to fit short screens
-  const width = `min(${Math.round(Wpx * ZOOM)}px, calc((100vh - 150px) * ${(Wpx / Hpx).toFixed(4)}))`
-  return <canvas ref={ref} className="minimap" width={Wpx * R} height={Hpx * R} style={{ width }} />
+  // (phones size it in styles.css, using --map-aspect to keep it on screen)
+  const aspect = (Wpx / Hpx).toFixed(4)
+  const width = `min(${Math.round(Wpx * ZOOM)}px, calc((100vh - 150px) * ${aspect}))`
+  return <canvas ref={ref} className="minimap" width={Wpx * R} height={Hpx * R} style={{ width, '--map-aspect': aspect }} />
 }

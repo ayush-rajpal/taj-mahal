@@ -686,14 +686,15 @@ body,
   height: auto;
 }
 
-/* on phones (and with the on-screen joystick) the jump button owns the bottom corner */
+/* on phones (and with the on-screen joystick) the jump button owns the bottom corner;
+   the map shrinks to fit short screens (--map-aspect is set on the canvas by Minimap.jsx) */
 .mapwrap.touch {
   top: 110px;
   bottom: auto;
 }
 
 .mapwrap.touch .minimap {
-  width: 190px !important;
+  width: min(190px, calc((100vh - 126px) * var(--map-aspect))) !important;
 }
 
 @media (pointer: coarse), (max-width: 700px) {
@@ -702,7 +703,104 @@ body,
     bottom: auto;
   }
   .minimap {
-    width: 150px !important;
+    width: min(190px, calc((100vh - 126px) * var(--map-aspect))) !important;
+  }
+}
+
+.hud-cycle {
+  display: none;
+}
+
+/* no keyboard on a phone or tablet, so no key hints */
+@media (pointer: coarse) {
+  .hud kbd {
+    display: none;
+  }
+}
+
+/* photo captions sit above the joystick */
+.board-card.touch {
+  bottom: 184px;
+}
+
+/* ---------- phones held sideways: the map opens between the buttons and the jump button */
+@media (pointer: coarse) and (max-height: 500px) {
+  .mapwrap,
+  .mapwrap.touch {
+    top: 96px;
+    right: 112px;
+  }
+  .minimap,
+  .mapwrap.touch .minimap {
+    width: min(190px, calc((100vh - 108px) * var(--map-aspect))) !important;
+  }
+}
+
+/* ---------- phones held upright: the place and pause on one row, the buttons on the next */
+@media (max-width: 640px) {
+  .where {
+    top: 10px;
+    left: 10px;
+    max-width: calc(100vw - 112px);
+    padding: 7px 12px;
+  }
+  .where-text {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .where-world {
+    display: none;
+  }
+  .pause {
+    left: auto;
+    right: 10px;
+    top: 10px;
+    transform: none;
+    padding: 7px 16px;
+  }
+  .hud {
+    top: 52px;
+    left: 10px;
+    right: 10px;
+    pointer-events: none; /* the empty part of the row still lets you drag to look */
+  }
+  .hud > * {
+    pointer-events: auto;
+  }
+  .hud-times {
+    display: none;
+  }
+  .hud-cycle {
+    display: inline-block;
+  }
+  .hud-row {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .hud-ask {
+    padding: 7px 12px;
+  }
+  .mapwrap,
+  .mapwrap.touch {
+    top: 96px;
+    right: 10px;
+  }
+  .minimap,
+  .mapwrap.touch .minimap {
+    width: min(200px, 50vw, calc((100vh - 290px) * var(--map-aspect))) !important;
+  }
+  .board-card {
+    left: 10px;
+    right: 10px;
+    max-width: none;
+  }
+  .guide {
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    width: calc(100vw - 20px);
   }
 }
 
